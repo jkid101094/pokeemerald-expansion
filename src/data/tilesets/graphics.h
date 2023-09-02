@@ -1634,3 +1634,22 @@ const u16 gTilesetPalettes_UnionRoom[][16] =
 };
 
 const u32 gTilesetTiles_UnionRoom[] = INCBIN_U32("data/tilesets/secondary/union_room/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Sakura[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/sakura/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Sakura[] = INCBIN_U32("data/tilesets/primary/sakura/tiles.4bpp.lz");
