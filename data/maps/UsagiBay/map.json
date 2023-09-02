@@ -176,21 +176,21 @@
       "x": 16,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_USAGI_BAY",
+      "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
       "dest_warp_id": "0"
     },
     {
       "x": 40,
       "y": 17,
       "elevation": 0,
-      "dest_map": "MAP_USAGI_BAY",
+      "dest_map": "MAP_SLATEPORT_CITY_POKEMON_FAN_CLUB",
       "dest_warp_id": "0"
     },
     {
       "x": 34,
       "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_USAGI_BAY",
+      "dest_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
       "dest_warp_id": "0"
     },
     {
