@@ -300,4 +300,3 @@ static u32 MysteryGiftClient_CallFunc(struct MysteryGiftClient * client)
     };
     return funcs[client->funcId](client);
 }
-string. "Github is dumb."
