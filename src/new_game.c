@@ -204,7 +204,7 @@ void NewGameInitData(void)
     WipeTrainerNameRecords();
     ResetTrainerHillResults();
     ResetContestLinkResults();
-    SetFlag(FLAG_RECEIVED_RUNNING_SHOES);
+    
 }
 
 static void ResetMiniGamesRecords(void)

@@ -999,3 +999,217 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "we meet. I'll be waiting!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+
+	Event_StartJordanBattle::
+	trainerbattle_no_whiteout_continue_script TRAINER_JORDAN_1,JordanIntro,JordanDefeat,JordanPost
+	end
+
+	JordanIntro::
+	return
+
+	JordanDefeat::
+	msgbox Jordan_Defeat_Text
+
+	JordanPost:: 
+	msgbox Jordan_Win_Text
+
+	Jordan_Defeat_Text:
+	.string "What!?\nBut I had the type advantage and everything!"
+
+	Jordan_Win_Text:
+	.string "Ha! Am I great or what?$"
+
+BirchLab::
+	.byte 0
+
+
+BirchLab_Trigger::
+	compare VAR_STORY_PROGRESSION, 0
+	goto_if_eq BirchLab_Trigger_1
+	compare VAR_STORY_PROGRESSION, 1
+	goto_if_le BirchLab_Trigger_2
+	return
+
+BirchLab_Trigger_1:
+	lockall
+	msgbox BirchLab_Trigger_Text_0
+	msgbox BirchLab_Trigger_Text_1
+	msgbox BirchLab_Trigger_Text_2
+	msgbox BirchLab_Trigger_Text_3
+	playmoncry SPECIES_IGGLYBUFF, CRY_MODE_NORMAL
+	showmonpic SPECIES_IGGLYBUFF, 10, 3
+	waitmoncry
+	msgbox BirchLab_Trigger_Text_4
+	hidemonpic
+	givemon SPECIES_IGGLYBUFF, 5, [ ITEM_SOOTHE_BELL ]
+	playfanfare MUS_OBTAIN_ITEM
+	setflag FLAG_STARTER_OBTAINED
+	setvar VAR_STORY_PROGRESSION, 1
+	msgbox BirchLab_Trigger_Text_5
+	setflag FLAG_SYS_POKEMON_GET
+	msgbox BirchLab_Trigger_Text_6, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq BirchLab_Trigger_6
+	msgbox BirchLab_Trigger_Text_8
+BirchLab_Trigger_5:
+	bufferpartymonnick STR_VAR_1, 0
+	msgbox BirchLab_Trigger_Text_9
+	giveitem ITEM_POKE_BALL [ 10 ]
+	giveitem ITEM_FRESH_WATER [ 5 ]
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox BirchLab_Trigger_Text_10
+	setflag FLAG_SYS_POKEDEX_GET
+	special SetUnlockedPokedexFlags
+	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
+	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	waitfanfare
+	msgbox BirchLab_Trigger_Text_11
+	msgbox BirchLab_Trigger_Text_12
+	waitmessage
+	releaseall
+	return
+
+BirchLab_Trigger_2:
+	lockall
+	msgbox BirchLab_Trigger_Text_13
+	msgbox BirchLab_Trigger_Text_14, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq BirchLab_Trigger_9
+	msgbox BirchLab_Trigger_Text_16
+	waitmessage
+	releaseall
+	end
+
+BirchLab_Trigger_6:
+	msgbox BirchLab_Trigger_Text_7
+	call Common_EventScript_NameReceivedPartyMon
+	goto BirchLab_Trigger_5
+
+BirchLab_Trigger_9:
+	msgbox BirchLab_Trigger_Text_15
+	waitmessage
+	call ProfBirch_EventScript_RatePokedex
+	waitmessage
+	releaseall
+	end
+
+
+Jordan_Lab_Cutscene::
+	lockall
+	playbgm MUS_RG_RIVAL_EXIT, FALSE
+	playse SE_DOOR
+	clearflag FLAG_JORDAN_VISIBLE
+	applymovement 7, JordanMovement
+	msgbox Jordan_Lab_Cutscene_Text_0
+	msgbox Jordan_Lab_Cutscene_Text_1
+	msgbox Jordan_Lab_Cutscene_Text_2
+	msgbox Jordan_Lab_Cutscene_Text_3, MSGBOX_YESNO
+	waitmessage
+	compare VAR_RESULT, YES
+	goto_if_eq Jordan_Lab_Cutscene_2
+Jordan_Lab_Cutscene_1:
+	releaseall
+	return
+
+Jordan_Lab_Cutscene_2:
+	msgbox Jordan_Lab_Cutscene_Text_4
+	goto Jordan_Lab_Cutscene_1
+
+
+JordanMovement:
+	face_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+BirchLab_Trigger_Text_0:
+	.string "Cordata: Oh! Arle! You've finally\n"
+	.string "arrived!\n"
+	.string "It's so great to meet you!\p"
+	.string "I have SO many questions to ask you!\n"
+	.string "Who's your inspiration?\l"
+	.string "What's your starsign?\l"
+	.string "Oh! And help me settle the great shoe\l"
+	.string "size debate!$"
+
+BirchLab_Trigger_Text_1:
+	.string "Oh. You're here to get a Pokémon, aren't\n"
+	.string "you? Sorry, that was SO unprofessional\l"
+	.string "of me... Ahemn. Right...$"
+
+BirchLab_Trigger_Text_2:
+	.string "I am Professor Cordata! The lead\n"
+	.string "researcher of Compettitive Pokémon\l"
+	.string "Battling!$"
+
+BirchLab_Trigger_Text_3:
+	.string "But anyway... About that Pokémon. I\n"
+	.string "think I've picked the perfect one for\l"
+	.string "you!$"
+
+BirchLab_Trigger_Text_4:
+	.string "Well? What do you think? Cute, huh? I\n"
+	.string "know Jigglypuff is your favorite so I\l"
+	.string "bred this lil' guy just for you! Or gal, I\l"
+	.string "guess. Thinking about it now I didn't\l"
+	.string "actually check...$"
+
+BirchLab_Trigger_Text_5:
+	.string "You recieved the Igglbuff!$"
+
+BirchLab_Trigger_Text_6:
+	.string "Oh well! No time for that! Now, would you\nlike to give this cutie a nickname?\p$"
+
+BirchLab_Trigger_Text_7:
+	.string "OK! I'm excited to hear your name for it.$"
+
+BirchLab_Trigger_Text_8:
+	.string "Oh? No nickname? OK then.$"
+
+BirchLab_Trigger_Text_9:
+	.string "Oh! And of course I can't let you leave\n"
+	.string "without the essentials!$"
+
+BirchLab_Trigger_Text_10:
+	.string "Recieved the Pokédex!$"
+
+BirchLab_Trigger_Text_11:
+	.string "That pack there contains a Pokédex and\n"
+	.string "some Pokéballs to start our journey, as\l"
+	.string "well as some Running Shoes.$"
+
+BirchLab_Trigger_Text_12:
+	.string "I look forward to seeing what you and\n"
+	.string "{STR_VAR_1} can accomplish\l"
+	.string "together!$"
+
+BirchLab_Trigger_Text_13:
+	.string "Oh, Arle! Welcome back!$"
+
+BirchLab_Trigger_Text_14:
+	.string "How is your adventure going?\nWould you like me to evaluate your\lPokédex?$"
+
+BirchLab_Trigger_Text_15:
+	.string "OK then! Just hand me your dex for a\n"
+	.string "sec...$"
+
+BirchLab_Trigger_Text_16:
+	.string "Oh. Alirighty, then. If you need\n"
+	.string "anything else never be afraid to ask!$"
+
+Jordan_Lab_Cutscene_Text_0:
+	.string "Oh. You're here too, Arle?\nAre you planing on competing in the\lLegend Cup too?$"
+
+Jordan_Lab_Cutscene_Text_1:
+	.string "Well tough luck!\n'Cause I'm going for the gold as well!$"
+
+Jordan_Lab_Cutscene_Text_2:
+	.string "You have a Pokémon now too, right?\nLet's see if you're up to the challenge\lwith a battle!$"
+
+Jordan_Lab_Cutscene_Text_3:
+	.string "How about it? You in?$"
+
+Jordan_Lab_Cutscene_Text_4:
+	.string "Alright, then!\nWe'll give this everything we've got!$"
