@@ -1406,14 +1406,21 @@ static void Task_NewGameBirchSpeechSub_WaitForLotad(u8 taskId)
 
 #undef tState
 
+static const u8 newString[] = _("Arle");
+
 static void Task_NewGameBirchSpeech_AndYouAre(u8 taskId)
 {
+    //Player Innit
     if (!RunTextPrintersAndIsPrinter0Active())
     {
+        gSaveBlock2Ptr->playerGender=MALE;
+        NewGameBirchSpeech_SetDefaultPlayerName((u8)newString);
+
         sStartedPokeBallTask = FALSE;
         StringExpandPlaceholders(gStringVar4, gText_Birch_AndYouAre);
         AddTextPrinterForMessage(TRUE);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_StartBirchLotadPlatformFade;
+        gTasks[taskId].func = Task_NewGameBirchSpeech_AreYouReady;
+        
     }
 }
 
@@ -2108,7 +2115,7 @@ void NewGameBirchSpeech_SetDefaultPlayerName(u8 nameId)
     u8 i;
 
     if (gSaveBlock2Ptr->playerGender == MALE)
-        name = sMalePresetNames[nameId];
+        name = newString;
     else
         name = sFemalePresetNames[nameId];
     for (i = 0; i < PLAYER_NAME_LENGTH; i++)
