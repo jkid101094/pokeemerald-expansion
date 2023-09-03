@@ -1001,20 +1001,18 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … Click!$"
 
 	Event_StartJordanBattle::
-	trainerbattle_no_whiteout_continue_script TRAINER_JORDAN_1,JordanIntro,JordanDefeat,JordanPost
+	trainerbattle_no_whiteout_continue_script TRAINER_JORDAN_1,Jordan_Intro_Text,Jordan_Defeat_Text,JordanPost
 	end
-
-	JordanIntro::
-	return
-
-	JordanDefeat::
-	msgbox Jordan_Defeat_Text
 
 	JordanPost:: 
 	msgbox Jordan_Win_Text
+	goto Jordan_Lab_Cutscene_1
+
+	Jordan_Intro_Text:
+	.string "Alright, then!\nWe'll give this everything we've got!$"
 
 	Jordan_Defeat_Text:
-	.string "What!?\nBut I had the type advantage and everything!"
+	.string "What!?\nBut I had the type advantage and everything!$"
 
 	Jordan_Win_Text:
 	.string "Ha! Am I great or what?$"
@@ -1071,7 +1069,7 @@ script BirchLab_Trigger
 	waitmessage
 	releaseall
 	}
-	elif(var(VAR_STORY_PROGRESSION) <= 1)
+	elif(var(VAR_STORY_PROGRESSION) >= 1)
 	{
 		lockall
 		msgbox (format("Oh, Arle! Welcome back!"))
@@ -1103,24 +1101,49 @@ script Jordan_Lab_Cutscene
 	playbgm(MUS_RG_RIVAL_EXIT, FALSE)
 	playse(SE_DOOR)
 	clearflag(FLAG_JORDAN_VISIBLE)
-	applymovement(7, JordanMovement)
+	applymovement(7, JordanMovement_R)
+	waitmovement(7)
 	msgbox("Oh. You're here too, Arle?\nAre you planing on competing in the\lLegend Cup too?")
 	msgbox("Well tough luck!\n'Cause I'm going for the gold as well!")
 	msgbox("You have a Pokémon now too, right?\nLet's see if you're up to the challenge\lwith a battle!")
 	msgbox("How about it? You in?", MSGBOX_YESNO)
 	waitmessage
 	if(var(VAR_RESULT) == YES){
-	msgbox("Alright, then!\nWe'll give this everything we've got!")
-
+	goto(Event_StartJordanBattle)
+	}
+	else{
+		msgbox(format("Oh, I get it.\nIt'd be lame to have our first battle right here, wouldn't it?"))
+		msgbox("I'll wait until we both get stronger!\nThen we'll have a match for the ages!")
 
 	}
+		msgbox("Anyway, smell ya later!")
+		applymovement(7, JordanExit)
+		waitmovement(7)
+		playse(SE_DOOR)
+		
+		setflag(FLAG_JORDAN_VISIBLE)
+		setvar(VAR_STORY_PROGRESSION, 2)
+		
 
-
-	releaseall
+		releaseall
 }
 
-movement JordanMovement {
+movement JordanMovement_L {
+	face_up
+	walk_up *2
+	walk_left
+	walk_up *2
+	
+}
+
+movement JordanMovement_R {
 	face_up
 	walk_up *4
+	
+}
+
+movement JordanExit {
+	face_down
+	walk_down *4
 	
 }
