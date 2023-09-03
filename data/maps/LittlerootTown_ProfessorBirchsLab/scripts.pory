@@ -999,6 +999,22 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "we meet. I'll be waiting!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+
+	Event_StartJordanBattle::
+	trainerbattle_no_whiteout_continue_script TRAINER_JORDAN_1,Jordan_Intro,JordanDefeat,JordanPost
+	end
+
+	JordanDefeat::
+	msgbox Jordan_Defeat_Text
+
+	JordanPost:: 
+	msgbox Jordan_Win_Text
+
+	Jordan_Defeat_Text:
+	.string "What!?\nBut I had the type advantage and everything!"
+
+	Jordan_Win_Text:
+	.string "Ha! Am I great or what?$"
 `
 mapscripts BirchLab {}
 
@@ -1018,7 +1034,7 @@ script BirchLab_Trigger
 	hidemonpic
 	givemon(SPECIES_IGGLYBUFF, 5, [ITEM_SOOTHE_BELL])
 	playfanfare(MUS_OBTAIN_ITEM)
-	setflag(FLAG_STARTEROBTAINED)
+	setflag(FLAG_STARTER_OBTAINED)
 	setvar(VAR_STORY_PROGRESSION, 1)
 	msgbox ("You recieved the Igglbuff!")
 	setflag(FLAG_SYS_POKEMON_GET)
@@ -1092,7 +1108,6 @@ script Jordan_Lab_Cutscene
 	waitmessage
 	if(var(VAR_RESULT) == YES){
 	msgbox("Alright, then!\nWe'll give this everything we've got!")
-	trainerbattle_no_intro(sJordan1, "What!?\nBut I had type advantage and everything!")
 
 
 	}
