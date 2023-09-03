@@ -1001,20 +1001,18 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … Click!$"
 
 	Event_StartJordanBattle::
-	trainerbattle_no_whiteout_continue_script TRAINER_JORDAN_1,JordanIntro,JordanDefeat,JordanPost
+	trainerbattle_no_whiteout_continue_script TRAINER_JORDAN_1,Jordan_Intro_Text,Jordan_Defeat_Text,JordanPost
 	end
-
-	JordanIntro::
-	return
-
-	JordanDefeat::
-	msgbox Jordan_Defeat_Text
 
 	JordanPost:: 
 	msgbox Jordan_Win_Text
+	goto Jordan_Lab_Cutscene_1
+
+	Jordan_Intro_Text:
+	.string "Alright, then!\nWe'll give this everything we've got!$"
 
 	Jordan_Defeat_Text:
-	.string "What!?\nBut I had the type advantage and everything!"
+	.string "What!?\nBut I had the type advantage and everything!$"
 
 	Jordan_Win_Text:
 	.string "Ha! Am I great or what?$"
@@ -1099,7 +1097,8 @@ Jordan_Lab_Cutscene::
 	playbgm MUS_RG_RIVAL_EXIT, FALSE
 	playse SE_DOOR
 	clearflag FLAG_JORDAN_VISIBLE
-	applymovement 7, JordanMovement
+	applymovement 7, JordanMovement_R
+	waitmovement 7
 	msgbox Jordan_Lab_Cutscene_Text_0
 	msgbox Jordan_Lab_Cutscene_Text_1
 	msgbox Jordan_Lab_Cutscene_Text_2
@@ -1107,21 +1106,46 @@ Jordan_Lab_Cutscene::
 	waitmessage
 	compare VAR_RESULT, YES
 	goto_if_eq Jordan_Lab_Cutscene_2
+	msgbox Jordan_Lab_Cutscene_Text_4
+	msgbox Jordan_Lab_Cutscene_Text_5
 Jordan_Lab_Cutscene_1:
+	msgbox Jordan_Lab_Cutscene_Text_6
+	applymovement 7, JordanExit
+	waitmovement 7
+	playse SE_DOOR
+	setflag FLAG_JORDAN_VISIBLE
+	setvar VAR_STORY_PROGRESSION, 2
 	releaseall
 	return
 
 Jordan_Lab_Cutscene_2:
-	msgbox Jordan_Lab_Cutscene_Text_4
+	goto Event_StartJordanBattle
 	goto Jordan_Lab_Cutscene_1
 
 
-JordanMovement:
+JordanMovement_L:
+	face_up
+	walk_up
+	walk_up
+	walk_left
+	walk_up
+	walk_up
+	step_end
+
+JordanMovement_R:
 	face_up
 	walk_up
 	walk_up
 	walk_up
 	walk_up
+	step_end
+
+JordanExit:
+	face_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
 	step_end
 
 BirchLab_Trigger_Text_0:
@@ -1212,4 +1236,12 @@ Jordan_Lab_Cutscene_Text_3:
 	.string "How about it? You in?$"
 
 Jordan_Lab_Cutscene_Text_4:
-	.string "Alright, then!\nWe'll give this everything we've got!$"
+	.string "Oh, I get it.\n"
+	.string "It'd be lame to have our first battle\l"
+	.string "right here, wouldn't it?$"
+
+Jordan_Lab_Cutscene_Text_5:
+	.string "I'll wait until we both get stronger!\nThen we'll have a match for the ages!$"
+
+Jordan_Lab_Cutscene_Text_6:
+	.string "Anyway, smell ya later!$"

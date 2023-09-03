@@ -1120,7 +1120,7 @@ script Jordan_Lab_Cutscene
 		applymovement(7, JordanExit)
 		waitmovement(7)
 		playse(SE_DOOR)
-		
+		removeobject(7)
 		setflag(FLAG_JORDAN_VISIBLE)
 		setvar(VAR_STORY_PROGRESSION, 2)
 		
