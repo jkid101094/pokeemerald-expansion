@@ -1022,10 +1022,10 @@ BirchLab::
 
 
 BirchLab_Trigger::
-	compare VAR_STORY_PROGRESSION, 0
-	goto_if_eq BirchLab_Trigger_1
 	compare VAR_STORY_PROGRESSION, 1
-	goto_if_le BirchLab_Trigger_2
+	goto_if_eq BirchLab_Trigger_1
+	compare VAR_STORY_PROGRESSION, 2
+	goto_if_ge BirchLab_Trigger_2
 	return
 
 BirchLab_Trigger_1:
@@ -1042,7 +1042,7 @@ BirchLab_Trigger_1:
 	givemon SPECIES_IGGLYBUFF, 5, [ ITEM_SOOTHE_BELL ]
 	playfanfare MUS_OBTAIN_ITEM
 	setflag FLAG_STARTER_OBTAINED
-	setvar VAR_STORY_PROGRESSION, 1
+	setvar VAR_STORY_PROGRESSION, 2
 	msgbox BirchLab_Trigger_Text_5
 	setflag FLAG_SYS_POKEMON_GET
 	msgbox BirchLab_Trigger_Text_6, MSGBOX_YESNO
@@ -1096,7 +1096,7 @@ Jordan_Lab_Cutscene::
 	lockall
 	playbgm MUS_RG_RIVAL_EXIT, FALSE
 	playse SE_DOOR
-	clearflag FLAG_JORDAN_VISIBLE
+	showobjectat 7, 104
 	applymovement 7, JordanMovement_R
 	waitmovement 7
 	msgbox Jordan_Lab_Cutscene_Text_0
@@ -1109,12 +1109,15 @@ Jordan_Lab_Cutscene::
 	msgbox Jordan_Lab_Cutscene_Text_4
 	msgbox Jordan_Lab_Cutscene_Text_5
 Jordan_Lab_Cutscene_1:
+	special HealPlayerParty
 	msgbox Jordan_Lab_Cutscene_Text_6
 	applymovement 7, JordanExit
 	waitmovement 7
 	playse SE_DOOR
-	setflag FLAG_JORDAN_VISIBLE
-	setvar VAR_STORY_PROGRESSION, 2
+	removeobject 7
+	hideobjectat 7, 104
+	setvar VAR_STORY_PROGRESSION, 3
+	fadedefaultbgm
 	releaseall
 	return
 
@@ -1201,8 +1204,7 @@ BirchLab_Trigger_Text_10:
 
 BirchLab_Trigger_Text_11:
 	.string "That pack there contains a Pokédex and\n"
-	.string "some Pokéballs to start our journey, as\l"
-	.string "well as some Running Shoes.$"
+	.string "some Pokéballs to start your journey.$"
 
 BirchLab_Trigger_Text_12:
 	.string "I look forward to seeing what you and\n"
@@ -1224,7 +1226,7 @@ BirchLab_Trigger_Text_16:
 	.string "anything else never be afraid to ask!$"
 
 Jordan_Lab_Cutscene_Text_0:
-	.string "Oh. You're here too, Arle?\nAre you planing on competing in the\lLegend Cup too?$"
+	.string "Jordan: Oh. You're here too, Arle?\nAre you planing on competing in the\lLegend Cup too?$"
 
 Jordan_Lab_Cutscene_Text_1:
 	.string "Well tough luck!\n'Cause I'm going for the gold as well!$"

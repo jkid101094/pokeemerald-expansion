@@ -1,3 +1,4 @@
+raw `
 .set LOCALID_RIVAL, 1
 
 LittlerootTown_BrendansHouse_2F_MapScripts::
@@ -302,24 +303,20 @@ PlayersHouse_2F_Text_ItsAGameCube:
 	.string "It's a Nintendo GameCube.\p"
 	.string "A Game Boy Advance is connected to\n"
 	.string "serve as the Controller.$"
+    `
+    mapscripts ArleHouse {}
 
-ArleHouse::
-	.byte 0
-
-
-Need_To_Set_Clock::
+script Need_To_Set_Clock
+{
 	lockall
-	msgbox Need_To_Set_Clock_Text_0
-	waitmessage
-	applymovement OBJ_EVENT_ID_PLAYER, MoveBack
-	waitmovement OBJ_EVENT_ID_PLAYER
-	releaseall
-	return
+    msgbox("I should set my clock first...")
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, MoveBack)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    releaseall
+}
 
-
-MoveBack:
-	walk_down
-	step_end
-
-Need_To_Set_Clock_Text_0:
-	.string "I should set my clock first...$"
+ movement MoveBack 
+    {
+        walk_down
+    }

@@ -1021,7 +1021,7 @@ mapscripts BirchLab {}
 
 script BirchLab_Trigger
 {
-	if(var(VAR_STORY_PROGRESSION) == 0)
+	if(var(VAR_STORY_PROGRESSION) == 1)
 	{
 	lockall
 	msgbox (format("Cordata: Oh! Arle! You've finally arrived!\nIt's so great to meet you!\pI have SO many questions to ask you!\nWho's your inspiration?\lWhat's your starsign?\lOh! And help me settle the great shoe size debate!"))
@@ -1036,7 +1036,7 @@ script BirchLab_Trigger
 	givemon(SPECIES_IGGLYBUFF, 5, [ITEM_SOOTHE_BELL])
 	playfanfare(MUS_OBTAIN_ITEM)
 	setflag(FLAG_STARTER_OBTAINED)
-	setvar(VAR_STORY_PROGRESSION, 1)
+	setvar(VAR_STORY_PROGRESSION, 2)
 	msgbox ("You recieved the Igglbuff!")
 	setflag(FLAG_SYS_POKEMON_GET)
 	msgbox ("Oh well! No time for that! Now, would you\nlike to give this cutie a nickname?\p", MSGBOX_YESNO)
@@ -1064,12 +1064,12 @@ script BirchLab_Trigger
 	setvar (VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
 	setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
 	waitfanfare
-	msgbox (format("That pack there contains a Pokédex and some Pokéballs to start our journey, as well as some Running Shoes."))
+	msgbox (format("That pack there contains a Pokédex and some Pokéballs to start your journey."))
 	msgbox (format("I look forward to seeing what you and {STR_VAR_1} can accomplish together!"))
 	waitmessage
 	releaseall
 	}
-	elif(var(VAR_STORY_PROGRESSION) >= 1)
+	elif(var(VAR_STORY_PROGRESSION) >= 2)
 	{
 		lockall
 		msgbox (format("Oh, Arle! Welcome back!"))
@@ -1100,10 +1100,10 @@ script Jordan_Lab_Cutscene
 	lockall
 	playbgm(MUS_RG_RIVAL_EXIT, FALSE)
 	playse(SE_DOOR)
-	clearflag(FLAG_JORDAN_VISIBLE)
+	showobjectat(7, 104)
 	applymovement(7, JordanMovement_R)
 	waitmovement(7)
-	msgbox("Oh. You're here too, Arle?\nAre you planing on competing in the\lLegend Cup too?")
+	msgbox("Jordan: Oh. You're here too, Arle?\nAre you planing on competing in the\lLegend Cup too?")
 	msgbox("Well tough luck!\n'Cause I'm going for the gold as well!")
 	msgbox("You have a Pokémon now too, right?\nLet's see if you're up to the challenge\lwith a battle!")
 	msgbox("How about it? You in?", MSGBOX_YESNO)
@@ -1116,13 +1116,15 @@ script Jordan_Lab_Cutscene
 		msgbox("I'll wait until we both get stronger!\nThen we'll have a match for the ages!")
 
 	}
+		special(HealPlayerParty)
 		msgbox("Anyway, smell ya later!")
 		applymovement(7, JordanExit)
 		waitmovement(7)
 		playse(SE_DOOR)
 		removeobject(7)
-		setflag(FLAG_JORDAN_VISIBLE)
-		setvar(VAR_STORY_PROGRESSION, 2)
+		hideobjectat(7, 104)
+		setvar(VAR_STORY_PROGRESSION, 3)
+		fadedefaultbgm
 		
 
 		releaseall
