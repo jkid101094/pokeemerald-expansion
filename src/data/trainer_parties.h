@@ -6,11 +6,81 @@ static const struct TrainerMonNoItemDefaultMoves sJordan1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout1[] = {
+static const struct TrainerMonItemCustomMoves sParty_MAA_Justin_1[] = {
     {
-    .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 67,
+    .species = SPECIES_BLASTOISE,
+    .friendship = 255,
+    .gender TRAINER_MON_MALE,
+    .heldItem = ITEM_BLASTOISINITE,
+    .iv = TRAINER_PARTY_IVS(30,21,30,29,20,14),
+    .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 4, 0),
+    .moves = {MOVE_WATER_PULSE, MOVE_DARK_PULSE, MOVE_ICE_BEAM, MOVE_RAPID_SPIN},
+    .nature = TRAINER_PARTY_NATURE(NATURE_CALM),
+    .nickname = COMPOUND_STRING("Psudeo-John"),
+    }
+    {
+    .lvl = 65,
+    .species = SPECIES_LILLIGANT,
+    .friendship = 255,
+    .ability = ABILITY_CHLOROPHYLL,
+    .gender TRAINER_MON_FEMALE,
+    .heldItem = ITEM_BIG_ROOT,
+    .iv = TRAINER_PARTY_IVS(31,31,31,29,31,3),
+    .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 4, 252),
+    .moves = {MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE, MOVE_SLEEP_POWDER, MOVE_HIDDEN_POWER},
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST)
+    .nickname = COMPOUND_STRING("Lillinbow"),
+    .isShiny = TRUE,
+    }
+    {
+    .lvl = 64,
+    .species = SPECIES_HELIOLISK,
+    .friendship = 255,
+    .ability = ABILITY_DRY_SKIN,
+    .gender TRAINER_MON_FEMALE,
+    .heldItem = ITEM_DAMP_ROCK,
+    .iv = TRAINER_PARTY_IVS(11,16,20,21,10,8),
+    .ev = TRAINER_PARTY_EVS(4, 2, 0, 252, 0, 252),
+    .moves = {MOVE_PARABOLIC_CHARGE, MOVE_SURF, MOVE_RAIN_DANCE, MOVE_THUNDER},
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+    .nickname = COMPOUND_STRING("Zilla"),
+    }
+    {
+    .lvl = 62,
+    .species = SPECIES_NIDDOQUUEEN,
+    .friendship = 255,
+    .gender TRAINER_MON_FEMALE,
+    .heldItem = ITEM_BLACK_SLUDGE,
+    .ability = ABILITY_SHEER_FORCE,
+    .iv = TRAINER_PARTY_IVS(27,31,19,15,10,24),
+    .ev = TRAINER_PARTY_EVS(6, 252, 252, 0, 0, 0),
+    .moves = {MOVE_TOXIC_SPIKES, MOVE_POISON_JAB, MOVE_EARTHQUAKE, MOVE_SUPERPOWER},
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+    .nickname = COMPOUND_STRING("Aria")
+    }
+    {
+    .lvl = 65,
+    .species = SPECIES_SIGILYPH,
+    .friendship = 255,
+    .gender TRAINER_MON_MALE,
+    .heldItem = ITEM_FLAME_ORB,
+    .iv = TRAINER_PARTY_IVS(19,21,25,6,25,28),
+    .ev = TRAINER_PARTY_EVS(252, 0, 0, 12, 246, 0),
+    .moves = {MOVE_COSMIC_POWER, MOVE_STORED_POWER, MOVE_PSYCHO_SHIFT, MOVE_ROOST},
+    .nature = TRAINER_PARTY_NATURE(NATURE_CALM),
+    .nickname = COMPOUND_STRING("Miracle")
+    }
+    {
+    .lvl = 65,
+    .species = SPECIES_CARBINK,
+    .friendship = 255,
+    .heldItem = ITEM_CHESTO_BERRY,
+    .iv = TRAINER_PARTY_IVS(16,15,28,11,10,10),
+    .ev = TRAINER_PARTY_EVS(252, 0, 0, 12, 246, 0),
+    .moves = {MOVE_STEALTH_ROCK, MOVE_PROTECT, MOVE_REST, MOVE_TOXIC},
+    .nature = TRAINER_PARTY_NATURE(NATURE_CALM),
+    .nickname = COMPOUND_STRING("Melody")
     }
 };
 
