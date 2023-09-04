@@ -1047,7 +1047,103 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
-    }
+    },
+     [INGAME_TRADE_BULBASAUR] =
+    {
+        .nickname = _("Bulbert"),
+        .species = SPECIES_BULBASAUR,
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .abilityNum = 1,
+        .otId = 17686,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x97,
+        .heldItem = ITEM_VENUSAURITE,
+        .mailNum = -1,
+        .otName = _("EMILE"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SMEARGLE
+    },
+     [INGAME_TRADE_CHARMANDER] =
+    {
+        .nickname = _("Charmin"),
+        .species = SPECIES_CHARMANDER,
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .abilityNum = 1,
+        .otId = 17686,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x97,
+        .heldItem = ITEM_CHARIZARDITE_X,
+        .mailNum = -1,
+        .otName = _("EMILE"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SMEARGLE
+    },
+    [INGAME_TRADE_SQUIRTLE] =
+    {
+        .nickname = _("Squirtim"),
+        .species = SPECIES_SQUIRTLE,
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .abilityNum = 1,
+        .otId = 17686,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x97,
+        .heldItem = ITEM_BLASTOISINITE,
+        .mailNum = -1,
+        .otName = _("EMILE"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SMEARGLE
+    },
+    [INGAME_TRADE_SHELMET] =
+    {
+        .nickname = _("Marauder"),
+        .species = SPECIES_SHELMET,
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .abilityNum = 0,
+        .otId = 23301,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x20,
+        .heldItem = ITEM_TIMID_MINT,
+        .mailNum = -1,
+        .otName = _("CHARLES"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_KARRABLAST
+    },
+    [INGAME_TRADE_KARRABLAST] =
+    {
+        .nickname = _("Squire"),
+        .species = SPECIES_KARRABLAST,
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .abilityNum = 0,
+        .otId = 33106,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x20,
+        .heldItem = ITEM_ADAMANT_MINT,
+        .mailNum = -1,
+        .otName = _("LESLIE"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SHELMET
+    },
+     [INGAME_TRADE_FEEBAS] =
+    {
+        .nickname = _("Lunch"),
+        .species = SPECIES_FEEBAS,
+        .ivs = {31, 31, 31, 31, 31, 31},
+        .abilityNum = 0,
+        .otId = 33106,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x20,
+        .heldItem = ITEM_ADAMANT_MINT,
+        .mailNum = -1,
+        .otName = _("LESLIE"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SHELMET
+    },
 };
 
 static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =

@@ -1030,6 +1030,7 @@ BirchLab_Trigger::
 
 BirchLab_Trigger_1:
 	lockall
+	faceplayer
 	msgbox BirchLab_Trigger_Text_0
 	msgbox BirchLab_Trigger_Text_1
 	msgbox BirchLab_Trigger_Text_2
@@ -1069,6 +1070,7 @@ BirchLab_Trigger_5:
 
 BirchLab_Trigger_2:
 	lockall
+	faceplayer
 	msgbox BirchLab_Trigger_Text_13
 	msgbox BirchLab_Trigger_Text_14, MSGBOX_YESNO
 	compare VAR_RESULT, YES
@@ -1168,7 +1170,7 @@ BirchLab_Trigger_Text_1:
 
 BirchLab_Trigger_Text_2:
 	.string "I am Professor Cordata! The lead\n"
-	.string "researcher of Compettitive Pokémon\l"
+	.string "researcher of Competitive Pokémon\l"
 	.string "Battling!$"
 
 BirchLab_Trigger_Text_3:

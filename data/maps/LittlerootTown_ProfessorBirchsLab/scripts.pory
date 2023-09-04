@@ -1024,9 +1024,10 @@ script BirchLab_Trigger
 	if(var(VAR_STORY_PROGRESSION) == 1)
 	{
 	lockall
+	faceplayer
 	msgbox (format("Cordata: Oh! Arle! You've finally arrived!\nIt's so great to meet you!\pI have SO many questions to ask you!\nWho's your inspiration?\lWhat's your starsign?\lOh! And help me settle the great shoe size debate!"))
 	msgbox (format("Oh. You're here to get a Pokémon, aren't you? Sorry, that was SO unprofessional of me... Ahemn. Right..."))
-	msgbox (format("I am Professor Cordata! The lead researcher of Compettitive Pokémon Battling!"))
+	msgbox (format("I am Professor Cordata! The lead researcher of Competitive Pokémon Battling!"))
 	msgbox (format("But anyway... About that Pokémon. I think I've picked the perfect one for you!"))
 	playmoncry(SPECIES_IGGLYBUFF, CRY_MODE_NORMAL)
 	showmonpic(SPECIES_IGGLYBUFF, 10, 3)
@@ -1072,6 +1073,7 @@ script BirchLab_Trigger
 	elif(var(VAR_STORY_PROGRESSION) >= 2)
 	{
 		lockall
+		faceplayer
 		msgbox (format("Oh, Arle! Welcome back!"))
 		msgbox ("How is your adventure going?\nWould you like me to evaluate your\lPokédex?", MSGBOX_YESNO)
 		if(var(VAR_RESULT) == YES)

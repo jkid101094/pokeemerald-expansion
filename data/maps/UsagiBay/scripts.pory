@@ -1,0 +1,284 @@
+mapscripts UsagiBay_MapScripts {}
+
+script UsagiBay_Artist
+{
+	lockall
+    faceplayer
+    goto_if_set(FLAG_ARTISAN_TRADE, ARTIST_TRADE_COMPLETE)
+	msgbox(format("I'm a traveling artist looking for new\nthings to paint."))
+    msgbox(format("Usagi Bay has a wonderful ladscape,\nbut I'm looking for something more animated."))
+    msgbox("Do you by chance have a Smeargle?\nI'll trade it for a Pokémon from my home\lregion.", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES)
+    {
+        special(ChoosePartyMon)
+        waitstate
+        goto_if_eq(VAR_0x8004, PARTY_NOTHING_CHOSEN, Trade_Declined)
+        copyvar(VAR_0x8004, VAR_0x8005)
+        specialvar(VAR_RESULT, GetTradeSpecies)
+        goto_if_ne(VAR_RESULT, SPECIES_SMEARGLE, Trade_Declined)
+        msgbox("Excellet!\nWhich Pokemon would you like?")
+        multichoice(25, 5, MULTI_KANTO_STARTER_CHOICE, 1)
+        closemessage
+            if(var(VAR_RESULT) == 0)
+            {
+                setvar(VAR_0x8004, INGAME_TRADE_BULBASAUR)
+                special(CreateInGameTradePokemon)
+                special(DoInGameTradeScene)
+                waitstate
+                setflag(FLAG_ARTISAN_TRADE)
+                return
+                releaseall
+                end
+            }
+            elif(var(VAR_RESULT) == 1)
+            {
+                setvar(VAR_0x8004, INGAME_TRADE_CHARMANDER)
+                special(CreateInGameTradePokemon)
+                special(DoInGameTradeScene)
+                waitstate
+                setflag(FLAG_ARTISAN_TRADE)
+                return
+                releaseall
+                end
+            }
+            elif(var(VAR_RESULT) == 2)
+            {
+                setvar(VAR_0x8004, INGAME_TRADE_SQUIRTLE)
+                special(CreateInGameTradePokemon)
+                special(DoInGameTradeScene)
+                waitstate
+                setflag(FLAG_ARTISAN_TRADE)
+                return
+                releaseall
+                end
+            }
+    }
+       
+    else
+    {
+        msgbox("Oh... Well if you should change your mind\nyou know where to find me.")
+        releaseall
+        end
+    }
+
+    Trade_Declined:
+        msgbox("Oh why must you tease me so?")
+        releaseall
+        end
+
+    ARTIST_TRADE_COMPLETE:
+        msgbox("Hello, friend!\nHow is my Pokémon doing?\lYour Smeargle is just fine.")
+        releaseall
+        end
+	
+}
+
+script UsagiBay_Woman{
+    lockall
+    faceplayer
+    msgbox("The square is so lovely!\nI always come here to do a little\lshopping.")
+    releaseall
+    end
+}
+
+script UsagiBay_Sailor{
+    lockall
+    faceplayer
+    msgbox("You'd never guess from it's size,\nbut the square is a hub for travelers\lfrom all over the world.\pI'm from Paldea, myself.")
+    releaseall
+    end
+}
+
+script UsagiBay_LittleGirl{
+    lockall
+    faceplayer
+    msgbox("Mommy left me to play while she does\nsome shopping.")
+    msgbox("I'm perfectly safe as long as Azurill is\nwith me!")
+    releaseall
+    end
+}
+
+script UsagiBay_Azurill{
+    lockall
+    faceplayer
+    playmoncry(SPECIES_AZURILL, CRY_MODE_NORMAL)
+	showmonpic(SPECIES_AZURILL, 10, 3)
+    msgbox("Azuuuuurill!")
+	waitmoncry
+    hidemonpic
+    releaseall
+    end
+}
+
+script UsagiBay_Ranger{
+    lockall
+    faceplayer
+    msgbox("Not just anyone can enter Victory\nRoad, ya know.\pIt takes a hardened trainer like myself\nto trudge through that forest.\pToo bad I can never make it, huh?")
+    releaseall
+    end
+}
+
+script UsagiBay_BugCatcher{
+    lockall
+    faceplayer
+    msgbox(format("Keep this between you and me, but I hear the square shopkeeps reveal more of their inventory to trainers with more badges.\pHow's that fair, huh?\nI want some Net Balls too!"))
+    releaseall
+    end
+}
+
+//Shop Scripts
+script StoneShop{
+    lock
+    faceplayer
+    message("Hi and welcome to Steven's Stones.\nHow may I help you?")
+    waitmessage
+    if(var(VAR_BADGES_OBTAINED)==0)
+    {
+        pokemart(stoneshop_1)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=2)
+    {
+        pokemart(stoneshop_2)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=4)
+    {
+        pokemart(stoneshop_3)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=6)
+    {
+        pokemart(stoneshop_4)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=8)
+    {
+        pokemart(stoneshop_5)
+    }
+    message("We hope to see you again!")
+    release
+    end
+}
+
+//Shop Inventories
+raw`
+.align 2
+stoneshop_1::
+.2byte ITEM_FIRE_STONE
+.2byte ITEM_WATER_STONE
+.2byte ITEM_THUNDER_STONE
+.2byte ITEM_LEAF_STONE
+.2byte ITEM_NONE
+release
+end
+
+stoneshop_2::
+.2byte ITEM_FIRE_STONE
+.2byte ITEM_WATER_STONE
+.2byte ITEM_THUNDER_STONE
+.2byte ITEM_LEAF_STONE
+.2byte ITEM_MOON_STONE
+.2byte ITEM_SUN_STONE
+.2byte ITEM_DAWN_STONE
+.2byte ITEM_DUSK_STONE
+.2byte ITEM_SHINY_STONE
+.2byte ITEM_DRAGON_SCALE
+.2byte ITEM_KINGS_ROCK
+.2byte ITEM_METAL_COAT
+.2byte ITEM_NONE
+release
+end
+
+stoneshop_3::
+.2byte ITEM_FIRE_STONE
+.2byte ITEM_WATER_STONE
+.2byte ITEM_THUNDER_STONE
+.2byte ITEM_LEAF_STONE
+.2byte ITEM_MOON_STONE
+.2byte ITEM_SUN_STONE
+.2byte ITEM_DAWN_STONE
+.2byte ITEM_DUSK_STONE
+.2byte ITEM_SHINY_STONE
+.2byte ITEM_ICE_STONE
+.2byte ITEM_MAGMARIZER
+.2byte ITEM_ELECTIRIZER
+.2byte ITEM_PROTECTOR
+.2byte ITEM_REAPER_CLOTH
+.2byte ITEM_RAZOR_CLAW
+.2byte ITEM_RAZOR_FANG
+.2byte ITEM_SWEET_APPLE
+.2byte ITEM_TART_APPLE
+.2byte ITEM_DRAGON_SCALE
+.2byte ITEM_KINGS_ROCK
+.2byte ITEM_METAL_COAT
+.2byte ITEM_NONE
+release
+end
+
+stoneshop_4::
+.2byte ITEM_FIRE_STONE
+.2byte ITEM_WATER_STONE
+.2byte ITEM_THUNDER_STONE
+.2byte ITEM_LEAF_STONE
+.2byte ITEM_MOON_STONE
+.2byte ITEM_SUN_STONE
+.2byte ITEM_DAWN_STONE
+.2byte ITEM_DUSK_STONE
+.2byte ITEM_SHINY_STONE
+.2byte ITEM_ICE_STONE
+.2byte ITEM_MAGMARIZER
+.2byte ITEM_ELECTIRIZER
+.2byte ITEM_REAPER_CLOTH
+.2byte ITEM_RAZOR_CLAW
+.2byte ITEM_RAZOR_FANG
+.2byte ITEM_SWEET_APPLE
+.2byte ITEM_TART_APPLE
+.2byte ITEM_DEEP_SEA_SCALE
+.2byte ITEM_DEEP_SEA_TOOTH
+.2byte ITEM_DRAGON_SCALE
+.2byte ITEM_KINGS_ROCK
+.2byte ITEM_METAL_COAT
+.2byte ITEM_OVAL_STONE
+.2byte ITEM_NONE
+release
+end
+
+stoneshop_5::
+.2byte ITEM_FIRE_STONE
+.2byte ITEM_WATER_STONE
+.2byte ITEM_THUNDER_STONE
+.2byte ITEM_LEAF_STONE
+.2byte ITEM_MOON_STONE
+.2byte ITEM_SUN_STONE
+.2byte ITEM_DAWN_STONE
+.2byte ITEM_DUSK_STONE
+.2byte ITEM_SHINY_STONE
+.2byte ITEM_ICE_STONE
+.2byte ITEM_MAGMARIZER
+.2byte ITEM_ELECTIRIZER
+.2byte ITEM_REAPER_CLOTH
+.2byte ITEM_RAZOR_CLAW
+.2byte ITEM_RAZOR_FANG
+.2byte ITEM_SWEET_APPLE
+.2byte ITEM_TART_APPLE
+.2byte ITEM_DEEP_SEA_SCALE
+.2byte ITEM_DEEP_SEA_TOOTH
+.2byte ITEM_DRAGON_SCALE
+.2byte ITEM_KINGS_ROCK
+.2byte ITEM_METAL_COAT
+.2byte ITEM_OVAL_STONE
+.2byte ITEM_SACHET
+.2byte ITEM_WHIPPED_DREAM
+.2byte ITEM_UPGRADE
+.2byte ITEM_DUBIOUS_DISC
+.2byte ITEM_DRAGON_SCALE
+.2byte ITEM_KINGS_ROCK
+.2byte ITEM_METAL_COAT
+.2byte ITEM_STRAWBERRY_SWEET
+.2byte ITEM_LOVE_SWEET
+.2byte ITEM_BERRY_SWEET
+.2byte ITEM_CLOVER_SWEET
+.2byte ITEM_FLOWER_SWEET
+.2byte ITEM_STAR_SWEET
+.2byte ITEM_RIBBON_SWEET
+.2byte ITEM_NONE
+release
+end
+`
