@@ -63,7 +63,6 @@ PlayersHouse_2F_EventScript_WallClock::
 	call PlayersHouse_2F_EventScript_SetWallClock
 	delay 30
 	setvar VAR_STORY_PROGRESSION, 1
-	hideobjectat 7, 104
 	setflag FLAG_SET_WALL_CLOCK
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2
