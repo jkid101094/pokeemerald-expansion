@@ -6,7 +6,7 @@
 #define TRAINER_MAA_JUSTIN_1                  2
 #define TRAINER_MAA_JUSTIN_2                  3
 #define TRAINER_ETERNAL_GODDESS               4
-#define TRAINER_LEAF                          5
+#define TRAINER_POST_LEAF                     5
 #define TRAINER_LAURA_1                       6
 #define TRAINER_ASUKA_1                       7
 #define TRAINER_NOX_1                         8

@@ -16,7 +16,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_JORDAN_1] =
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_JORDAN,
         .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("Jordan"),
         .items = {},
@@ -52,7 +52,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ETERNAL_GODDESS] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_JUNO,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Goddess"),
         .items = {ITEM_MEGA_RING, ITEM_Z_POWER_RING, ITEM_DYNAMAX_BAND, ITEM_X_SP_ATK},
@@ -61,7 +61,7 @@ const struct Trainer gTrainers[] = {
         .party = EVERYTHING_CUSTOMIZED(sParty_Juno),
     },
 
-    [TRAINER_LEAF] =
+    [TRAINER_POST_LEAF] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
@@ -70,7 +70,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_MEGA_RING, ITEM_Z_POWER_RING, ITEM_DYNAMAX_BAND, ITEM_X_SP_ATK},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Leaf),
+        .party = EVERYTHING_CUSTOMIZED(sParty_Post_Leaf),
     },
 
     [TRAINER_LAURA_1] =

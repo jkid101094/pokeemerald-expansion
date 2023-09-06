@@ -1506,7 +1506,7 @@ void PlayTrainerEncounterMusic(void)
             music = MUS_ENCOUNTER_AQUA;
             break;
         case TRAINER_ENCOUNTER_MUSIC_MAGMA:
-            music = MUS_RG_RIVAL_EXIT;
+            music = MUS_ENCOUNTER_MAGMA;
             break;
         case TRAINER_ENCOUNTER_MUSIC_SWIMMER:
             music = MUS_ENCOUNTER_SWIMMER;
@@ -1525,6 +1525,24 @@ void PlayTrainerEncounterMusic(void)
             break;
         case TRAINER_ENCOUNTER_MUSIC_RICH:
             music = MUS_ENCOUNTER_RICH;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_JORDAN:
+            music = MUS_RG_RIVAL_EXIT;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_LAURA:
+            music = MUS_ENCOUNTER_RICH;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_ASUKA:
+            music = MUS_ENCOUNTER_RICH;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_NOX:
+            music = MUS_ENCOUNTER_RICH;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_JUNO:
+            music = MUS_ENCOUNTER_RICH;
+        case TRAINER_ENCOUNTER_MUSIC_LEAF:
+            music = MUS_ENCOUNTER_RICH;
+            break;
             break;
         default:
             music = MUS_ENCOUNTER_SUSPICIOUS;

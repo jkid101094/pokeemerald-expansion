@@ -6,11 +6,6 @@ SeafloorCavern_Room3_EventScript_Shelly::
 	msgbox SeafloorCavern_Room3_Text_ShellyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-SeafloorCavern_Room3_EventScript_Grunt5::
-	trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_5, SeafloorCavern_Room3_Text_Grunt5Intro, SeafloorCavern_Room3_Text_Grunt5Defeat
-	msgbox SeafloorCavern_Room3_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE
-	end
-
 SeafloorCavern_Room3_Text_ShellyIntro:
 	.string "Ahahahaha!\p"
 	.string "How did you manage to get here without\n"

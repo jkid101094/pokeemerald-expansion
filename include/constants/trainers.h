@@ -110,6 +110,10 @@
 #define TRAINER_PIC_LEAF                  90
 #define TRAINER_PIC_RS_BRENDAN            91
 #define TRAINER_PIC_RS_MAY                92
+#define TRAINER_PIC_LAURA                 93
+#define TRAINER_PIC_ASUKA                 94
+#define TRAINER_PIC_NOX                   95
+#define TRAINER_PIC_JUNO                  96
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -368,6 +372,12 @@
 #define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // used for other trainer classes too
 #define TRAINER_ENCOUNTER_MUSIC_INTERVIEWER 12
 #define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Rich Boys and Gentlemen
+#define TRAINER_ENCOUNTER_MUSIC_JORDAN      14
+#define TRAINER_ENCOUNTER_MUSIC_LAURA       15
+#define TRAINER_ENCOUNTER_MUSIC_ASUKA       16
+#define TRAINER_ENCOUNTER_MUSIC_NOX         17
+#define TRAINER_ENCOUNTER_MUSIC_JUNO        18
+#define TRAINER_ENCOUNTER_MUSIC_LEAF        19
 
 #define F_TRAINER_FEMALE (1 << 7)
 
