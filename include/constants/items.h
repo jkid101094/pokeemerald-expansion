@@ -323,6 +323,7 @@
 #define ITEM_DREAD_PLATE 264
 #define ITEM_IRON_PLATE 265
 #define ITEM_PIXIE_PLATE 266
+#define ITEM_LEGEND_PLATE 799
 
 // Drives
 #define ITEM_DOUSE_DRIVE 267
@@ -974,7 +975,7 @@
 #define ITEM_PEAT_BLOCK 797
 #define ITEM_BERSERK_GENE 798
 
-#define ITEMS_COUNT 799
+#define ITEMS_COUNT 800
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

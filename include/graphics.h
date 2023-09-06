@@ -8047,6 +8047,8 @@ extern const u32 gItemIcon_IronPlate[];
 extern const u32 gItemIconPalette_IronPlate[];
 extern const u32 gItemIcon_PixiePlate[];
 extern const u32 gItemIconPalette_PixiePlate[];
+extern const u32 gItemIcon_LegendPlate[];
+extern const u32 gItemIconPalette_LegendPlate[];
 // Drives
 extern const u32 gItemIcon_DouseDrive[];
 extern const u32 gItemIconPalette_DouseDrive[];

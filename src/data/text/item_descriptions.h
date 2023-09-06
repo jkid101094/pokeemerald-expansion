@@ -1422,6 +1422,11 @@ static const u8 sPixiePlateDesc[] = _(
     "boosts the power of\n"
     "Fairy-type moves.");
 
+static const u8 sLegendPlateDesc[] = _(
+    "A stone tablet that\n"
+    "allows the user to\n"
+    "utilize every type.");
+
 // Drives
 static const u8 sDouseDriveDesc[] = _(
     "Changes Genesect's\n"

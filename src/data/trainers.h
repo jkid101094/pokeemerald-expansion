@@ -31,7 +31,7 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Justin"),
-        .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {ITEM_FULL_RESTORE, ITEM_MEGA_RING, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = EVERYTHING_CUSTOMIZED(sParty_MAA_Justin_1),
@@ -49,64 +49,64 @@ const struct Trainer gTrainers[] = {
         .party = EVERYTHING_CUSTOMIZED(sParty_MAA_Justin_2),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_3] =
+    [TRAINER_ETERNAL_GODDESS] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _("GRUNT"),
-        .items = {},
+        .trainerName = _("Goddess"),
+        .items = {ITEM_MEGA_RING, ITEM_Z_POWER_RING, ITEM_DYNAMAX_BAND, ITEM_X_SP_ATK},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout3),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = EVERYTHING_CUSTOMIZED(sParty_Juno),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_4] =
+    [TRAINER_LEAF] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _("GRUNT"),
-        .items = {},
+        .trainerName = _("Leaf"),
+        .items = {ITEM_MEGA_RING, ITEM_Z_POWER_RING, ITEM_DYNAMAX_BAND, ITEM_X_SP_ATK},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout4),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Leaf),
     },
 
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
+    [TRAINER_LAURA_1] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Laura"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSeafloorCavern1),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Laura1),
     },
 
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
+    [TRAINER_ASUKA_1] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Asuka"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSeafloorCavern2),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Asuka1),
     },
 
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
+    [TRAINER_NOX_1] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Nox"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSeafloorCavern3),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Nox1),
     },
 
     [TRAINER_GABRIELLE_1] =
