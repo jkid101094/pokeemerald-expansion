@@ -6,7 +6,7 @@ static const struct TrainerMonNoItemDefaultMoves sJordan1[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_MAA_Justin_1[] = {
+static const struct TrainerMonCustomized sParty_MAA_Justin_1[] = {
     {
     .lvl = 67,
     .species = SPECIES_BLASTOISE,
@@ -18,7 +18,7 @@ static const struct TrainerMonItemCustomMoves sParty_MAA_Justin_1[] = {
     .moves = {MOVE_WATER_PULSE, MOVE_DARK_PULSE, MOVE_ICE_BEAM, MOVE_RAPID_SPIN},
     .nature = TRAINER_PARTY_NATURE(NATURE_CALM),
     .nickname = COMPOUND_STRING("Psudeo-John"),
-    }
+    },
     {
     .lvl = 65,
     .species = SPECIES_LILLIGANT,
@@ -29,10 +29,10 @@ static const struct TrainerMonItemCustomMoves sParty_MAA_Justin_1[] = {
     .iv = TRAINER_PARTY_IVS(31,31,31,29,31,3),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 4, 252),
     .moves = {MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE, MOVE_SLEEP_POWDER, MOVE_HIDDEN_POWER},
-    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST)
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
     .nickname = COMPOUND_STRING("Lillinbow"),
     .isShiny = TRUE,
-    }
+    },
     {
     .lvl = 64,
     .species = SPECIES_HELIOLISK,
@@ -45,10 +45,10 @@ static const struct TrainerMonItemCustomMoves sParty_MAA_Justin_1[] = {
     .moves = {MOVE_PARABOLIC_CHARGE, MOVE_SURF, MOVE_RAIN_DANCE, MOVE_THUNDER},
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
     .nickname = COMPOUND_STRING("Zilla"),
-    }
+    },
     {
     .lvl = 62,
-    .species = SPECIES_NIDDOQUUEEN,
+    .species = SPECIES_NIDOQUEEN,
     .friendship = 255,
     .gender TRAINER_MON_FEMALE,
     .heldItem = ITEM_BLACK_SLUDGE,
@@ -57,8 +57,8 @@ static const struct TrainerMonItemCustomMoves sParty_MAA_Justin_1[] = {
     .ev = TRAINER_PARTY_EVS(6, 252, 252, 0, 0, 0),
     .moves = {MOVE_TOXIC_SPIKES, MOVE_POISON_JAB, MOVE_EARTHQUAKE, MOVE_SUPERPOWER},
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
-    .nickname = COMPOUND_STRING("Aria")
-    }
+    .nickname = COMPOUND_STRING("Aria"),
+    },
     {
     .lvl = 65,
     .species = SPECIES_SIGILYPH,
@@ -69,8 +69,8 @@ static const struct TrainerMonItemCustomMoves sParty_MAA_Justin_1[] = {
     .ev = TRAINER_PARTY_EVS(252, 0, 0, 12, 246, 0),
     .moves = {MOVE_COSMIC_POWER, MOVE_STORED_POWER, MOVE_PSYCHO_SHIFT, MOVE_ROOST},
     .nature = TRAINER_PARTY_NATURE(NATURE_CALM),
-    .nickname = COMPOUND_STRING("Miracle")
-    }
+    .nickname = COMPOUND_STRING("Miracle"),
+    },
     {
     .lvl = 65,
     .species = SPECIES_CARBINK,
@@ -80,20 +80,33 @@ static const struct TrainerMonItemCustomMoves sParty_MAA_Justin_1[] = {
     .ev = TRAINER_PARTY_EVS(252, 0, 0, 12, 246, 0),
     .moves = {MOVE_STEALTH_ROCK, MOVE_PROTECT, MOVE_REST, MOVE_TOXIC},
     .nature = TRAINER_PARTY_NATURE(NATURE_CALM),
-    .nickname = COMPOUND_STRING("Melody")
+    .nickname = COMPOUND_STRING("Melody"),
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout2[] = {
+static const struct TrainerMonCustomized sParty_MAA_Justin_2[] = {
     {
-    .iv = 0,
-    .lvl = 31,
-    .species = SPECIES_ZUBAT,
+    .lvl = 67,
+    .species = SPECIES_POLITOED,
+    .friendship = 255,
+    .gender TRAINER_MON_FEMALE,
+    .heldItem = ITEM_DAMP_ROCK,
+    .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+    .ev = TRAINER_PARTY_EVS(252, 0, 4, 252, 0, 0),
+    .moves = {MOVE_HYDRO_PUMP, MOVE_RAIN_DANCE, MOVE_ICE_BEAM, MOVE_PSYCHIC},
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+    .nickname = COMPOUND_STRING("Tizzle"),
     },
     {
-    .iv = 0,
-    .lvl = 31,
-    .species = SPECIES_CARVANHA,
+    .lvl = 65,
+    .species = SPECIES_CHARIZARD,
+    .friendship = 255,
+    .gender TRAINER_MON_MALE,
+    .heldItem = ITEM_CHARIZARDITE_X,
+    .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+    .ev = TRAINER_PARTY_EVS(5, 252, 0, 0, 1, 252),
+    .moves = {MOVE_HYDRO_PUMP, MOVE_RAIN_DANCE, MOVE_ICE_BEAM, MOVE_PSYCHIC},
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
     }
 };
 
