@@ -3289,8 +3289,8 @@ const u8 gWhimsicottPokedexText[] = _(
 
 const u8 gPetililPokedexText[] = _(
     "The leaves on it's head make a lovely\n"
-    "garnish. Because of this, Petilil is\n
-    prized by chefs.");
+    "garnish. Because of this, Petilil is\n"
+    "prized by chefs.");
 
 const u8 gLilligantPokedexText[] = _(
     "Though it consumes berries, it appears\n"
@@ -4189,8 +4189,8 @@ const u8 gTyrantrumPokedexText[] = _(
 
 const u8 gAmauraPokedexText[] = _(
     "A breeding mishap by an inexperienced\n"
-    "trainer caused this Pokémon to\n
-    repopulate en mass.");
+    "trainer caused this Pokémon to\n"
+    "repopulate en mass.");
 
 const u8 gAurorusPokedexText[] = _(
     "Using the diamond-shaped crystals on its\n"
