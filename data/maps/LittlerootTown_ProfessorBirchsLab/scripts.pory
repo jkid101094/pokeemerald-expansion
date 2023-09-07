@@ -1105,7 +1105,7 @@ script Jordan_Lab_Cutscene
 	showobjectat(7, 104)
 	applymovement(7, JordanMovement_R)
 	waitmovement(7)
-	msgbox("Jordan: Oh. You're here too, Arle?\nAre you planing on competing in the\lLegend Cup too?")
+	msgbox("Jordan: Oh. You're here too, Arle?\nAre you planing on competing in the\lChampions Tournament too?")
 	msgbox("Well tough luck!\n'Cause I'm going for the gold as well!")
 	msgbox("You have a Pokémon now too, right?\nLet's see if you're up to the challenge\lwith a battle!")
 	msgbox("How about it? You in?", MSGBOX_YESNO)
