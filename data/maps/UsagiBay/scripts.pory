@@ -153,6 +153,7 @@ script StoneShop{
         pokemart(stoneshop_5)
     }
     message("We hope to see you again!")
+    waitmessage
     release
     end
 }

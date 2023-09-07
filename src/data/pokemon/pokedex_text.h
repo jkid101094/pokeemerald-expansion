@@ -257,10 +257,9 @@ const u8 gGolbatPokedexText[] = _(
     "darkness and strikes from behind.");
 
 const u8 gOddishPokedexText[] = _(
-    "This Pokémon grows by absorbing moonlight.\n"
-    "During the daytime, it buries itself in the\n"
-    "ground, leaving only its leaves exposed to\n"
-    "avoid detection by its enemies.");
+    "Supposedly, its name comes from a scientist\n"
+    "trying to explain how it's really not that\n"
+    "odd.");
 
 const u8 gGloomPokedexText[] = _(
     "A horribly noxious honey drools from its\n"
@@ -443,10 +442,9 @@ const u8 gTentacruelPokedexText[] = _(
     "grows excited or agitated.");
 
 const u8 gGeodudePokedexText[] = _(
-    "It climbs mountain paths using only the\n"
-    "power of its arms. Because they look just\n"
-    "like boulders lining paths, hikers may step\n"
-    "on them without noticing.");
+    "In ancient times children would chuck\n"
+    "this Pokémon at onee annother for fun.\n"
+    "What a terrible idea that was.");
 
 const u8 gGravelerPokedexText[] = _(
     "They descend from mountains by tumbling\n"
@@ -3290,16 +3288,14 @@ const u8 gWhimsicottPokedexText[] = _(
     "to itself and takes off.");
 
 const u8 gPetililPokedexText[] = _(
-    "By pruning the leaves on its head with\n"
-    "regularity, this Pokémon can be grown\n"
-    "into a fine plump shape. These bitter\n"
-    "leaves refresh those who eat them.");
+    "The leaves on it's head make a lovely\n"
+    "garnish. Because of this, Petilil is\n
+    prized by chefs.");
 
 const u8 gLilligantPokedexText[] = _(
-    "Even veteran Trainers face a challenge\n"
-    "in getting its beautiful flower to bloom.\n"
-    "It withers away if a trainer does not\n"
-    "take good care of it.");
+    "Though it consumes berries, it appears\n"
+    "to lack a mouth.\n"
+    "This baffles even top scientists.");
 
 const u8 gBasculinPokedexText[] = _(
     "Red and blue Basculin usually do not\n"
@@ -4192,10 +4188,9 @@ const u8 gTyrantrumPokedexText[] = _(
     "world it once inhabited.");
 
 const u8 gAmauraPokedexText[] = _(
-    "This ancient Pokémon was restored from\n"
-    "part of its body that had been frozen in\n"
-    "ice for over 100 million years. It lived in a\n"
-    "cold land where there were no predators.");
+    "A breeding mishap by an inexperienced\n"
+    "trainer caused this Pokémon to\n
+    repopulate en mass.");
 
 const u8 gAurorusPokedexText[] = _(
     "Using the diamond-shaped crystals on its\n"
@@ -5262,16 +5257,14 @@ const u8 gArctozoltPokedexText[] = _(
     "hard time walking around.");
 
 const u8 gDracovishPokedexText[] = _(
-    "Powerful legs and jaws made it the apex\n"
-    "predator of its time. Its own overhunting\n"
-    "of its prey was what drove it to\n"
-    "extinction.");
+    "It's existence is nothing but misery.\n"
+    "Reviving this Pokémon was a grave mistake.\n"
+    "It cries out in pain.");
 
 const u8 gArctovishPokedexText[] = _(
-    "Though it's able to capture prey by\n"
-    "freezing its surroundings, it has trouble\n"
-    "eating the prey afterward because its\n"
-    "mouth is on top of its head.");
+    "Its head is upside down.\n"
+    "Why is its head upside down?\n"
+    "Someone please fix this.");
 
 const u8 gDuraludonPokedexText[] = _(
     "Its body resembles polished metal, and\n"

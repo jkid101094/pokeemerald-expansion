@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Route1/border.bin",
       "blockdata_filepath": "data/layouts/Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_TENOU",
+      "name": "MtTenou_Layout",
+      "width": 60,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/MtTenou/border.bin",
+      "blockdata_filepath": "data/layouts/MtTenou/map.bin"
     }
   ]
 }
