@@ -127,6 +127,37 @@ UsagiBay_BugCatcher::
 	end
 
 
+HouseSign1::
+	lockall
+	MSGBOX HouseSign1_Text_0
+	releaseall
+	return
+
+
+HouseSign2::
+	lockall
+	MSGBOX HouseSign2_Text_0
+	releaseall
+	return
+
+
+PlazaSign::
+	lockall
+	MSGBOX PlazaSign_Text_0
+	releaseall
+	return
+
+
+CantLeaveTown::
+	lockall
+	msgbox CantLeaveTown_Text_0
+	waitmessage
+	applymovement OBJ_EVENT_ID_PLAYER, MoveBack
+	waitmovement OBJ_EVENT_ID_PLAYER
+	releaseall
+	return
+
+
 StoneShop::
 	lock
 	faceplayer
@@ -341,6 +372,18 @@ UsagiBay_BugCatcher_Text_0:
 	.string "more badges.\p"
 	.string "How's that fair, huh?\n"
 	.string "I want some Net Balls too!$"
+
+HouseSign1_Text_0:
+	.string "Arle's house.$"
+
+HouseSign2_Text_0:
+	.string "Someone's house.$"
+
+PlazaSign_Text_0:
+	.string "-Usagi Bay Plaza-\nIt's not an A unless it comes from the\lbay!$"
+
+CantLeaveTown_Text_0:
+	.string "I shouldn't leave town without a\nPokémon!$"
 
 StoneShop_Text_0:
 	.string "Hi and welcome to Steven's Stones.\nHow may I help you?$"

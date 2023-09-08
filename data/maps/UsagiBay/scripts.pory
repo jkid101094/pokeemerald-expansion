@@ -126,6 +126,34 @@ script UsagiBay_BugCatcher{
     end
 }
 
+script HouseSign1 {
+    lockall
+    MSGBOX("Arle's house.")
+    releaseall
+}
+
+script HouseSign2 {
+    lockall
+    MSGBOX("Someone's house.")
+    releaseall
+}
+
+script PlazaSign {
+    lockall
+    MSGBOX("-Usagi Bay Plaza-\nIt's not an A unless it comes from the\lbay!")
+    releaseall
+}
+
+script CantLeaveTown
+ {
+	lockall
+    msgbox("I shouldn't leave town without a\nPokémon!")
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, MoveBack)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    releaseall
+}
+
 //Shop Scripts
 script StoneShop{
     lock

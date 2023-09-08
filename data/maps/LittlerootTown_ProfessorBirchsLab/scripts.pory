@@ -1006,7 +1006,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 
 	JordanPost:: 
 	msgbox Jordan_Win_Text
-	goto Jordan_Lab_Cutscene_1
+	goto Jordan_Lab_Cutscene_End
 
 	Jordan_Intro_Text:
 	.string "Alright, then!\nWe'll give this everything we've got!$"
@@ -1016,6 +1016,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 
 	Jordan_Win_Text:
 	.string "Ha! Am I great or what?$"
+	.string "Looks like you need more practice!\nYou'll never win with a Pokémon like\lthat!$"
 `
 mapscripts BirchLab {}
 
@@ -1097,12 +1098,36 @@ script BirchLab_Trigger
 	
 }
 
-script Jordan_Lab_Cutscene
+script Jordan_Lab_Cutscene_L
 {
 	lockall
 	playbgm(MUS_RG_RIVAL_EXIT, FALSE)
 	playse(SE_DOOR)
-	showobjectat(7, 104)
+	showobjectat(7, MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB)
+	applymovement(7, JordanMovement_L)
+	waitmovement(7)
+	msgbox("Jordan: Oh. You're here too, Arle?\nAre you planing on competing in the\lChampions Tournament too?")
+	msgbox("Well tough luck!\n'Cause I'm going for the gold as well!")
+	msgbox("You have a Pokémon now too, right?\nLet's see if you're up to the challenge\lwith a battle!")
+	msgbox("How about it? You in?", MSGBOX_YESNO)
+	waitmessage
+	if(var(VAR_RESULT) == YES){
+	goto(Event_StartJordanBattle)
+	}
+	else{
+		msgbox(format("Oh, I get it.\nIt'd be lame to have our first battle right here, wouldn't it?"))
+		msgbox("I'll wait until we both get stronger!\nThen we'll have a match for the ages!")
+		goto (Jordan_Lab_Cutscene_End)
+
+	}
+}
+
+script Jordan_Lab_Cutscene_R
+{
+	lockall
+	playbgm(MUS_RG_RIVAL_EXIT, FALSE)
+	playse(SE_DOOR)
+	showobjectat(7, MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB)
 	applymovement(7, JordanMovement_R)
 	waitmovement(7)
 	msgbox("Jordan: Oh. You're here too, Arle?\nAre you planing on competing in the\lChampions Tournament too?")
@@ -1116,19 +1141,21 @@ script Jordan_Lab_Cutscene
 	else{
 		msgbox(format("Oh, I get it.\nIt'd be lame to have our first battle right here, wouldn't it?"))
 		msgbox("I'll wait until we both get stronger!\nThen we'll have a match for the ages!")
+		goto (Jordan_Lab_Cutscene_End)
 
 	}
-		special(HealPlayerParty)
+}
+
+script Jordan_Lab_Cutscene_End{
+	special(HealPlayerParty)
 		msgbox("Anyway, smell ya later!")
 		applymovement(7, JordanExit)
 		waitmovement(7)
 		playse(SE_DOOR)
 		removeobject(7)
-		hideobjectat(7, 104)
+		hideobjectat(7, MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB)
 		setvar(VAR_STORY_PROGRESSION, 3)
 		fadedefaultbgm
-		
-
 		releaseall
 }
 

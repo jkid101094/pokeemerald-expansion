@@ -1006,7 +1006,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 
 	JordanPost:: 
 	msgbox Jordan_Win_Text
-	goto Jordan_Lab_Cutscene_1
+	goto Jordan_Lab_Cutscene_End
 
 	Jordan_Intro_Text:
 	.string "Alright, then!\nWe'll give this everything we've got!$"
@@ -1016,6 +1016,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 
 	Jordan_Win_Text:
 	.string "Ha! Am I great or what?$"
+	.string "Looks like you need more practice!\nYou'll never win with a Pokémon like\lthat!$"
 
 BirchLab::
 	.byte 0
@@ -1094,38 +1095,66 @@ BirchLab_Trigger_9:
 	end
 
 
-Jordan_Lab_Cutscene::
+Jordan_Lab_Cutscene_L::
 	lockall
 	playbgm MUS_RG_RIVAL_EXIT, FALSE
 	playse SE_DOOR
-	showobjectat 7, 104
-	applymovement 7, JordanMovement_R
+	showobjectat 7, MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB
+	applymovement 7, JordanMovement_L
 	waitmovement 7
-	msgbox Jordan_Lab_Cutscene_Text_0
-	msgbox Jordan_Lab_Cutscene_Text_1
-	msgbox Jordan_Lab_Cutscene_Text_2
-	msgbox Jordan_Lab_Cutscene_Text_3, MSGBOX_YESNO
+	msgbox Jordan_Lab_Cutscene_L_Text_0
+	msgbox Jordan_Lab_Cutscene_L_Text_1
+	msgbox Jordan_Lab_Cutscene_L_Text_2
+	msgbox Jordan_Lab_Cutscene_L_Text_3, MSGBOX_YESNO
 	waitmessage
 	compare VAR_RESULT, YES
-	goto_if_eq Jordan_Lab_Cutscene_2
-	msgbox Jordan_Lab_Cutscene_Text_4
-	msgbox Jordan_Lab_Cutscene_Text_5
-Jordan_Lab_Cutscene_1:
+	goto_if_eq Jordan_Lab_Cutscene_L_1
+	msgbox Jordan_Lab_Cutscene_L_Text_4
+	msgbox Jordan_Lab_Cutscene_L_Text_5
+	goto Jordan_Lab_Cutscene_End
+	return
+
+Jordan_Lab_Cutscene_L_1:
+	goto Event_StartJordanBattle
+	return
+
+
+Jordan_Lab_Cutscene_R::
+	lockall
+	playbgm MUS_RG_RIVAL_EXIT, FALSE
+	playse SE_DOOR
+	showobjectat 7, MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB
+	applymovement 7, JordanMovement_R
+	waitmovement 7
+	msgbox Jordan_Lab_Cutscene_L_Text_0
+	msgbox Jordan_Lab_Cutscene_L_Text_1
+	msgbox Jordan_Lab_Cutscene_L_Text_2
+	msgbox Jordan_Lab_Cutscene_L_Text_3, MSGBOX_YESNO
+	waitmessage
+	compare VAR_RESULT, YES
+	goto_if_eq Jordan_Lab_Cutscene_R_1
+	msgbox Jordan_Lab_Cutscene_L_Text_4
+	msgbox Jordan_Lab_Cutscene_L_Text_5
+	goto Jordan_Lab_Cutscene_End
+	return
+
+Jordan_Lab_Cutscene_R_1:
+	goto Event_StartJordanBattle
+	return
+
+
+Jordan_Lab_Cutscene_End::
 	special HealPlayerParty
-	msgbox Jordan_Lab_Cutscene_Text_6
+	msgbox Jordan_Lab_Cutscene_End_Text_0
 	applymovement 7, JordanExit
 	waitmovement 7
 	playse SE_DOOR
 	removeobject 7
-	hideobjectat 7, 104
+	hideobjectat 7, MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB
 	setvar VAR_STORY_PROGRESSION, 3
 	fadedefaultbgm
 	releaseall
 	return
-
-Jordan_Lab_Cutscene_2:
-	goto Event_StartJordanBattle
-	goto Jordan_Lab_Cutscene_1
 
 
 JordanMovement_L:
@@ -1227,25 +1256,25 @@ BirchLab_Trigger_Text_16:
 	.string "Oh. Alirighty, then. If you need\n"
 	.string "anything else never be afraid to ask!$"
 
-Jordan_Lab_Cutscene_Text_0:
+Jordan_Lab_Cutscene_L_Text_0:
 	.string "Jordan: Oh. You're here too, Arle?\nAre you planing on competing in the\lChampions Tournament too?$"
 
-Jordan_Lab_Cutscene_Text_1:
+Jordan_Lab_Cutscene_L_Text_1:
 	.string "Well tough luck!\n'Cause I'm going for the gold as well!$"
 
-Jordan_Lab_Cutscene_Text_2:
+Jordan_Lab_Cutscene_L_Text_2:
 	.string "You have a Pokémon now too, right?\nLet's see if you're up to the challenge\lwith a battle!$"
 
-Jordan_Lab_Cutscene_Text_3:
+Jordan_Lab_Cutscene_L_Text_3:
 	.string "How about it? You in?$"
 
-Jordan_Lab_Cutscene_Text_4:
+Jordan_Lab_Cutscene_L_Text_4:
 	.string "Oh, I get it.\n"
 	.string "It'd be lame to have our first battle\l"
 	.string "right here, wouldn't it?$"
 
-Jordan_Lab_Cutscene_Text_5:
+Jordan_Lab_Cutscene_L_Text_5:
 	.string "I'll wait until we both get stronger!\nThen we'll have a match for the ages!$"
 
-Jordan_Lab_Cutscene_Text_6:
+Jordan_Lab_Cutscene_End_Text_0:
 	.string "Anyway, smell ya later!$"

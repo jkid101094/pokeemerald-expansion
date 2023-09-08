@@ -130,7 +130,7 @@
       "elevation": 0,
       "var": "VAR_STORY_PROGRESSION",
       "var_value": "2",
-      "script": "Jordan_Lab_Cutscene"
+      "script": "Jordan_Lab_Cutscene_L"
     },
     {
       "type": "trigger",
@@ -139,7 +139,7 @@
       "elevation": 0,
       "var": "VAR_STORY_PROGRESSION",
       "var_value": "2",
-      "script": "Jordan_Lab_Cutscene"
+      "script": "Jordan_Lab_Cutscene_R"
     }
   ],
   "bg_events": [
