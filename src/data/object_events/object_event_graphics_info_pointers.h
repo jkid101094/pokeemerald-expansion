@@ -244,7 +244,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Storyteller
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
-
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HMItemBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Laura;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Asuka;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nox;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -486,6 +489,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LINK_RS_MAY] =              &gObjectEventGraphicsInfo_RubySapphireMay,
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
+    [OBJ_EVENT_GFX_HM_ITEM_BALL] =             &gObjectEventGraphicsInfo_HMItemBall,
+    [OBJ_EVENT_GFX_LAURA] =                    &gObjectEventGraphicsInfo_Laura,
+    [OBJ_EVENT_GFX_LAURA] =                    &gObjectEventGraphicsInfo_Asuka,
+    [OBJ_EVENT_GFX_LAURA] =                    &gObjectEventGraphicsInfo_Nox,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
