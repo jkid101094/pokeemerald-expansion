@@ -1228,7 +1228,7 @@ BirchLab_Trigger_Text_16:
 	.string "anything else never be afraid to ask!$"
 
 Jordan_Lab_Cutscene_Text_0:
-	.string "Jordan: Oh. You're here too, Arle?\nAre you planing on competing in the\lLegend Cup too?$"
+	.string "Jordan: Oh. You're here too, Arle?\nAre you planing on competing in the\lChampions Tournament too?$"
 
 Jordan_Lab_Cutscene_Text_1:
 	.string "Well tough luck!\n'Cause I'm going for the gold as well!$"

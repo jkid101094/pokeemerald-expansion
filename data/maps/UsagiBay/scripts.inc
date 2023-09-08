@@ -144,6 +144,7 @@ StoneShop::
 	goto_if_le StoneShop_6
 StoneShop_1:
 	message StoneShop_Text_1
+	waitmessage
 	release
 	end
 
