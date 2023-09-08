@@ -28,10 +28,6 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 	closemessage
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaApproachPlayer
 	waitmovement 0
-	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
-	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaBackOff
-	waitmovement 0
 	call PetalburgWoods_EventScript_DevonResearcherPostBattle
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave
 	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherExitLeft
@@ -63,10 +59,6 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
-	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
-	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaBackOff
 	waitmovement 0
 	call PetalburgWoods_EventScript_DevonResearcherPostBattle
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave

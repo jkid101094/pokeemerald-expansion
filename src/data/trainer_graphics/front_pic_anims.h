@@ -370,6 +370,26 @@ static const union AnimCmd *const sAnims_RubySapphireMay[] ={
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_Laura[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Asuka[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Nox[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Juno[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Justin[] ={
+    sAnim_GeneralFrame0,
+};
+
 const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 {
     [TRAINER_PIC_HIKER] = sAnims_Hiker,
@@ -465,4 +485,10 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_LEAF] = sAnims_Leaf,
     [TRAINER_PIC_RS_BRENDAN] = sAnims_RubySapphireBrendan,
     [TRAINER_PIC_RS_MAY] = sAnims_RubySapphireMay,
+    [TRAINER_PIC_LAURA] = sAnims_Laura,
+    [TRAINER_PIC_ASUKA] = sAnims_Asuka,
+    [TRAINER_PIC_NOX] = sAnims_Nox,
+    [TRAINER_PIC_JUNO] = sAnims_Juno,
+    [TRAINER_PIC_JUSTIN] = sAnims_Justin,
+
 };
