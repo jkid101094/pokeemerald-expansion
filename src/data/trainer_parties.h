@@ -439,11 +439,11 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Stanley[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Declan[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Bart[] = {
     {
     .iv = 0,
-    .lvl = 34,
-    .species = SPECIES_GYARADOS,
+    .lvl = 4,
+    .species = SPECIES_SHINX,
     }
 };
 

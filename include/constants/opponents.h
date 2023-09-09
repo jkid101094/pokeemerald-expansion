@@ -16,7 +16,7 @@
 #define TRAINER_JEDI                         12
 #define TRAINER_RIKKI                        13
 #define TRAINER_STANLEY                      14
-#define TRAINER_DECLAN                       15
+#define TRAINER_BART                         15
 #define TRAINER_GRUNT_RUSTURF_TUNNEL         16
 #define TRAINER_GRUNT_WEATHER_INST_1         17
 #define TRAINER_GRUNT_WEATHER_INST_2         18

@@ -3755,20 +3755,6 @@ Route124_Text_RoyRematchNotEnoughMons:
 	.string "ROY: Did you want to battle us?\n"
 	.string "Bring two POKéMON, then.$"
 
-Route124_Text_DeclanIntro:
-	.string "Here I am swimming by my lonesome\n"
-	.string "on this wide, beautiful sea.\p"
-	.string "There's no other word for it.\n"
-	.string "This is pathetic!$"
-
-Route124_Text_DeclanDefeat:
-	.string "I'm feeling blue.\n"
-	.string "Blue as the sky…$"
-
-Route124_Text_DeclanPostBattle:
-	.string "I should chat up lady SWIMMERS\n"
-	.string "and invite them on a long swim.$"
-
 Route124_Text_IsabellaIntro:
 	.string "I'm not going to lose to some\n"
 	.string "surfer TRAINER.$"

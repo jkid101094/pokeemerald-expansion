@@ -186,7 +186,6 @@ script StoneShop{
     end
 }
 
-//Shop Inventories
 raw`
 .align 2
 stoneshop_1::
@@ -311,3 +310,197 @@ stoneshop_5::
 release
 end
 `
+script BattleShop{
+    lock
+    faceplayer
+    message("Hi and welcome to Chasey Supply.\nHow may I help you?")
+    waitmessage
+    if(var(VAR_BADGES_OBTAINED)==0)
+    {
+        pokemart(battleshop_1)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=2)
+    {
+        pokemart(battleshop_2)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=4)
+    {
+        pokemart(battleshop_3)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=6)
+    {
+        pokemart(battleshop_4)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=8)
+    {
+        pokemart(battleshop_5)
+    }
+    message("We hope to see you again!")
+    waitmessage
+    release
+    end
+}
+mart battleshop_1{
+    ITEM_POWER_WEIGHT
+    ITEM_POWER_BRACER
+    ITEM_POWER_BELT
+    ITEM_POWER_LENS
+    ITEM_POWER_BAND
+    ITEM_POWER_ANKLET
+}
+mart battleshop_2{
+    ITEM_POWER_WEIGHT
+    ITEM_POWER_BRACER
+    ITEM_POWER_BELT
+    ITEM_POWER_LENS
+    ITEM_POWER_BAND
+    ITEM_POWER_ANKLET
+    ITEM_EXP_SHARE
+    ITEM_CHOICE_BAND
+    ITEM_CHOICE_SCARF
+    ITEM_CHOICE_SPECS
+}
+mart battleshop_3{
+    ITEM_POWER_WEIGHT
+    ITEM_POWER_BRACER
+    ITEM_POWER_BELT
+    ITEM_POWER_LENS
+    ITEM_POWER_BAND
+    ITEM_POWER_ANKLET
+    ITEM_EXP_SHARE
+    ITEM_CHOICE_BAND
+    ITEM_CHOICE_SCARF
+    ITEM_CHOICE_SPECS
+}
+mart battleshop_4{
+    ITEM_POWER_WEIGHT
+    ITEM_POWER_BRACER
+    ITEM_POWER_BELT
+    ITEM_POWER_LENS
+    ITEM_POWER_BAND
+    ITEM_POWER_ANKLET
+    ITEM_EXP_SHARE
+    ITEM_CHOICE_BAND
+    ITEM_CHOICE_SCARF
+    ITEM_CHOICE_SPECS
+}
+mart battleshop_5{
+    ITEM_POWER_WEIGHT
+    ITEM_POWER_BRACER
+    ITEM_POWER_BELT
+    ITEM_POWER_LENS
+    ITEM_POWER_BAND
+    ITEM_POWER_ANKLET
+    ITEM_EXP_SHARE
+    ITEM_CHOICE_BAND
+    ITEM_CHOICE_SCARF
+    ITEM_CHOICE_SPECS
+}
+
+script BallShop{
+    lock
+    faceplayer
+    message("Hi and welcome to the Ball Emporium.\nHow may I help you?")
+    waitmessage
+    if(var(VAR_BADGES_OBTAINED)==0)
+    {
+        pokemart(ballshop_1)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=2)
+    {
+        pokemart(ballshop_2)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=4)
+    {
+        pokemart(ballshop_3)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=6)
+    {
+        pokemart(ballshop_4)
+    }
+    elif(var(VAR_BADGES_OBTAINED)<=8)
+    {
+        pokemart(ballshop_5)
+    }
+    message("We hope to see you again!")
+    waitmessage
+    release
+    end
+}
+mart ballshop_1{
+    ITEM_POKE_BALL
+}
+mart ballshop_2{
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_FAST_BALL
+    ITEM_LEVEL_BALL
+    ITEM_LURE_BALL
+    ITEM_HEAVY_BALL
+    ITEM_LOVE_BALL
+    ITEM_FRIEND_BALL
+    ITEM_MOON_BALL
+}
+mart ballshop_3{
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_ULTRA_BALL
+    ITEM_FAST_BALL
+    ITEM_LEVEL_BALL
+    ITEM_LURE_BALL
+    ITEM_HEAVY_BALL
+    ITEM_LOVE_BALL
+    ITEM_FRIEND_BALL
+    ITEM_MOON_BALL
+    ITEM_NET_BALL
+    ITEM_DIVE_BALL
+    ITEM_NEST_BALL
+    ITEM_REPEAT_BALL
+    ITEM_TIMER_BALL
+    ITEM_LUXURY_BALL
+}
+mart ballshop_4{
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_ULTRA_BALL
+    ITEM_FAST_BALL
+    ITEM_LEVEL_BALL
+    ITEM_LURE_BALL
+    ITEM_HEAVY_BALL
+    ITEM_LOVE_BALL
+    ITEM_FRIEND_BALL
+    ITEM_MOON_BALL
+    ITEM_NET_BALL
+    ITEM_DIVE_BALL
+    ITEM_NEST_BALL
+    ITEM_REPEAT_BALL
+    ITEM_TIMER_BALL
+    ITEM_LUXURY_BALL
+    ITEM_DUSK_BALL
+    ITEM_HEAL_BALL
+    ITEM_QUICK_BALL
+}
+mart ballshop_5{
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_ULTRA_BALL
+    ITEM_FAST_BALL
+    ITEM_LEVEL_BALL
+    ITEM_LURE_BALL
+    ITEM_HEAVY_BALL
+    ITEM_LOVE_BALL
+    ITEM_FRIEND_BALL
+    ITEM_MOON_BALL
+    ITEM_NET_BALL
+    ITEM_DIVE_BALL
+    ITEM_NEST_BALL
+    ITEM_REPEAT_BALL
+    ITEM_TIMER_BALL
+    ITEM_LUXURY_BALL
+    ITEM_DUSK_BALL
+    ITEM_HEAL_BALL
+    ITEM_QUICK_BALL
+    ITEM_DREAM_BALL
+    ITEM_BEAST_BALL
+    ITEM_MASTER_BALL
+}

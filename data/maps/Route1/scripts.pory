@@ -1,0 +1,101 @@
+mapscripts Route1_MapScripts {}
+
+//Signs
+script route1_sign1{
+    lockall
+    msgbox("-ROUTE 1-\nNORTH: MT. TENOU\lEAST: KINO GROVE\lSOUTH: USAGI BAY")
+    releaseall
+}
+script route1_sign2{
+    lockall
+    msgbox("NOTICE: Jordan was here. Arle's a loser.")
+    releaseall
+}
+script route1_sign3{
+    lockall
+    msgbox("KINO GROVE: Beware of bugs!")
+    releaseall
+}
+
+//NPCS
+script Route1_Mart_Employee{
+    lockall
+    faceplayer
+    if(flag(FLAG_ROUTE1_POTION) == FALSE){
+        msgbox("Hello there!\nI see you're taking your first steps on\lyour grand adventure!")
+        msgbox(format("I represent your local PokéMart and boy do I have a surprise for you!\pAll budding trainers are entitled to ONE\nFREE POTION!\pYes! An entire potion FOR FREE!"))
+        msgbox(format("What are you waiting for! Take it! Take it! TAKE IT!"))
+        giveitem(ITEM_POTION[1])
+        msgbox("Thank you for continuing to shop at your\nlocal PokéMart!")
+        setflag(FLAG_ROUTE1_POTION)
+    }
+    else{
+        msgbox("Hey hey hey! How's my favorite newbie?\nSorry! I can't give you another potion!\lCompany policy and all.\pBut hey, cheer up!\nThere's always more at your local\lPokéMart!")
+        }
+    releaseall
+}
+
+script Route1_Jogger{
+    lockall
+    faceplayer
+    msgbox("Nothing like getting in a good workout\nat the beach!\pOw!\nI stubbed my toe on a rock!")
+    releaseall
+}
+
+//Item Balls
+script Route1_Item_Ball_Rare_Candy{
+    lockall
+    giveitem(ITEM_RARE_CANDY, [1])
+    setflag(FLAG_ROUTE1_RARE_CANDY)
+    releaseall
+
+}
+
+//Trainers
+script TrainerRikki{
+    trainerbattle_single(TRAINER_RIKKI, RikkiIntro, RikkiLoss)
+    msgbox(PostBattle_Rikki, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+script TrainerStanley{
+    trainerbattle_single(TRAINER_STANLEY, StanleyIntro, StanleyLoss)
+    msgbox(PostBattle_Stanley, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+script TrainerBart{
+    trainerbattle_single(TRAINER_BART, BartIntro, BartLoss)
+    msgbox(PostBattle_Stanley, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+text RikkiIntro{
+    "Are you a beginner too?\nWant to see my Pokémon?"
+}
+text RikkiLoss{
+    "You didn't even look!"
+}
+text PostBattle_Rikki{
+    "Maybe I'm just not cut out for this..."
+}
+
+text StanleyIntro{
+    "You're after that item over there, huh?\nGuess you'll have to beat me first!"
+}
+text StanleyLoss{
+    "Wait a second!\nI didn't think you'd actually win!"
+}
+text PostBattle_Stanley{
+    "Truth be told I don't even know what it is.\nI never checked!"
+}
+
+text BartIntro{
+    "You'll make great EXP for my nuzlocke!"
+}
+text BartLoss{
+    "What? No! My Pokémon!"
+}
+text PostBattle_Bart{
+    "I love nuzlocking, but man...\nI hate releasing my Pokémon..."
+}

@@ -1015,8 +1015,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "What!?\nBut I had the type advantage and everything!$"
 
 	Jordan_Win_Text:
-	.string "Ha! Am I great or what?$"
-	.string "Looks like you need more practice!\nYou'll never win with a Pokémon like\lthat!$"
+	.string "Ha! Am I great or what?\nLooks like you need more practice!\lYou'll never win with a Pokémon like\lthat!$"
 
 BirchLab::
 	.byte 0
@@ -1097,9 +1096,10 @@ BirchLab_Trigger_9:
 
 Jordan_Lab_Cutscene_L::
 	lockall
+	clearflag FLAG_JORDAN_VISIBLE
 	playbgm MUS_RG_RIVAL_EXIT, FALSE
 	playse SE_DOOR
-	showobjectat 7, MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB
+	addobject 7
 	applymovement 7, JordanMovement_L
 	waitmovement 7
 	msgbox Jordan_Lab_Cutscene_L_Text_0
@@ -1121,9 +1121,10 @@ Jordan_Lab_Cutscene_L_1:
 
 Jordan_Lab_Cutscene_R::
 	lockall
+	clearflag FLAG_JORDAN_VISIBLE
 	playbgm MUS_RG_RIVAL_EXIT, FALSE
 	playse SE_DOOR
-	showobjectat 7, MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB
+	addobject 7
 	applymovement 7, JordanMovement_R
 	waitmovement 7
 	msgbox Jordan_Lab_Cutscene_L_Text_0
@@ -1151,6 +1152,7 @@ Jordan_Lab_Cutscene_End::
 	playse SE_DOOR
 	removeobject 7
 	hideobjectat 7, MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB
+	setflag FLAG_JORDAN_VISIBLE
 	setvar VAR_STORY_PROGRESSION, 3
 	fadedefaultbgm
 	releaseall

@@ -323,6 +323,243 @@ stoneshop_5::
 release
 end
 
+BattleShop::
+	lock
+	faceplayer
+	message BattleShop_Text_0
+	waitmessage
+	compare VAR_BADGES_OBTAINED, 0
+	goto_if_eq BattleShop_2
+	compare VAR_BADGES_OBTAINED, 2
+	goto_if_le BattleShop_3
+	compare VAR_BADGES_OBTAINED, 4
+	goto_if_le BattleShop_4
+	compare VAR_BADGES_OBTAINED, 6
+	goto_if_le BattleShop_5
+	compare VAR_BADGES_OBTAINED, 8
+	goto_if_le BattleShop_6
+BattleShop_1:
+	message StoneShop_Text_1
+	waitmessage
+	release
+	end
+
+BattleShop_2:
+	pokemart battleshop_1
+	goto BattleShop_1
+
+BattleShop_3:
+	pokemart battleshop_2
+	goto BattleShop_1
+
+BattleShop_4:
+	pokemart battleshop_3
+	goto BattleShop_1
+
+BattleShop_5:
+	pokemart battleshop_4
+	goto BattleShop_1
+
+BattleShop_6:
+	pokemart battleshop_5
+	goto BattleShop_1
+
+
+	.align 2
+battleshop_1:
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_NONE
+
+	.align 2
+battleshop_2:
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_CHOICE_BAND
+	.2byte ITEM_CHOICE_SCARF
+	.2byte ITEM_CHOICE_SPECS
+	.2byte ITEM_NONE
+
+	.align 2
+battleshop_3:
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_CHOICE_BAND
+	.2byte ITEM_CHOICE_SCARF
+	.2byte ITEM_CHOICE_SPECS
+	.2byte ITEM_NONE
+
+	.align 2
+battleshop_4:
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_CHOICE_BAND
+	.2byte ITEM_CHOICE_SCARF
+	.2byte ITEM_CHOICE_SPECS
+	.2byte ITEM_NONE
+
+	.align 2
+battleshop_5:
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_EXP_SHARE
+	.2byte ITEM_CHOICE_BAND
+	.2byte ITEM_CHOICE_SCARF
+	.2byte ITEM_CHOICE_SPECS
+	.2byte ITEM_NONE
+
+BallShop::
+	lock
+	faceplayer
+	message BallShop_Text_0
+	waitmessage
+	compare VAR_BADGES_OBTAINED, 0
+	goto_if_eq BallShop_2
+	compare VAR_BADGES_OBTAINED, 2
+	goto_if_le BallShop_3
+	compare VAR_BADGES_OBTAINED, 4
+	goto_if_le BallShop_4
+	compare VAR_BADGES_OBTAINED, 6
+	goto_if_le BallShop_5
+	compare VAR_BADGES_OBTAINED, 8
+	goto_if_le BallShop_6
+BallShop_1:
+	message StoneShop_Text_1
+	waitmessage
+	release
+	end
+
+BallShop_2:
+	pokemart ballshop_1
+	goto BallShop_1
+
+BallShop_3:
+	pokemart ballshop_2
+	goto BallShop_1
+
+BallShop_4:
+	pokemart ballshop_3
+	goto BallShop_1
+
+BallShop_5:
+	pokemart ballshop_4
+	goto BallShop_1
+
+BallShop_6:
+	pokemart ballshop_5
+	goto BallShop_1
+
+
+	.align 2
+ballshop_1:
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_NONE
+
+	.align 2
+ballshop_2:
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_FAST_BALL
+	.2byte ITEM_LEVEL_BALL
+	.2byte ITEM_LURE_BALL
+	.2byte ITEM_HEAVY_BALL
+	.2byte ITEM_LOVE_BALL
+	.2byte ITEM_FRIEND_BALL
+	.2byte ITEM_MOON_BALL
+	.2byte ITEM_NONE
+
+	.align 2
+ballshop_3:
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_FAST_BALL
+	.2byte ITEM_LEVEL_BALL
+	.2byte ITEM_LURE_BALL
+	.2byte ITEM_HEAVY_BALL
+	.2byte ITEM_LOVE_BALL
+	.2byte ITEM_FRIEND_BALL
+	.2byte ITEM_MOON_BALL
+	.2byte ITEM_NET_BALL
+	.2byte ITEM_DIVE_BALL
+	.2byte ITEM_NEST_BALL
+	.2byte ITEM_REPEAT_BALL
+	.2byte ITEM_TIMER_BALL
+	.2byte ITEM_LUXURY_BALL
+	.2byte ITEM_NONE
+
+	.align 2
+ballshop_4:
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_FAST_BALL
+	.2byte ITEM_LEVEL_BALL
+	.2byte ITEM_LURE_BALL
+	.2byte ITEM_HEAVY_BALL
+	.2byte ITEM_LOVE_BALL
+	.2byte ITEM_FRIEND_BALL
+	.2byte ITEM_MOON_BALL
+	.2byte ITEM_NET_BALL
+	.2byte ITEM_DIVE_BALL
+	.2byte ITEM_NEST_BALL
+	.2byte ITEM_REPEAT_BALL
+	.2byte ITEM_TIMER_BALL
+	.2byte ITEM_LUXURY_BALL
+	.2byte ITEM_DUSK_BALL
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_NONE
+
+	.align 2
+ballshop_5:
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_FAST_BALL
+	.2byte ITEM_LEVEL_BALL
+	.2byte ITEM_LURE_BALL
+	.2byte ITEM_HEAVY_BALL
+	.2byte ITEM_LOVE_BALL
+	.2byte ITEM_FRIEND_BALL
+	.2byte ITEM_MOON_BALL
+	.2byte ITEM_NET_BALL
+	.2byte ITEM_DIVE_BALL
+	.2byte ITEM_NEST_BALL
+	.2byte ITEM_REPEAT_BALL
+	.2byte ITEM_TIMER_BALL
+	.2byte ITEM_LUXURY_BALL
+	.2byte ITEM_DUSK_BALL
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_DREAM_BALL
+	.2byte ITEM_BEAST_BALL
+	.2byte ITEM_MASTER_BALL
+	.2byte ITEM_NONE
+
 UsagiBay_Artist_Text_0:
 	.string "I'm a traveling artist looking for new\n"
 	.string "things to paint.$"
@@ -390,3 +627,9 @@ StoneShop_Text_0:
 
 StoneShop_Text_1:
 	.string "We hope to see you again!$"
+
+BattleShop_Text_0:
+	.string "Hi and welcome to Chasey Supply.\nHow may I help you?$"
+
+BallShop_Text_0:
+	.string "Hi and welcome to the Ball Emporium.\nHow may I help you?$"
