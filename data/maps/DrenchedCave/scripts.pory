@@ -1,0 +1,11 @@
+mapscripts DrenchedCave_MapScripts {}
+
+script ManaphyEgg{
+    lockall
+    if(flag(FLAG_MANAPHY_EGG_RECIEVED) != TRUE)
+    {
+        msgbox("You recieved Mystery Egg!")
+        giveegg(SPECIES_MANAPHY)
+    }
+    releaseall
+}

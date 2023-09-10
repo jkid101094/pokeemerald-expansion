@@ -836,3 +836,14 @@ const struct Tileset gTileset_Sakura =
     .metatileAttributes = gMetatileAttributes_Sakura,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_WaterCave =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_WaterCave,
+    .palettes = gTilesetPalettes_WaterCave,
+    .metatiles = gMetatiles_WaterCave,
+    .metatileAttributes = gMetatileAttributes_WaterCave,
+    .callback = NULL,
+};
