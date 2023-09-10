@@ -8,7 +8,7 @@ script route1_sign1{
 }
 script route1_sign2{
     lockall
-    msgbox("NOTICE: Jordan was here. Arle's a loser.")
+    msgbox("NOTICE: Please be on the lookout for lost\nitems.\pIf found please return to the Usagi Bay lost\nand found.\pThank you and watch your step!")
     releaseall
 }
 script route1_sign3{
