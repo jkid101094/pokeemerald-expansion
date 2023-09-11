@@ -4434,8 +4434,8 @@
     {
       "id": "LAYOUT_MT_TENOU",
       "name": "MtTenou_Layout",
-      "width": 60,
-      "height": 80,
+      "width": 90,
+      "height": 82,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/MtTenou/border.bin",
@@ -4450,6 +4450,16 @@
       "secondary_tileset": "gTileset_WaterCave",
       "border_filepath": "data/layouts/DrenchedCave/border.bin",
       "blockdata_filepath": "data/layouts/DrenchedCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRENCHED_CAVE_UNDERWATER",
+      "name": "DrenchedCaveUnderwater_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/DrenchedCaveUnderwater/border.bin",
+      "blockdata_filepath": "data/layouts/DrenchedCaveUnderwater/map.bin"
     }
   ]
 }

@@ -83,7 +83,7 @@ route1_sign1_Text_0:
 	.string "-ROUTE 1-\nNORTH: MT. TENOU\lEAST: KINO GROVE\lSOUTH: USAGI BAY$"
 
 route1_sign2_Text_0:
-	.string "NOTICE: Jordan was here. Arle's a loser.$"
+	.string "NOTICE: Please be on the lookout for lost\nitems.\pIf found please return to the Usagi Bay lost\nand found.\pThank you and watch your step!$"
 
 route1_sign3_Text_0:
 	.string "KINO GROVE: Beware of bugs!$"

@@ -255,12 +255,12 @@ static const struct TrainerMonCustomized sParty_Post_Leaf[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Laura1[] = {
     {
     .iv = 0,
-    .lvl = 9,
+    .lvl = 7,
     .species = SPECIES_POPPLIO,
     },
     {
     .iv = 0,
-    .lvl = 8,
+    .lvl = 6,
     .species = SPECIES_EXEGGCUTE,
     }
 };
@@ -268,17 +268,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Laura1[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Asuka1[] = {
     {
     .iv = 0,
-    .lvl = 16,
+    .lvl = 14,
     .species = SPECIES_RABOOT,
     },
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 12,
     .species = SPECIES_ORICORIO,
     },
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 12,
     .species = SPECIES_ODDISH,
     }
 };

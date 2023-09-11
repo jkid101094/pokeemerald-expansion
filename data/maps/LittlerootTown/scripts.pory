@@ -1,0 +1,29 @@
+mapscripts LittlerootTown_MapScripts{}
+
+script RegidragoEncounter{
+    lockall
+    playmoncry(SPECIES_REGIDRAGO, CRY_MODE_ENCOUNTER)
+    msgbox("Gi gi gi gi!")
+    setwildbattle(SPECIES_REGIDRAGO, 15, item=ITEM_NONE)
+    waitmoncry
+    dowildbattle
+    releaseall
+}
+script RegielekiEncounter{
+    lockall
+    playmoncry(SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER)
+    msgbox("Gi gi gi gi!")
+    setwildbattle(SPECIES_REGIELEKI, 15, item=ITEM_NONE)
+    waitmoncry
+    dowildbattle
+    releaseall
+}
+script RegigigasEncounter{
+    lockall
+    playmoncry(SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER)
+    msgbox("Gi gi gi gi!")
+    setwildbattle(SPECIES_REGIGIGAS, 15, item=ITEM_NONE)
+    waitmoncry
+    dowildbattle
+    releaseall
+}

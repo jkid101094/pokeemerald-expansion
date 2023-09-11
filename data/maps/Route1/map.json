@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_MT_TENOU",
-      "offset": 0,
+      "offset": -6,
       "direction": "up"
     }
   ],
