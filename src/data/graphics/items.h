@@ -1333,7 +1333,7 @@ const u32 gItemIconPalette_BrightPowder[] = INCBIN_U32("graphics/items/icon_pale
 const u32 gItemIcon_InBattleHerb[] = INCBIN_U32("graphics/items/icons/in_battle_herb.4bpp.lz");
 const u32 gItemIconPalette_WhiteHerb[] = INCBIN_U32("graphics/items/icon_palettes/white_herb.gbapal.lz");
 
-const u32 gItemIcon_ExpShare[] = INCBIN_U32("graphics/items/icons/exp_share.4bpp.lz");
+const u32 gItemIcon_ExpShare[] = INCBIN_U32("graphics/items/icons/.4bpp.lz");
 const u32 gItemIconPalette_ExpShare[] = INCBIN_U32("graphics/items/icon_palettes/exp_share.gbapal.lz");
 
 const u32 gItemIcon_QuickClaw[] = INCBIN_U32("graphics/items/icons/quick_claw.4bpp.lz");
