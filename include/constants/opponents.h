@@ -19,8 +19,8 @@
 #define TRAINER_BART                         15
 #define TRAINER_GUSTAF                       16
 #define TRAINER_OLIVIA                       17
-#define TRAINER_GRUNT_WEATHER_INST_2         18
-#define TRAINER_GRUNT_WEATHER_INST_3         19
+#define TRAINER_FOSTER                       18
+#define TRAINER_JULIAN                       19
 #define TRAINER_GRUNT_MUSEUM_1               20
 #define TRAINER_GRUNT_MUSEUM_2               21
 #define TRAINER_GRUNT_SPACE_CENTER_1         22

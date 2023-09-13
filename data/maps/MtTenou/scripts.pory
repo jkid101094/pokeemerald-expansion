@@ -82,4 +82,35 @@ text PostBattle_Olivia{
     "I wonder what the biggest Pokémon of\nall is..."
 }
 
+script HikerFoster{
+    trainerbattle_single(TRAINER_FOSTER, FosterIntro, FosterLoss)
+    msgbox(PostBattle_Foster, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+text FosterIntro{
+    "Caught me a wee little lad, I did.\nWould you like to meet him?"
+}
+text FosterLoss{
+    "Aye...\nGuess you weren't down for a play date..."
+}
+text PostBattle_Foster{
+    "Care for a spot of tea, lass?\nNo? Fine. More for us."
+}
+
+script CollectorJulian{
+    trainerbattle_single(TRAINER_JULIAN, JulianIntro, JulianLoss)
+    msgbox(PostBattle_Julian, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+text JulianIntro{
+    "Hehe... Want to see my\ncollection?"
+}
+text JulianLoss{
+    "I should be adding YOU to my\ncollection..."
+}
+text PostBattle_Julian{
+    "My collection of what?\nPokémon, of course.\lWhat did you think I meant?"
+}
 //Items

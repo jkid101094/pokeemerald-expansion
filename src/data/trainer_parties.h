@@ -463,39 +463,34 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Gustaf[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Olivia[] = {
     {
     .iv = 0,
-    .lvl = 6,
+    .lvl = 4,
     .species = SPECIES_ONIX,
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst2[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Foster[] = {
     {
     .iv = 0,
-    .lvl = 27,
-    .species = SPECIES_POOCHYENA,
-    },
-    {
-    .iv = 0,
-    .lvl = 27,
-    .species = SPECIES_CARVANHA,
+    .lvl = 5,
+    .species = SPECIES_CUBONE,
     }
-};
-
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst3[] = {
+}
+static const struct TrainerMonNoItemDefaultMoves sParty_Julian[] = {
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 3,
+    .species = SPECIES_PICHU,
     },
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_ZUBAT,
+    .lvl = 3,
+    .species = SPECIES_WOOPER,
     },
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_CARVANHA,
+    .lvl = 3,
+    .species = SPECIES_RALTS,
+    .gender TRAINER_MON_FEMALE,
     }
 };
 
