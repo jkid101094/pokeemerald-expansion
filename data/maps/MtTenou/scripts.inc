@@ -15,6 +15,7 @@ LauraEncounter1::
 	msgbox LauraEncounter1_Text_0
 	waitmessage
 	applymovement 1, LauraCome
+	applymovement 1, ArleFaceDown
 	waitmovement 1
 	msgbox LauraEncounter1_Text_1
 	msgbox LauraEncounter1_Text_2
@@ -41,6 +42,10 @@ LauraCome:
 	walk_up
 	step_end
 
+ArleFaceDown:
+	face_down
+	step_end
+
 LauraGo:
 	walk_down
 	walk_down
@@ -50,7 +55,7 @@ LauraGo:
 	step_end
 
 LauraEncounter1_Text_0:
-	.string "Yo, Arles! Waitup!$"
+	.string "Laura: Yo, Arles! Waitup!$"
 
 LauraEncounter1_Text_1:
 	.string "Phew! Glad I caught up to ya!\nWas starting to think I'd never find\lyou.$"

@@ -4655,7 +4655,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HMItemBall = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_HMITEMBALL,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 128,
     .width = 16,
@@ -4674,7 +4674,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HMItemBall = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Laura = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_RED_LEAF,
+    .paletteTag = OBJ_EVENT_PAL_TAG_LAURA,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4693,7 +4693,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Laura = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Asuka = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_RED_LEAF,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ASUKA,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4712,7 +4712,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Asuka = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nox = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_RED_LEAF,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NOX,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4731,7 +4731,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nox = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juno = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_RED_LEAF,
+    .paletteTag = OBJ_EVENT_PAL_TAG_JUNO,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4750,7 +4750,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juno = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Justin = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_RED_LEAF,
+    .paletteTag = OBJ_EVENT_PAL_TAG_JUSTIN,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,

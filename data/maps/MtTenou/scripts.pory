@@ -11,9 +11,10 @@ script LauraEncounter1{
     lockall
     playbgm(MUS_ENCOUNTER_GIRL, FALSE)
     addobject(1)
-    msgbox("Yo, Arles! Waitup!")
+    msgbox("Laura: Yo, Arles! Waitup!")
     waitmessage
     applymovement(1, LauraCome)
+    applymovement(1, ArleFaceDown)
     waitmovement(1)
     msgbox("Phew! Glad I caught up to ya!\nWas starting to think I'd never find\lyou.")
     msgbox("I really wish we could have started our\njourneys together, but Nox is SO\limpatient...")
@@ -38,6 +39,10 @@ text LauraLoseText {
 
 movement LauraCome{
     walk_up*5
+}
+
+movement ArleFaceDown{
+    face_down
 }
 
 movement LauraGo{
