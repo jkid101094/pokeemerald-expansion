@@ -6,7 +6,7 @@ script HideLaura{
     removeobject(1)
 }
 
-//Trainers
+//Story
 script LauraEncounter1{
     lockall
     playbgm(MUS_ENCOUNTER_GIRL, FALSE)
@@ -14,17 +14,17 @@ script LauraEncounter1{
     msgbox("Laura: Yo, Arles! Waitup!")
     waitmessage
     applymovement(1, LauraCome)
-    applymovement(1, ArleFaceDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, ArleFaceDown)
     waitmovement(1)
     msgbox("Phew! Glad I caught up to ya!\nWas starting to think I'd never find\lyou.")
     msgbox("I really wish we could have started our\njourneys together, but Nox is SO\limpatient...")
-    msgbox(format("She ran on off ahead and then Jordan got tired of waiting... Asuka took off after Jordan and before I knew it it was just me standing there on Route 1..."))
+    msgbox(format("She ran on off ahead and then Jordan got tired of waiting... Asuka took off after Jordan and before I knew it I was the only one left standing there on Route 1..."))
     msgbox(format("Ah, who needs that sentimental stuff anyways, right? Besides, I can tell you're starting to zone out. So how about we have some fun with a battle?"))
     msgbox(format("Gotta warn ya, though. I caught a sweet new Pokémon in that forest over there!"))
     msgbox("You ready, Arles? OK! Let's go!")
     trainerbattle_no_intro(TRAINER_LAURA_1, LauraLoseText)
     msgbox(format("I guess I've still got some training to do, huh?\pGuess I'll put my energy towards leveling up for now."))
-    msgbox("See you later, Arles!\pTake care, alright?")
+    msgbox("See you later, Arles!\nTake care, alright?")
     setvar(VAR_STORY_PROGRESSION, 4)
     applymovement(1, LauraGo)
     waitmovement(1)

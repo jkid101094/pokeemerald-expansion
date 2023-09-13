@@ -15,7 +15,7 @@ LauraEncounter1::
 	msgbox LauraEncounter1_Text_0
 	waitmessage
 	applymovement 1, LauraCome
-	applymovement 1, ArleFaceDown
+	applymovement OBJ_EVENT_ID_PLAYER, ArleFaceDown
 	waitmovement 1
 	msgbox LauraEncounter1_Text_1
 	msgbox LauraEncounter1_Text_2
