@@ -447,24 +447,24 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Bart[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntRusturfTunnel[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Gustaf[] = {
     {
     .iv = 0,
-    .lvl = 11,
-    .species = SPECIES_POOCHYENA,
-    }
-};
-
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst1[] = {
-    {
-    .iv = 0,
-    .lvl = 27,
-    .species = SPECIES_ZUBAT,
+    .lvl = 3,
+    .species = SPECIES_MACHOP,
     },
     {
     .iv = 0,
-    .lvl = 27,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 3,
+    .species = SPECIES_GEODUDE_ALOLAN,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Olivia[] = {
+    {
+    .iv = 0,
+    .lvl = 6,
+    .species = SPECIES_ONIX,
     }
 };
 
@@ -1896,7 +1896,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Bridget[] = {
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Olivia[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_NAH[] = {
     {
     .iv = 100,
     .lvl = 35,

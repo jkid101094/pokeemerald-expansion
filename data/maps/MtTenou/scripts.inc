@@ -54,6 +54,20 @@ LauraGo:
 	walk_down
 	step_end
 
+HikerGustaf::
+	trainerbattle_single TRAINER_GUSTAF, GustafIntro, GustafLoss
+	msgbox PostBattle_Gustaf, MSGBOX_AUTOCLOSE
+	waitmessage
+	return
+
+
+LadyOlivia::
+	trainerbattle_single TRAINER_OLIVIA, OliviaIntro, OliviaLoss
+	msgbox PostBattle_Olivia, MSGBOX_AUTOCLOSE
+	waitmessage
+	return
+
+
 LauraEncounter1_Text_0:
 	.string "Laura: Yo, Arles! Waitup!$"
 
@@ -66,9 +80,9 @@ LauraEncounter1_Text_2:
 LauraEncounter1_Text_3:
 	.string "She ran on off ahead and then Jordan\n"
 	.string "got tired of waiting... Asuka took off\l"
-	.string "after Jordan and before I knew it it\l"
-	.string "was just me standing there on Route\l"
-	.string "1...$"
+	.string "after Jordan and before I knew it I was\l"
+	.string "the only one left standing there on\l"
+	.string "Route 1...$"
 
 LauraEncounter1_Text_4:
 	.string "Ah, who needs that sentimental stuff\n"
@@ -90,7 +104,25 @@ LauraEncounter1_Text_7:
 	.string "leveling up for now.$"
 
 LauraEncounter1_Text_8:
-	.string "See you later, Arles!\pTake care, alright?$"
+	.string "See you later, Arles!\nTake care, alright?$"
 
 LauraLoseText::
 	.string "Haha! Great job, Arles!$"
+
+GustafIntro::
+	.string "Mt. Tenou is the tallest mountain in\nthis region, but did you know it's\lactually TWO volcanos?$"
+
+GustafLoss::
+	.string "Looks like you're erupting too!$"
+
+PostBattle_Gustaf::
+	.string "They say Mt. Tenou won't erupt again\nfor thousands of years, but if it did, it\lwould end all life in the region.\pThat's scary to think about!$"
+
+OliviaIntro::
+	.string "I just LOVE big Pokémon!\nWho's your biggest one?$"
+
+OliviaLoss::
+	.string "I guess the bigger they are, the harder\nthey fall...$"
+
+PostBattle_Olivia::
+	.string "I wonder what the biggest Pokémon of\nall is...$"

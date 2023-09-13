@@ -17,8 +17,8 @@
 #define TRAINER_RIKKI                        13
 #define TRAINER_STANLEY                      14
 #define TRAINER_BART                         15
-#define TRAINER_GRUNT_RUSTURF_TUNNEL         16
-#define TRAINER_GRUNT_WEATHER_INST_1         17
+#define TRAINER_GUSTAF                       16
+#define TRAINER_OLIVIA                       17
 #define TRAINER_GRUNT_WEATHER_INST_2         18
 #define TRAINER_GRUNT_WEATHER_INST_3         19
 #define TRAINER_GRUNT_MUSEUM_1               20
@@ -131,7 +131,7 @@
 #define TRAINER_JESSICA_1                   127
 #define TRAINER_CONNIE                      128
 #define TRAINER_BRIDGET                     129
-#define TRAINER_OLIVIA                      130
+#define TRAINER_NAH                         130
 #define TRAINER_TIFFANY                     131
 #define TRAINER_JESSICA_2                   132
 #define TRAINER_JESSICA_3                   133

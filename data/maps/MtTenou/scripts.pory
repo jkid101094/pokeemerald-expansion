@@ -48,3 +48,38 @@ movement ArleFaceDown{
 movement LauraGo{
     walk_down*5
 }
+
+//Trainers
+script HikerGustaf{
+    trainerbattle_single(TRAINER_GUSTAF, GustafIntro, GustafLoss)
+    msgbox(PostBattle_Gustaf, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+text GustafIntro{
+    "Mt. Tenou is the tallest mountain in\nthis region, but did you know it's\lactually TWO volcanos?"
+}
+text GustafLoss{
+    "Looks like you're erupting too!"
+}
+text PostBattle_Gustaf{
+    "They say Mt. Tenou won't erupt again\nfor thousands of years, but if it did, it\lwould end all life in the region.\pThat's scary to think about!"
+}
+
+script LadyOlivia{
+    trainerbattle_single(TRAINER_OLIVIA, OliviaIntro, OliviaLoss)
+    msgbox(PostBattle_Olivia, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+text OliviaIntro{
+    "I just LOVE big Pokémon!\nWho's your biggest one?"
+}
+text OliviaLoss{
+    "I guess the bigger they are, the harder\nthey fall..."
+}
+text PostBattle_Olivia{
+    "I wonder what the biggest Pokémon of\nall is..."
+}
+
+//Items
