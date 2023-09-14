@@ -237,7 +237,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntWeatherInst3),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Julian),
     },
 
     [TRAINER_GRUNT_MUSEUM_1] =
@@ -552,16 +552,16 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Chip),
     },
 
-    [TRAINER_FOSTER] =
+    [TRAINER_FRODO] =
     {
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-        .trainerName = _("FOSTER"),
+        .trainerName = _("FRODO"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_CUSTOM_MOVES(sParty_Foster),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Frodo),
     },
 
     [TRAINER_DUSTY_2] =

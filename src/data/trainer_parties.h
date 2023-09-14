@@ -474,7 +474,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Foster[] = {
     .lvl = 5,
     .species = SPECIES_CUBONE,
     }
-}
+};
 static const struct TrainerMonNoItemDefaultMoves sParty_Julian[] = {
     {
     .iv = 0,
@@ -490,7 +490,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Julian[] = {
     .iv = 0,
     .lvl = 3,
     .species = SPECIES_RALTS,
-    .gender TRAINER_MON_FEMALE,
     }
 };
 
@@ -818,7 +817,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Chip[] = {
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Foster[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_Frodo[] = {
     {
     .iv = 100,
     .lvl = 25,

@@ -68,6 +68,43 @@ LadyOlivia::
 	return
 
 
+HikerFoster::
+	trainerbattle_single TRAINER_FOSTER, FosterIntro, FosterLoss
+	msgbox PostBattle_Foster, MSGBOX_AUTOCLOSE
+	waitmessage
+	return
+
+
+CollectorJulian::
+	trainerbattle_single TRAINER_JULIAN, JulianIntro, JulianLoss
+	msgbox PostBattle_Julian, MSGBOX_AUTOCLOSE
+	waitmessage
+	return
+
+
+MtTenou_Item_Ball_Stone_Plate::
+	lockall
+	giveitem ITEM_STONE_PLATE, [ 1 ]
+	setflag FLAG_ROUTE1_RARE_CANDY
+	releaseall
+	return
+
+
+MtTennou_Item_Ball_TM39::
+	lockall
+	giveitem ITEM_TM39_ROCK_TOMB, [ 1 ]
+	setflag FLAG_MT_TENOU_TM39
+	releaseall
+	return
+
+
+TenouSign::
+	lockall
+	msgbox TenouSign_Text_0
+	releaseall
+	return
+
+
 LauraEncounter1_Text_0:
 	.string "Laura: Yo, Arles! Waitup!$"
 
@@ -106,6 +143,9 @@ LauraEncounter1_Text_7:
 LauraEncounter1_Text_8:
 	.string "See you later, Arles!\nTake care, alright?$"
 
+TenouSign_Text_0:
+	.string "-MT. TENOU-\nThe Apex of Albastia.$"
+
 LauraLoseText::
 	.string "Haha! Great job, Arles!$"
 
@@ -126,3 +166,21 @@ OliviaLoss::
 
 PostBattle_Olivia::
 	.string "I wonder what the biggest Pokémon of\nall is...$"
+
+FosterIntro::
+	.string "Caught me a wee little lad, I did.\nWould you like to meet him?$"
+
+FosterLoss::
+	.string "Aye...\nGuess you weren't down for a play date...$"
+
+PostBattle_Foster::
+	.string "Care for a spot of tea, lass?\nNo? Fine. More for us.$"
+
+JulianIntro::
+	.string "Hehe... Want to see my collection?$"
+
+JulianLoss::
+	.string "I should be adding YOU to my\ncollection...$"
+
+PostBattle_Julian::
+	.string "My collection of what? Pokémon, of course.\nWhat did you think I meant?$"

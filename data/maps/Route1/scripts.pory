@@ -46,10 +46,10 @@ script Route1_Jogger{
 script Route1_Item_Ball_Rare_Candy{
     lockall
     giveitem(ITEM_RARE_CANDY, [1])
-    setflag(FLAG_ROUTE1_RARE_CANDY)
+    setflag(FLAG_MT_TENOU_STONE_PLATE)
     releaseall
-
 }
+
 
 //Trainers
 script TrainerRikki{

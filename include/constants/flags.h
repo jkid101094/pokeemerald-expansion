@@ -50,9 +50,9 @@
 #define FLAG_ROUTE1_RARE_CANDY 0x26 // Unused Flag
 #define FLAG_MANAPHY_EGG_RECIEVED    0x27 // Unused Flag
 #define FLAG_MAKE_SHINY    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
+#define FLAG_MT_TENOU_STONE_PLATE   0x29 // Unused Flag
+#define FLAG_MT_TENOU_TM39    0x2A // Unused Flag
+#define FLAG_TAXI_ENABLED    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag

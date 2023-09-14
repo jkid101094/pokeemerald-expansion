@@ -1282,7 +1282,7 @@ static void Task_NewGameBirchSpeech_Init(u8 taskId)
     ResetSpriteData();
     FreeAllSpritePalettes();
     ResetAllPicSprites();
-    AddBirchSpeechObjects(taskId);
+    //AddBirchSpeechObjects(taskId);
     BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
     gTasks[taskId].tBG1HOFS = 0;
     gTasks[taskId].func = Task_NewGameBirchSpeech_WaitToShowBirch;

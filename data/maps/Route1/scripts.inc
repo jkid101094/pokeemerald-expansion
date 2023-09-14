@@ -53,7 +53,7 @@ Route1_Jogger::
 Route1_Item_Ball_Rare_Candy::
 	lockall
 	giveitem ITEM_RARE_CANDY, [ 1 ]
-	setflag FLAG_ROUTE1_RARE_CANDY
+	setflag FLAG_MT_TENOU_STONE_PLATE
 	releaseall
 	return
 
@@ -74,7 +74,7 @@ TrainerStanley::
 
 TrainerBart::
 	trainerbattle_single TRAINER_BART, BartIntro, BartLoss
-	msgbox PostBattle_Stanley, MSGBOX_AUTOCLOSE
+	msgbox PostBattle_Bart, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 

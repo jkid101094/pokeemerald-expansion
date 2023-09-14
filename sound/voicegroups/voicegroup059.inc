@@ -19,7 +19,7 @@ voicegroup059::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_trumpet_60, 255, 242, 0, 242
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_string_ensemble_72, 255, 242, 0, 242
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_harp, 255, 242, 0, 242
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_trumpet_60, 255, 242, 0, 242
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_piano1_48, 255, 242, 0, 242

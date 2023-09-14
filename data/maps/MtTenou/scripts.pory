@@ -105,12 +105,33 @@ script CollectorJulian{
 }
 
 text JulianIntro{
-    "Hehe... Want to see my\ncollection?"
+    "Hehe... Want to see my collection?"
 }
 text JulianLoss{
     "I should be adding YOU to my\ncollection..."
 }
 text PostBattle_Julian{
-    "My collection of what?\nPokémon, of course.\lWhat did you think I meant?"
+    "My collection of what? Pokémon, of course.\nWhat did you think I meant?"
 }
+
 //Items
+script MtTenou_Item_Ball_Stone_Plate{
+    lockall
+    giveitem(ITEM_STONE_PLATE, [1])
+    setflag(FLAG_ROUTE1_RARE_CANDY)
+    releaseall
+}
+
+script MtTennou_Item_Ball_TM39{
+    lockall
+    giveitem(ITEM_TM39_ROCK_TOMB, [1])
+    setflag(FLAG_MT_TENOU_TM39)
+    releaseall
+}
+
+//Signs
+script TenouSign{
+lockall
+msgbox("-MT. TENOU-\nThe Apex of Albastia.")
+releaseall
+}

@@ -48,6 +48,8 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 
+extern u8 TaxiMenu[];
+
 // Menu actions
 enum
 {
@@ -65,6 +67,7 @@ enum
     MENU_ACTION_RETIRE_FRONTIER,
     MENU_ACTION_PYRAMID_BAG,
     MENU_ACTION_DEBUG,
+    MENU_ACTION_TAXI,
 };
 
 // Save status
@@ -106,6 +109,7 @@ static bool8 StartMenuLinkModePlayerNameCallback(void);
 static bool8 StartMenuBattlePyramidRetireCallback(void);
 static bool8 StartMenuBattlePyramidBagCallback(void);
 static bool8 StartMenuDebugCallback(void);
+static bool8 StartMenuTaxiCallback(void);
 
 // Menu callbacks
 static bool8 SaveStartCallback(void);
@@ -158,6 +162,8 @@ static const struct WindowTemplate sPyramidFloorWindowTemplate_2 = {0, 1, 1, 0xA
 static const struct WindowTemplate sPyramidFloorWindowTemplate_1 = {0, 1, 1, 0xC, 4, 0xF, 8};
 
 static const u8 gText_MenuDebug[] = _("DEBUG");
+static const u8 gText_Taxi[] = _("TAXI");
+
 
 static const struct MenuAction sStartMenuItems[] =
 {
@@ -175,6 +181,8 @@ static const struct MenuAction sStartMenuItems[] =
     [MENU_ACTION_RETIRE_FRONTIER] = {gText_MenuRetire,  {.u8_void = StartMenuBattlePyramidRetireCallback}},
     [MENU_ACTION_PYRAMID_BAG]     = {gText_MenuBag,     {.u8_void = StartMenuBattlePyramidBagCallback}},
     [MENU_ACTION_DEBUG]           = {gText_MenuDebug,   {.u8_void = StartMenuDebugCallback}},
+    [MENU_ACTION_TAXI]            = {gText_Taxi,    {.u8_void = StartMenuTaxiCallback}}
+
 };
 
 static const struct BgTemplate sBgTemplates_LinkBattleSave[] =
@@ -315,6 +323,11 @@ static void BuildNormalStartMenu(void)
     if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
     {
         AddStartMenuAction(MENU_ACTION_POKENAV);
+    }
+
+    if (FlagGet(FLAG_TAXI_ENABLED) == TRUE)
+    {
+        AddStartMenuAction(MENU_ACTION_TAXI);
     }
 
     AddStartMenuAction(MENU_ACTION_PLAYER);
@@ -621,7 +634,8 @@ static bool8 HandleStartMenuInput(void)
             && gMenuCallback != StartMenuExitCallback
             && gMenuCallback != StartMenuDebugCallback
             && gMenuCallback != StartMenuSafariZoneRetireCallback
-            && gMenuCallback != StartMenuBattlePyramidRetireCallback)
+            && gMenuCallback != StartMenuBattlePyramidRetireCallback
+            && gMenuCallback != StartMenuTaxiCallback)
         {
            FadeScreen(FADE_TO_BLACK, 0);
         }
@@ -630,6 +644,13 @@ static bool8 HandleStartMenuInput(void)
     }
 
     if (JOY_NEW(START_BUTTON | B_BUTTON))
+    {
+        RemoveExtraStartMenuWindows();
+        HideStartMenu();
+        return TRUE;
+    }
+
+    if (JOY_NEW(SELECT_BUTTON))
     {
         RemoveExtraStartMenuWindows();
         HideStartMenu();
@@ -693,6 +714,21 @@ static bool8 StartMenuPokeNavCallback(void)
         RemoveExtraStartMenuWindows();
         CleanupOverworldWindowsAndTilemaps();
         SetMainCallback2(CB2_InitPokeNav);  // Display PokeNav
+
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+static bool8 StartMenuTaxiCallback(void)
+{
+    if (!gPaletteFade.active)
+    {
+        PlayRainStoppingSoundEffect();
+        RemoveExtraStartMenuWindows();
+        CleanupOverworldWindowsAndTilemaps();
+        SetMainCallback2(CB2_InitPokeNav);
 
         return TRUE;
     }
