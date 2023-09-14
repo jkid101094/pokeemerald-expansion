@@ -57,7 +57,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("Goddess"),
         .items = {ITEM_MEGA_RING, ITEM_Z_POWER_RING, ITEM_DYNAMAX_BAND, ITEM_X_SP_ATK},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON | AI_FLAG_SMART_SWITCHING | AI_FLAG_HP_AWARE | AI_FLAG_SETUP_FIRST_TURN,
         .party = EVERYTHING_CUSTOMIZED(sParty_Juno),
     },
 
@@ -126,10 +126,10 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Tiki"),
-        .items = {},
+        .items = {ITEM_MEGA_RING},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Tiki),
+        .party = EVERYTHING_CUSTOMIZED(sParty_Tiki),
     },
 
     [TRAINER_VERIDIS] =
@@ -140,7 +140,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("Veridis"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Veridis),
     },
 
@@ -240,16 +240,16 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Julian),
     },
 
-    [TRAINER_GRUNT_MUSEUM_1] =
+    [TRAINER_KIRB] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _("GRUNT"),
-        .items = {},
+        .trainerName = _("Kirb"),
+        .items = {ITEM_MEGA_RING, ITEM_Z_POWER_RING},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMuseum1),
+        .party = EVERYTHING_CUSTOMIZED(sParty_Kirb),
     },
 
     [TRAINER_GRUNT_MUSEUM_2] =

@@ -321,40 +321,72 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Arne[] = {
     .iv = 0,
     .lvl = 3,
     .species = SPECIES_ESPEON,
+    },
+    {
+    .iv = 0,
+    .lvl = 3,
+    .species = SPECIES_HATTERENE,
+    },
+    {
+    .iv = 0,
+    .lvl = 3,
+    .species = SPECIES_NOIVERN,
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Tiki[] = {
+static const struct TrainerMonCustomized sParty_Tiki[] = {
     {
-    .iv = 0,
-    .lvl = 3,
+    .lvl = 10,
     .species = SPECIES_LUXRAY,
+    .friendship = 255,
+    .heldItem = ITEM_FLAME_ORB,
+    .ability = ABILITY_GUTS,
+    .ball = ITEM_PREMIER_BALL,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
     },
     {
-    .iv = 0,
-    .lvl = 3,
-    .species = SPECIES_GARDEVOIR,
-    },
-    {
-    .iv = 0,
-    .lvl = 3,
-    .species = SPECIES_MIMIKYU,
-    },
-    {
-    .iv = 0,
-    .lvl = 3,
+    .lvl = 10,
     .species = SPECIES_LURANTIS,
+    .friendship = 255,
+    .ability = ABILITY_CONTRARY,
+    .ball = ITEM_PREMIER_BALL,
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
     },
     {
-    .iv = 0,
-    .lvl = 3,
-    .species = SPECIES_SNEASLER,
+    .lvl = 10,
+    .species = SPECIES_GARDEVOIR,
+    .friendship = 255,
+    .heldItem = ITEM_GARDEVOIRITE,
+    .ability = ABILITY_SYNCHRONIZE,
+    .ball = ITEM_PREMIER_BALL,
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
     },
     {
-    .iv = 0,
-    .lvl = 3,
+    .lvl = 10,
+    .species = SPECIES_MIMIKYU,
+    .friendship = 255,
+    .heldItem = ITEM_LEFTOVERS,
+    .ball = ITEM_PREMIER_BALL,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    },
+    {
+    .lvl = 10,
     .species = SPECIES_GOODRA_HISUIAN,
-    }
+    .friendship = 255,
+    .heldItem = ITEM_CHESTO_BERRY,
+    .moves = {MOVE_REST, MOVE_SHELTER, MOVE_DRAGON_PULSE, MOVE_HEAVY_SLAM},
+    .ability = ABILITY_GOOEY,
+    .ball = ITEM_PREMIER_BALL,
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+    },
+    {
+    .lvl = 10,
+    .species = SPECIES_SNEASLER,
+    .friendship = 255,
+    .ability = ABILITY_UNBURDEN,
+    .ball = ITEM_PREMIER_BALL,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Veridis[] = {
@@ -493,12 +525,68 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Julian[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntMuseum1[] = {
+static const struct TrainerMonCustomized sParty_Kirb[] = {
     {
-    .iv = 0,
-    .lvl = 15,
-    .species = SPECIES_CARVANHA,
-    }
+    .lvl = 50,
+    .species = SPECIES_AMPHAROS,
+    .friendship = 255,
+    .gender TRAINER_MON_MALE,
+    .heldItem = ITEM_LEFTOVERS,
+    .ability = ABILITY_STATIC,
+    .moves = {MOVE_COTTON_GUARD, MOVE_THUNDERBOLT, MOVE_DRAGON_PULSE, MOVE_ICE_PUNCH},
+    .nickname = COMPOUND_STRING("Warrior"),
+
+    },
+     {
+    .lvl = 50,
+    .species = SPECIES_FERROTHORN,
+    .friendship = 255,
+    .gender TRAINER_MON_MALE,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .ability = ABILITY_IRON_BARBS,
+    .moves = {MOVE_BODY_PRESS, MOVE_GYRO_BALL, MOVE_POWER_WHIP, MOVE_IRON_DEFENSE},
+    .nickname = COMPOUND_STRING("Duritan"),
+    },
+     {
+    .lvl = 50,
+    .species = SPECIES_STARMIE,
+    .friendship = 255,
+    .heldItem = ITEM_WATERIUM_Z,
+    .ability = ABILITY_NATURAL_CURE,
+    .moves = {MOVE_ICE_BEAM, MOVE_HYDRO_PUMP, MOVE_LIGHT_SCREEN, MOVE_PSYSHOCK},
+    .nickname = COMPOUND_STRING("JamJammin"),
+    .isShiny = TRUE,
+    },
+     {
+    .lvl = 50,
+    .species = SPECIES_MIENSHAO,
+    .friendship = 255,
+    .gender TRAINER_MON_FEMALE,
+    .heldItem = ITEM_POWER_HERB,
+    .ability = ABILITY_REGENERATOR,
+    .moves = {MOVE_DIG, MOVE_FOCUS_PUNCH, MOVE_KNOCK_OFF, MOVE_FOCUS_BLAST},
+    .nickname = COMPOUND_STRING("Wisklash"),
+    },
+     {
+    .lvl = 50,
+    .species = SPECIES_AUDINO,
+    .friendship = 255,
+    .gender TRAINER_MON_FEMALE,
+    .heldItem = ITEM_AUDINITE,
+    .ability = ABILITY_HEALER,
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_ICE_BEAM, MOVE_CALM_MIND, MOVE_HEAL_BELL},
+    .nickname = COMPOUND_STRING("Synthia"),
+    },
+     {
+    .lvl = 50,
+    .species = SPECIES_CINDERACE,
+    .friendship = 255,
+    .gender TRAINER_MON_FEMALE,
+    .heldItem = ITEM_CHARCOAL,
+    .ability = ABILITY_LIBERO,
+    .moves = {MOVE_BLAZE_KICK, MOVE_SHADOW_BALL, MOVE_GUNK_SHOT, MOVE_PYRO_BALL},
+    .nickname = COMPOUND_STRING("Sorrel"),
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntMuseum2[] = {
