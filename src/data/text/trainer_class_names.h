@@ -71,4 +71,5 @@ const u8 gTrainerClassNames[][13] = {
     [TRAINER_CLASS_JUNO] = _("Eternal"),
     [TRAINER_CLASS_LEAF] = _("{PKMN} Trainer"),
     [TRAINER_CLASS_ARTIST] = _("Artist"),
+    [TRAINER_CLASS_TIKI] = _("LostPrincess"),
 };

@@ -589,7 +589,7 @@ static const struct TrainerMonCustomized sParty_Kirb[] = {
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntMuseum2[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Randolph[] = {
     {
     .iv = 0,
     .lvl = 14,

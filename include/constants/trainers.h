@@ -364,7 +364,8 @@
 #define TRAINER_CLASS_JUSTIN         0x46
 #define TRAINER_CLASS_LEAF           0x47
 #define TRAINER_CLASS_ARTIST         0x48
-#define TRAINER_CLASS_COUNT          0x49
+#define TRAINER_CLASS_TIKI           0x49
+#define TRAINER_CLASS_COUNT          0x4a
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

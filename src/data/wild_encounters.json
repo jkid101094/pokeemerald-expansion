@@ -11918,6 +11918,204 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_TENOU_INTERIOR",
+          "base_label": "gTenouInterior0",
+          "land_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_SABLEYE"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_CARBINK"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_SABLEYE"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_CARBINK"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 15,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 15,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_TENOU_INTERIOR2",
+          "base_label": "gTenouInterior20",
+          "land_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_SABLEYE"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_CARBINK"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_SABLEYE"
+              },
+              {
+                "min_level": 4,
+                "max_level": 8,
+                "species": "SPECIES_CARBINK"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 15,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 15,
+                "species": "SPECIES_GEODUDE_ALOLAN"
+              }
+            ]
+          }
         }
       ]
     },

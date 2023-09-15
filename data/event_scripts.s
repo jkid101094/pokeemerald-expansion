@@ -1069,3 +1069,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/DrenchedCave/scripts.inc"
 
 	.include "data/maps/DrenchedCaveUnderwater/scripts.inc"
+
+	.include "data/maps/TenouInterior/scripts.inc"
+
+	.include "data/maps/TenouInterior2/scripts.inc"

@@ -4460,6 +4460,26 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/DrenchedCaveUnderwater/border.bin",
       "blockdata_filepath": "data/layouts/DrenchedCaveUnderwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_TENOU_INTERIOR",
+      "name": "TenouInterior_Layout",
+      "width": 30,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TenouInterior/border.bin",
+      "blockdata_filepath": "data/layouts/TenouInterior/map.bin"
+    },
+    {
+      "id": "LAYOUT_TENOU_INTERIOR2",
+      "name": "TenouInterior2_Layout",
+      "width": 60,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TenouInterior2/border.bin",
+      "blockdata_filepath": "data/layouts/TenouInterior2/map.bin"
     }
   ]
 }

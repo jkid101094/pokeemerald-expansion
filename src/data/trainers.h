@@ -122,8 +122,8 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_TIKI] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
+        .trainerClass = TRAINER_CLASS_TIKI,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
         .trainerName = _("Tiki"),
         .items = {ITEM_MEGA_RING},
@@ -252,16 +252,16 @@ const struct Trainer gTrainers[] = {
         .party = EVERYTHING_CUSTOMIZED(sParty_Kirb),
     },
 
-    [TRAINER_GRUNT_MUSEUM_2] =
+    [TRAINER_RANDOLPH] =
     {
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Randolph"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMuseum2),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Randolph),
     },
 
     [TRAINER_GRUNT_SPACE_CENTER_1] =

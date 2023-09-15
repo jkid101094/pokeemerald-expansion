@@ -97,7 +97,9 @@
     "Route1",
     "MtTenou",
     "DrenchedCave",
-    "DrenchedCaveUnderwater"
+    "DrenchedCaveUnderwater",
+    "TenouInterior",
+    "TenouInterior2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
