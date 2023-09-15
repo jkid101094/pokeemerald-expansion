@@ -684,16 +684,62 @@ static const struct TrainerMonCustomized sParty_Laura3[] = {
 
 static const struct TrainerMonCustomized sParty_Laura4[] = {
     {
-    .iv = 0,
-    .lvl = 7,
-    .species = SPECIES_POPPLIO,
+    .iv = 255,
+    .lvl = 59,
+    .species = SPECIES_PRIMARINA,
+    .ability = ABILITY_TORRENT,
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+    .heldItem = ITEM_PRIMARIUM_Z
     .gender TRAINER_MON_FEMALE,
+    .moves = {MOVE_SPARKLING_ARIA, MOVE_AMNESIA, MOVE_MOON_BLAST, MOVE_LIGHT_SCREEN},
     },
     {
-    .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_EXEGGCUTE,
+    .iv = 255,
+    .lvl = 59,
+    .species = SPECIES_EXEGGCUTOR_ALOLAN,
+    .ability = ABILITY_FRISK,
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+    .heldItem = ITEM_WHITE_HERB
     .gender TRAINER_MON_MALE,
+    .moves = {MOVE_DRACO_METEOR, MOVE_LEAF_STORM, MOVE_FLAMETHROWER, MOVE_GIGA_DRAIN},
+    },
+    {
+    .iv = 255,
+    .lvl = 61,
+    .species = SPECIES_GRAPPLOCT,
+    .ability = ABILITY_TECHNICIAN,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .heldItem = ITEM_FIGHTINIUM_Z
+    .gender TRAINER_MON_MALE,
+    .moves = {MOVE_BRUTAL_SWING, MOVE_CIRCLE_THROW, MOVE_OCTOLOCK, MOVE_PAYBACK},
+    },
+    {
+    .iv = 255,
+    .lvl = 59,
+    .species = SPECIES_MAROWAK_ALOLAN,
+    .ability = ABILITY_LIGHTNING_ROD,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .heldItem = ITEM_THICK_CLUB
+    .gender TRAINER_MON_MALE,
+    .moves = {MOVE_POLTERGEIST, MOVE_FIRE_PUNCH, MOVE_LOW_KICK, MOVE_SHADOW_BONE},
+    },
+    {
+    .iv = 255,
+    .lvl = 60,
+    .species = SPECIES_ROTOM_WASH,
+    .ability = ABILITY_LEVITATE,
+    .nature = TRAINER_PARTY_NATURE(NATURE_CALM),
+    .heldItem = ITEM_LEFTOVERS
+    .moves = {MOVE_VOLT_SWITCH, MOVE_HYDRO_PUMP, MOVE_THUNDER_WAVE, MOVE_PAIN_SPLIT},
+    },
+    {
+    .iv = 255,
+    .lvl = 58,
+    .species = SPECIES_CURSOLA,
+    .ability = ABILITY_WEAK_ARMOR,
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+    .heldItem = ITEM_CHOICE_SPECS
+    .moves = {MOVE_SHADOW_BALL, MOVE_POWER_GEM, MOVE_EARTH_POWER, MOVE_HEX},
     }
 };
 
@@ -729,31 +775,100 @@ static const struct TrainerMonCustomized sParty_Asuka3[] = {
 
 static const struct TrainerMonCustomized sParty_Asuka4[] = {
     {
-    .iv = 0,
-    .lvl = 7,
-    .species = SPECIES_RABOOT,
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_CINDERACE,
+    .ability = ABILITY_LIBERO,
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+    .heldItem = ITEM_FIRIUM_Z
     .gender TRAINER_MON_FEMALE,
-    },
+    .moves = {MOVE_PYRO_BALL, MOVE_U_TURN, MOVE_COURT_CHANGE, MOVE_GUNK_SHOT},
+    }
     {
-    .iv = 0,
-    .lvl = 7,
-    .species = SPECIES_MACHOP,
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_MACHAMP,
+    .ability = ABILITY_GUTS,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .heldItem = ITEM_FLAME_ORB
     .gender TRAINER_MON_MALE,
-    },
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_ICE_PUNCH, MOVE_BULLET_PUNCH},
+    }
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_ORICORIO,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .heldItem = ITEM_FIRE_GEM
+    .gender TRAINER_MON_FEMALE,
+    .moves = {MOVE_REVELATION_DANCE, MOVE_HURRICANE, MOVE_ROOST, MOVE_TEETER_DANCE},
+    }
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_BELLOSSOM,
+    .ability = ABILITY_CHLOROPHYLL,
+    .nature = TRAINER_PARTY_NATURE(NATURE_TIMID),
+    .heldItem = ITEM_LEFTOVERS
+    .gender TRAINER_MON_FEMALE,
+    .moves = {MOVE_STRENGTH_SAP, MOVE_QUIVER_DANCE, MOVE_GIGA_DRAIN, MOVE_SAFEGUARD},
+    }
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_PASSIMIAN,
+    .ability = ABILITY_DEFIANT,
+    .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY),
+    .heldItem = ITEM_CHOICE_SCARF
+    .gender TRAINER_MON_MALE,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_KNOCK_OFF, MOVE_EARTHQUAKE},
+    }
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_AMBIPOM,
+    .ability = ABILITY_TECHNICIAN,
+    .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY),
+    .heldItem = ITEM_LIFE_ORB
+    .gender TRAINER_MON_MALE,
+    .moves = {MOVE_FAKE_OUT, MOVE_RETURN, MOVE_LOW_KICK, MOVE_PURSUIT},
+    }
 };
 
 static const struct TrainerMonCustomized sParty_Nox2[] = {
     {
-    .iv = 0,
-    .lvl = 23,
+    .iv = 50,
+    .lvl = 30,
     .species = SPECIES_GLACEON,
+    .ability = ABILITY_SNOW_CLOAK,
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
     .gender TRAINER_MON_FEMALE,
+    }
+    {
+    .iv = 50,
+    .lvl = 30,
+    .species = SPECIES_GOODRA,
+    .ability = ABILITY_SAP_SIPPER,
+    .gender TRAINER_MON_FEMALE,
+    .nature = TRAINER_PARTY_NATURE(NATURE_TIMID),
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_DRACO_METEOR, MOVE_THUNDERBOLT, MOVE_FIRE_BLAST, MOVE_EARTHQUAKE},
     },
     {
-    .iv = 0,
-    .lvl = 21,
-    .species = SPECIES_ROCKRUFF,
-    .gender TRAINER_MON_MALE,
+    .iv = 50,
+    .lvl = 30,
+    .species = SPECIES_SCOLIPEDE,
+    .gender TRAINER_MON_FEMALE,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .ability = ABILITY_SPEED_BOOST,
+    },
+    {
+    .iv = 50,
+    .lvl = 30,
+    .species = SPECIES_LYCANROC,
+    .ability = ABILITY_KEEN_EYE,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .gender TRAINER_MON_FEMALE,
     }
 };
 
@@ -774,16 +889,65 @@ static const struct TrainerMonCustomized sParty_Nox3[] = {
 
 static const struct TrainerMonCustomized sParty_Nox4[] = {
     {
-    .iv = 0,
-    .lvl = 23,
+    .iv = 255,
+    .lvl = 55,
     .species = SPECIES_GLACEON,
+    .ability = ABILITY_SNOW_CLOAK,
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+    .heldItem = ITEM_NORMALIUM_Z
     .gender TRAINER_MON_FEMALE,
+    .moves = {MOVE_HAIL, MOVE_ICE_BEAM, MOVE_SHADOW_BALL, MOVE_CELEBRATE},
+    }
+    {
+    .iv = 255,
+    .lvl = 56,
+    .species = SPECIES_GOODRA,
+    .ability = ABILITY_SAP_SIPPER,
+    .gender TRAINER_MON_FEMALE,
+    .nature = TRAINER_PARTY_NATURE(NATURE_TIMID),
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_DRACO_METEOR, MOVE_THUNDERBOLT, MOVE_FIRE_BLAST, MOVE_EARTHQUAKE},
     },
     {
-    .iv = 0,
-    .lvl = 21,
-    .species = SPECIES_ROCKRUFF,
-    .gender TRAINER_MON_MALE,
+    .iv = 255,
+    .lvl = 67,
+    .species = SPECIES_LITTEN,
+    .gender TRAINER_MON_FEMALE,
+    .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY),
+    .ability = ABILITY_INTIMIDATE,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_U_TURN, MOVE_FLARE_BLITZ, MOVE_WILL_O_WISP, MOVE_FAKE_OUT},
+    },
+    {
+    .iv = 255,
+    .lvl = 56,
+    .species = SPECIES_SCOLIPEDE,
+    .gender TRAINER_MON_FEMALE,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .ability = ABILITY_SPEED_BOOST,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = {MOVE_SWORDS_DANCE, MOVE_MEGAHORN, MOVE_AQUA_TAIL, MOVE_EARTHQUAKE},
+    },
+    {
+    .iv = 255,
+    .lvl = 57,
+    .species = SPECIES_TALONFLAME,
+    .ability = ABILITY_GALE_WINGS,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .heldItem = ITEM_FLYING_GEM,
+    .gender TRAINER_MON_FEMALE,
+    .moves = {MOVE_ACROBATICS, MOVE_SWORDS_DANCE, MOVE_ROOST, MOVE_WILL_O_WISP},
+
+    },
+    {
+    .iv = 255,
+    .lvl = 56,
+    .species = SPECIES_LYCANROC,
+    .ability = ABILITY_KEEN_EYE,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .heldItem = ITEM_ROCKY_HELMET
+    .gender TRAINER_MON_FEMALE,
+    .moves = {MOVE_SWORDS_DANCE, MOVE_STONE_EDGE, MOVE_BRICK_BREAK, MOVE_ACCELEROCK},
     }
 };
 
@@ -799,9 +963,9 @@ static const struct TrainerMonCustomized sJordan2[] = {
     {
     .iv = 50,
     .lvl = 21,
-    .species = SPECIES_LILLIGANT,
-    .ability = ABILITY_OWN_TEMPO,
-    .nature = TRAINER_PARTY_NATURE(NATURE_TIMID),
+    .species = SPECIES_LILLIGANT_HISUIAN,
+    .ability = ABILITY_HUSTLE,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
     .gender TRAINER_MON_FEMALE,
     }
     {
@@ -832,8 +996,7 @@ static const struct TrainerMonCustomized sJordan3[] = {
     .heldItem = ITEM_CHOICE_BAND,
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
     .gender TRAINER_MON_MALE,
-
-    }
+    },
     {
     .iv = 100,
     .lvl = 40,
@@ -842,7 +1005,7 @@ static const struct TrainerMonCustomized sJordan3[] = {
     .nature = TRAINER_PARTY_NATURE(NATURE_IMPISH),
     .gender TRAINER_MON_MALE,
     .moves = {MOVE_VOLT_SWITCH, MOVE_GIGA_DRAIN, MOVE_NONE, MOVE_NONE},
-    }
+    },
     {
     .iv = 100,
     .lvl = 41,
@@ -850,7 +1013,7 @@ static const struct TrainerMonCustomized sJordan3[] = {
     .ability = ABILITY_REFRIGERATE,
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
     .gender TRAINER_MON_FEMALE,
-    }
+    },
     {
     .iv = 100,
     .lvl = 42,
@@ -871,7 +1034,7 @@ static const struct TrainerMonCustomized sJordan4[] = {
     .heldItem = ITEM_ROCKY_HELMET
     .gender TRAINER_MON_MALE,
     .moves = {MOVE_TOXIC_SPIKES, MOVE_BARB_BARRAGE, MOVE_SPIKES, MOVE_LIQUIDATION},
-    }
+    },
     {
     .iv = 255,
     .lvl = 61,
@@ -907,7 +1070,7 @@ static const struct TrainerMonCustomized sJordan4[] = {
     .species = SPECIES_DARMANITAN_GALARIAN,
     .ability = ABILITY_ZEN_MODE,
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
-    .heldItem = ITEM_FOCUS_BAND,
+    .heldItem = ITEM_FOCUS_SASH,
     .gender TRAINER_MON_MALE,
     .moves = {MOVE_U_TURN, MOVE_ICICLE_CRASH, MOVE_FLARE_BLITZ, MOVE_EARTHQUAKE},
 
