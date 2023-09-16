@@ -109,7 +109,7 @@
   "warp_events": [
     {
       "x": 6,
-      "y": 45,
+      "y": 44,
       "elevation": 0,
       "dest_map": "MAP_MT_TENOU",
       "dest_warp_id": "0"

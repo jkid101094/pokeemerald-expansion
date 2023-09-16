@@ -83,14 +83,14 @@
   "warp_events": [
     {
       "x": 3,
-      "y": 15,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_TENOU_INTERIOR",
       "dest_warp_id": "1"
     },
     {
       "x": 30,
-      "y": 15,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_MT_TENOU",
       "dest_warp_id": "0"

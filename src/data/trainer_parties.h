@@ -608,7 +608,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jenette[] = {
     {
     .iv = 0,
     .lvl = 8,
-    .species = SPECIES_SABLYEYE,
+    .species = SPECIES_SABLEYE,
     }
 };
 
@@ -618,19 +618,19 @@ static const struct TrainerMonCustomized sParty_Michael[] = {
     .lvl = 1,
     .species = SPECIES_TEDDIURSA,
     .gender TRAINER_MON_MALE,
-    }
+    },
     {
     .iv = 0,
     .lvl = 9,
     .species = SPECIES_BUNNELBY,
     .gender TRAINER_MON_MALE,
-    }
+    },
     {
     .iv = 0,
     .lvl = 8,
     .species = SPECIES_TORCHIC,
     .gender TRAINER_MON_FEMALE,
-    }
+    },
     {
     .iv = 0,
     .lvl = 7,
@@ -689,17 +689,17 @@ static const struct TrainerMonCustomized sParty_Laura4[] = {
     .species = SPECIES_PRIMARINA,
     .ability = ABILITY_TORRENT,
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
-    .heldItem = ITEM_PRIMARIUM_Z
+    .heldItem = ITEM_PRIMARIUM_Z,
     .gender TRAINER_MON_FEMALE,
-    .moves = {MOVE_SPARKLING_ARIA, MOVE_AMNESIA, MOVE_MOON_BLAST, MOVE_LIGHT_SCREEN},
+    .moves = {MOVE_SPARKLING_ARIA, MOVE_AMNESIA, MOVE_MOONBLAST, MOVE_LIGHT_SCREEN},
     },
     {
     .iv = 255,
     .lvl = 59,
-    .species = SPECIES_EXEGGCUTOR_ALOLAN,
+    .species = SPECIES_EXEGGUTOR_ALOLAN,
     .ability = ABILITY_FRISK,
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
-    .heldItem = ITEM_WHITE_HERB
+    .heldItem = ITEM_WHITE_HERB,
     .gender TRAINER_MON_MALE,
     .moves = {MOVE_DRACO_METEOR, MOVE_LEAF_STORM, MOVE_FLAMETHROWER, MOVE_GIGA_DRAIN},
     },
@@ -709,7 +709,7 @@ static const struct TrainerMonCustomized sParty_Laura4[] = {
     .species = SPECIES_GRAPPLOCT,
     .ability = ABILITY_TECHNICIAN,
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
-    .heldItem = ITEM_FIGHTINIUM_Z
+    .heldItem = ITEM_FIGHTINIUM_Z,
     .gender TRAINER_MON_MALE,
     .moves = {MOVE_BRUTAL_SWING, MOVE_CIRCLE_THROW, MOVE_OCTOLOCK, MOVE_PAYBACK},
     },
@@ -719,7 +719,7 @@ static const struct TrainerMonCustomized sParty_Laura4[] = {
     .species = SPECIES_MAROWAK_ALOLAN,
     .ability = ABILITY_LIGHTNING_ROD,
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
-    .heldItem = ITEM_THICK_CLUB
+    .heldItem = ITEM_THICK_CLUB,
     .gender TRAINER_MON_MALE,
     .moves = {MOVE_POLTERGEIST, MOVE_FIRE_PUNCH, MOVE_LOW_KICK, MOVE_SHADOW_BONE},
     },
@@ -729,7 +729,7 @@ static const struct TrainerMonCustomized sParty_Laura4[] = {
     .species = SPECIES_ROTOM_WASH,
     .ability = ABILITY_LEVITATE,
     .nature = TRAINER_PARTY_NATURE(NATURE_CALM),
-    .heldItem = ITEM_LEFTOVERS
+    .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_VOLT_SWITCH, MOVE_HYDRO_PUMP, MOVE_THUNDER_WAVE, MOVE_PAIN_SPLIT},
     },
     {
@@ -738,7 +738,7 @@ static const struct TrainerMonCustomized sParty_Laura4[] = {
     .species = SPECIES_CURSOLA,
     .ability = ABILITY_WEAK_ARMOR,
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
-    .heldItem = ITEM_CHOICE_SPECS
+    .heldItem = ITEM_CHOICE_SPECS,
     .moves = {MOVE_SHADOW_BALL, MOVE_POWER_GEM, MOVE_EARTH_POWER, MOVE_HEX},
     }
 };
@@ -780,56 +780,56 @@ static const struct TrainerMonCustomized sParty_Asuka4[] = {
     .species = SPECIES_CINDERACE,
     .ability = ABILITY_LIBERO,
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
-    .heldItem = ITEM_FIRIUM_Z
+    .heldItem = ITEM_FIRIUM_Z,
     .gender TRAINER_MON_FEMALE,
     .moves = {MOVE_PYRO_BALL, MOVE_U_TURN, MOVE_COURT_CHANGE, MOVE_GUNK_SHOT},
-    }
+    },
     {
     .iv = 255,
     .lvl = 55,
     .species = SPECIES_MACHAMP,
     .ability = ABILITY_GUTS,
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
-    .heldItem = ITEM_FLAME_ORB
+    .heldItem = ITEM_FLAME_ORB,
     .gender TRAINER_MON_MALE,
     .moves = {MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_ICE_PUNCH, MOVE_BULLET_PUNCH},
-    }
+    },
     {
     .iv = 255,
     .lvl = 55,
     .species = SPECIES_ORICORIO,
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
-    .heldItem = ITEM_FIRE_GEM
+    .heldItem = ITEM_FIRE_GEM,
     .gender TRAINER_MON_FEMALE,
     .moves = {MOVE_REVELATION_DANCE, MOVE_HURRICANE, MOVE_ROOST, MOVE_TEETER_DANCE},
-    }
+    },
     {
     .iv = 255,
     .lvl = 55,
     .species = SPECIES_BELLOSSOM,
     .ability = ABILITY_CHLOROPHYLL,
     .nature = TRAINER_PARTY_NATURE(NATURE_TIMID),
-    .heldItem = ITEM_LEFTOVERS
+    .heldItem = ITEM_LEFTOVERS,
     .gender TRAINER_MON_FEMALE,
     .moves = {MOVE_STRENGTH_SAP, MOVE_QUIVER_DANCE, MOVE_GIGA_DRAIN, MOVE_SAFEGUARD},
-    }
+    },
     {
     .iv = 255,
     .lvl = 55,
     .species = SPECIES_PASSIMIAN,
     .ability = ABILITY_DEFIANT,
     .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY),
-    .heldItem = ITEM_CHOICE_SCARF
+    .heldItem = ITEM_CHOICE_SCARF,
     .gender TRAINER_MON_MALE,
     .moves = {MOVE_CLOSE_COMBAT, MOVE_U_TURN, MOVE_KNOCK_OFF, MOVE_EARTHQUAKE},
-    }
+    },
     {
     .iv = 255,
     .lvl = 55,
     .species = SPECIES_AMBIPOM,
     .ability = ABILITY_TECHNICIAN,
     .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY),
-    .heldItem = ITEM_LIFE_ORB
+    .heldItem = ITEM_LIFE_ORB,
     .gender TRAINER_MON_MALE,
     .moves = {MOVE_FAKE_OUT, MOVE_RETURN, MOVE_LOW_KICK, MOVE_PURSUIT},
     }
@@ -843,7 +843,7 @@ static const struct TrainerMonCustomized sParty_Nox2[] = {
     .ability = ABILITY_SNOW_CLOAK,
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
     .gender TRAINER_MON_FEMALE,
-    }
+    },
     {
     .iv = 50,
     .lvl = 30,
@@ -894,10 +894,10 @@ static const struct TrainerMonCustomized sParty_Nox4[] = {
     .species = SPECIES_GLACEON,
     .ability = ABILITY_SNOW_CLOAK,
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
-    .heldItem = ITEM_NORMALIUM_Z
+    .heldItem = ITEM_NORMALIUM_Z,
     .gender TRAINER_MON_FEMALE,
     .moves = {MOVE_HAIL, MOVE_ICE_BEAM, MOVE_SHADOW_BALL, MOVE_CELEBRATE},
-    }
+    },
     {
     .iv = 255,
     .lvl = 56,
@@ -945,7 +945,7 @@ static const struct TrainerMonCustomized sParty_Nox4[] = {
     .species = SPECIES_LYCANROC,
     .ability = ABILITY_KEEN_EYE,
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
-    .heldItem = ITEM_ROCKY_HELMET
+    .heldItem = ITEM_ROCKY_HELMET,
     .gender TRAINER_MON_FEMALE,
     .moves = {MOVE_SWORDS_DANCE, MOVE_STONE_EDGE, MOVE_BRICK_BREAK, MOVE_ACCELEROCK},
     }
@@ -959,7 +959,7 @@ static const struct TrainerMonCustomized sJordan2[] = {
     .ability = ABILITY_INTIMIDATE,
     .nature = TRAINER_PARTY_NATURE(NATURE_IMPISH),
     .gender TRAINER_MON_MALE,
-    }
+    },
     {
     .iv = 50,
     .lvl = 21,
@@ -967,7 +967,7 @@ static const struct TrainerMonCustomized sJordan2[] = {
     .ability = ABILITY_HUSTLE,
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
     .gender TRAINER_MON_FEMALE,
-    }
+    },
     {
     .iv = 50,
     .lvl = 22,
@@ -987,11 +987,11 @@ static const struct TrainerMonCustomized sJordan3[] = {
     .heldItem = ITEM_LIFE_ORB,
     .nature = TRAINER_PARTY_NATURE(NATURE_IMPISH),
     .gender TRAINER_MON_MALE,
-    }
+    },
     {
     .iv = 100,
     .lvl = 39,
-    .species = SPECIES_ELECTROSS,
+    .species = SPECIES_EELEKTROSS,
     .ability = ABILITY_LEVITATE,
     .heldItem = ITEM_CHOICE_BAND,
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
@@ -1017,7 +1017,7 @@ static const struct TrainerMonCustomized sJordan3[] = {
     {
     .iv = 100,
     .lvl = 42,
-    .species = SPECIES_GOURGIEST,
+    .species = SPECIES_GOURGEIST,
     .ability = ABILITY_FRISK,
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
     .gender TRAINER_MON_FEMALE,
@@ -1031,7 +1031,7 @@ static const struct TrainerMonCustomized sJordan4[] = {
     .species = SPECIES_OVERQWIL,
     .ability = ABILITY_INTIMIDATE,
     .nature = TRAINER_PARTY_NATURE(NATURE_IMPISH),
-    .heldItem = ITEM_ROCKY_HELMET
+    .heldItem = ITEM_ROCKY_HELMET,
     .gender TRAINER_MON_MALE,
     .moves = {MOVE_TOXIC_SPIKES, MOVE_BARB_BARRAGE, MOVE_SPIKES, MOVE_LIQUIDATION},
     },
@@ -1081,7 +1081,7 @@ static const struct TrainerMonCustomized sJordan4[] = {
     .species = SPECIES_ALTARIA,
     .ability = ABILITY_NATURAL_CURE,
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
-    .heldItem = ITEM_ALTARIANITE
+    .heldItem = ITEM_ALTARIANITE,
     .gender TRAINER_MON_FEMALE,
     .moves = {MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_FLARE_BLITZ, MOVE_EARTHQUAKE},
     .friendship = 255,
