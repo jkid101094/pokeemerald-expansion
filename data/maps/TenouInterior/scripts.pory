@@ -1,4 +1,4 @@
-mapscripts TenouInterior {}
+mapscripts TenouInterior_MapScripts {}
 
 //Trainers
 script TrainerRandolph{

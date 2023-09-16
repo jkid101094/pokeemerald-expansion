@@ -48,7 +48,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "TrainerGunter",
       "flag": "0"
@@ -71,12 +71,12 @@
       "x": 36,
       "y": 1,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "TrainerJenette",
       "flag": "0"
     }
   ],
@@ -90,10 +90,10 @@
     },
     {
       "x": 30,
-      "y": 14,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_MT_TENOU",
-      "dest_warp_id": "0"
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

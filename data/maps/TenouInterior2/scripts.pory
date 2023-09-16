@@ -1,4 +1,4 @@
-mapscripts TenouInterior2 {}
+mapscripts TenouInterior2_MapScripts {}
 
 //Trainers
 script TrainerGunter{
@@ -18,7 +18,7 @@ text PostBattle_Gunter{
 }
 
 script TrainerJenette{
-trainerbattle_single(TRAINER_JENETTE, JenetteIntro, JenetteLoss)
+    trainerbattle_single(TRAINER_JENETTE, JenetteIntro, JenetteLoss)
     msgbox(PostBattle_Jenette, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }
@@ -38,7 +38,7 @@ text PostBattle_Jenette{
 script MushroomGuy{
     lockall
     faceplayer
-        if(flag(FLAG_MUSHROOM_POKEMON_TAKEN == TRUE))
+        if(flag(FLAG_MUSHROOM_POKEMON_TAKEN) == TRUE)
         {
             msgbox(format("Hello again, friend! How's my Morelull doing?"))
         }

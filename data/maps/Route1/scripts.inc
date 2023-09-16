@@ -53,7 +53,7 @@ Route1_Jogger::
 Route1_Item_Ball_Rare_Candy::
 	lockall
 	giveitem ITEM_RARE_CANDY, [ 1 ]
-	setflag FLAG_MT_TENOU_STONE_PLATE
+	setflag FLAG_ROUTE1_RARE_CANDY
 	releaseall
 	return
 

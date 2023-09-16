@@ -85,7 +85,7 @@ CollectorJulian::
 MtTenou_Item_Ball_Stone_Plate::
 	lockall
 	giveitem ITEM_STONE_PLATE, [ 1 ]
-	setflag FLAG_ROUTE1_RARE_CANDY
+	setflag FLAG_MT_TENOU_STONE_PLATE
 	releaseall
 	return
 
