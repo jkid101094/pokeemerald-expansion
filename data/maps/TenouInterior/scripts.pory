@@ -1,0 +1,33 @@
+mapscripts TenouInterior {}
+
+//Trainers
+script TrainerRandolph{
+trainerbattle_single(TRAINER_RANDOLPH, RandolphIntro, RandolphLoss)
+    msgbox(PostBattle_Randolph, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+text RandolphIntro{
+    "Hey, you're getting in the way of my\nresearch! Get lost!"
+}
+text RandolphLoss{
+    "Ugh... Fine!\nI guess you can stay."
+}
+text PostBattle_Randolph{
+    "Just stay out of my way, OK?\nDon't make me ask nicely."
+}
+
+//Items
+script Tenou_Interior_Item_Ball_Nugget{
+    lockall
+    giveitem(ITEM_NUGGET, [1])
+    setflag(FLAG_TENOU_INTERIOR_NUGGET)
+    releaseall
+}
+
+script Tenou_Interior_Item_Ball_Ether{
+    lockall
+    giveitem(ITEM_ETHER, [1])
+    setflag(FLAG_TENOU_INTERIOR_ETHER)
+    releaseall
+}

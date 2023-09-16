@@ -3961,8 +3961,8 @@ struct TrainerSlide
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
-    /* Put any trainer slide-in messages inside this array.
-    Example:
+    // Put any trainer slide-in messages inside this array.
+    //Example:
     {
         .trainerId = TRAINER_WALLY_VR_2,
         .isFrontierTrainer = FALSE,
@@ -3978,7 +3978,6 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgZMove = sText_Electromagnetism,
         .msgBeforeFirstTurn = sText_GravityIntensified,
     },
-    */
 };
 
 static u32 GetEnemyMonCount(u32 firstId, u32 lastId, bool32 onlyAlive)

@@ -1,0 +1,106 @@
+mapscripts TenouInterior2 {}
+
+//Trainers
+script TrainerGunter{
+trainerbattle_single(TRAINER_GUNTER, GunterIntro, GunterLoss)
+    msgbox(PostBattle_Gunter, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+text GunterIntro{
+    "I came in this cave to rest,\nbut there are monsters everywhere!"
+}
+text GunterLoss{
+    "What? You mean they're just Pokémon?"
+}
+text PostBattle_Gunter{
+    "Hahaha! I knew that!\nI wasn't scared at all!"
+}
+
+script TrainerJenette{
+trainerbattle_single(TRAINER_JENETTE, JenetteIntro, JenetteLoss)
+    msgbox(PostBattle_Jenette, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+text JenetteIntro{
+    "Teeheehe...\nDo you believe in ghosts, little girl?"
+}
+text JenetteLoss{
+    "Looks like I'm busted!"
+}
+text PostBattle_Jenette{
+    "Kekeke!\nYou best know who to call when you're\lall alone!"
+}
+
+//NPCs
+//Dear God, I hope this works so I don't have to edit it.
+script MushroomGuy{
+    lockall
+    faceplayer
+        if(flag(FLAG_MUSHROOM_POKEMON_TAKEN == TRUE))
+        {
+            msgbox(format("Hello again, friend! How's my Morelull doing?"))
+        }
+        else
+        {
+            if(flag(FLAG_MUSHROOM_MAN_TALKED_TO) == TRUE)
+            {
+                 msgbox(format("Oh! It's you again!\nCome to take my mushroom?"), MSGBOX_YESNO)
+                 if(var(VAR_RESULT) == YES)
+	            {
+                    hidemonpic
+                    givemon(SPECIES_MORELULL, 10, [ITEM_BIG_MUSHROOM])
+                    playfanfare(MUS_OBTAIN_ITEM)
+                    msgbox ("You recieved the Morelull!", MSGBOX_AUTOCLOSE) 
+                    waitfanfare
+                    setflag(FLAG_MUSHROOM_POKEMON_TAKEN)
+                    msgbox (format("Give the Morelull a nickname?"), MSGBOX_YESNO)
+                if(var(VAR_RESULT) == YES)
+	            {
+		            call (Common_EventScript_NameReceivedPartyMon)
+	            }
+                msgbox (format("Thanks for taking it off my hands!\nJust don't eat it, OK?"))
+
+	            }
+	            else
+	            {
+                    hidemonpic
+		            msgbox(format("Still no? OK. Suit yourself!"))
+	            }
+
+            }
+            else
+            {
+                setflag(FLAG_MUSHROOM_MAN_TALKED_TO)
+                msgbox(format("Me? A trainer? Heavens no!\nI just came to sample this cave's fine, delicate mushrooms!"))
+                msgbox(format("That reminds me... I found this mushroom awhile back. I don't think it's edible, so you can take it."))
+                playmoncry(SPECIES_MORELULL, CRY_MODE_NORMAL)
+	            showmonpic(SPECIES_MORELULL, 10, 3)
+	            waitmoncry
+                msgbox(format("How about it? Wanna take this thing off my hands? It's free!"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES)
+	    {
+            hidemonpic
+            givemon(SPECIES_MORELULL, 10, [ITEM_BIG_MUSHROOM])
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox ("You recieved the Morelull!", MSGBOX_AUTOCLOSE) 
+            waitfanfare
+            setflag(FLAG_MUSHROOM_POKEMON_TAKEN)
+            msgbox (format("Give the Morelull a nickname?"), MSGBOX_YESNO)
+                if(var(VAR_RESULT) == YES)
+	            {
+		            call (Common_EventScript_NameReceivedPartyMon)
+	            }
+            msgbox (format("Thanks for taking it off my hands!\nJust don't eat it, OK?"))
+
+	    }
+	    else
+	    {
+            hidemonpic
+		    msgbox(format("Fine, then. I'll keep it.\nMaybe I can put it in a stew or something."))
+	    }
+            }
+        }
+    releaseall
+}

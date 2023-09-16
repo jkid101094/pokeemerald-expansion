@@ -53,10 +53,10 @@
 #define FLAG_MT_TENOU_STONE_PLATE   0x29 // Unused Flag
 #define FLAG_MT_TENOU_TM39    0x2A // Unused Flag
 #define FLAG_TAXI_ENABLED    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
+#define FLAG_TENOU_INTERIOR_NUGGET    0x2C // Unused Flag
+#define FLAG_TENOU_INTERIOR_ETHER    0x2D // Unused Flag
+#define FLAG_MUSHROOM_MAN_TALKED_TO   0x2E // Unused Flag
+#define FLAG_MUSHROOM_POKEMON_TAKEN    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
