@@ -11923,7 +11923,7 @@
           "map": "MAP_TENOU_INTERIOR",
           "base_label": "gTenouInterior0",
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 4,
@@ -12022,7 +12022,7 @@
           "map": "MAP_TENOU_INTERIOR2",
           "base_label": "gTenouInterior20",
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 4,
@@ -12121,7 +12121,7 @@
           "map": "MAP_BURNING_BRIDGE",
           "base_label": "gBurningBridge0",
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 6,

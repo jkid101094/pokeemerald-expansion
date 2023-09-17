@@ -71,6 +71,7 @@
 #define MAP_TENOU_INTERIOR           (62 | (0 << 8))
 #define MAP_TENOU_INTERIOR2          (63 | (0 << 8))
 #define MAP_BURNING_BRIDGE           (64 | (0 << 8))
+#define MAP_ARDENT_ALLEY             (65 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
