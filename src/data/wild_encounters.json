@@ -11561,7 +11561,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 5,
@@ -11591,7 +11591,7 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 5,
@@ -11650,7 +11650,7 @@
           "map": "MAP_MT_TENOU",
           "base_label": "gMtTenou0",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 2,
@@ -11715,7 +11715,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 5,
@@ -11745,7 +11745,7 @@
             ]
           },
           "rock_smash_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 2,
@@ -11775,7 +11775,7 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 15,
@@ -11834,7 +11834,7 @@
           "map": "MAP_USAGI_BAY",
           "base_label": "gUsagiBay0",
           "water_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 5,
@@ -11864,7 +11864,7 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 5,
@@ -11923,7 +11923,7 @@
           "map": "MAP_TENOU_INTERIOR",
           "base_label": "gTenouInterior0",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 4,
@@ -11988,7 +11988,7 @@
             ]
           },
           "rock_smash_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 5,
@@ -12022,7 +12022,7 @@
           "map": "MAP_TENOU_INTERIOR2",
           "base_label": "gTenouInterior20",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 4,
@@ -12087,7 +12087,7 @@
             ]
           },
           "rock_smash_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 21,
             "mons": [
               {
                 "min_level": 5,
@@ -12113,6 +12113,75 @@
                 "min_level": 5,
                 "max_level": 15,
                 "species": "SPECIES_GEODUDE_ALOLAN"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_BURNING_BRIDGE",
+          "base_label": "gBurningBridge0",
+          "land_mons": {
+            "encounter_rate": 21,
+            "mons": [
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_SLUGMA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_VULPIX"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_SIZZLIPEDE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_SIZZLIPEDE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_KOFFING"
+              },
+              {
+                "min_level": 6,
+                "max_level": 10,
+                "species": "SPECIES_KOFFING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GROWLITHE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GROWLITHE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GROWLITHE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGBY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GROWLITHE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGBY"
               }
             ]
           }

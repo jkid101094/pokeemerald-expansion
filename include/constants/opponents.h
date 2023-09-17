@@ -39,8 +39,8 @@
 #define TRAINER_JORDAN_2                     35
 #define TRAINER_JORDAN_3                     36
 #define TRAINER_JORDAN_4                     37
-#define TRAINER_FELIX                        38
-#define TRAINER_VIOLET                       39
+#define TRAINER_TIMMOTHY                     38
+#define TRAINER_WALT                         39
 #define TRAINER_ROSE_2                       40
 #define TRAINER_ROSE_3                       41
 #define TRAINER_ROSE_4                       42

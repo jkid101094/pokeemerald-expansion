@@ -802,6 +802,9 @@ static const u8 sText_ItemRestoredSpeciesPP[] = _("{B_BUFF1} had its\nPP restore
 static const u8 sText_AtkTrappedDef[] = _("{B_ATK_NAME_WITH_PREFIX} trapped\nthe {B_DEF_NAME_WITH_PREFIX}!");
 static const u8 sText_MirrorHerbCopied[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} used its {B_LAST_ITEM}\nto mirror its opponent's stat changes!");
 
+//Custom
+static const u8 sLaura1LowHP[] = _("We're not done just yet!\nReady, Exeggcute?");
+
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
     [STRINGID_MIRRORHERBCOPIED - BATTLESTRINGS_TABLE_START] = sText_MirrorHerbCopied,
@@ -1457,6 +1460,10 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNFROSTBITEHEALED - BATTLESTRINGS_TABLE_START] = sText_PkmnFrostbiteHealed,
     [STRINGID_PKMNFROSTBITEHEALED2 - BATTLESTRINGS_TABLE_START] = sText_PkmnFrostbiteHealed2,
     [STRINGID_PKMNFROSTBITEHEALEDBY - BATTLESTRINGS_TABLE_START] = sText_PkmnFrostbiteHealedBy,
+
+    //Custom
+    [STRINGID_LAURA1LOWHP - BATTLESTRINGS_TABLE_START] = sLaura1LowHP,
+
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -3961,8 +3968,8 @@ struct TrainerSlide
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
-    // Put any trainer slide-in messages inside this array.
-    //Example:
+    /*Put any trainer slide-in messages inside this array.
+    Example:
     {
         .trainerId = TRAINER_WALLY_VR_2,
         .isFrontierTrainer = FALSE,
@@ -3978,7 +3985,22 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgZMove = sText_Electromagnetism,
         .msgBeforeFirstTurn = sText_GravityIntensified,
     },
+    */
+
+    //Laura
+    {
+        .trainerId = TRAINER_LAURA_1,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sLaura1LowHP,
+    },
+
+    //Asuka
+
+    //Nox
+
+    //Jordan
 };
+
 
 static u32 GetEnemyMonCount(u32 firstId, u32 lastId, bool32 onlyAlive)
 {

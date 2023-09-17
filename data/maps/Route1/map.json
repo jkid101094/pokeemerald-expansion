@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_HM_ITEM_BALL",
       "x": 47,
       "y": 22,
       "elevation": 0,
@@ -160,7 +160,7 @@
       "y": 12,
       "elevation": 0,
       "item": "ITEM_ANTIDOTE",
-      "flag": "FLAG_TEMP_2"
+      "flag": "FLAG_ROUTE1_ANTIDOTE"
     },
     {
       "type": "hidden_item",
@@ -168,7 +168,7 @@
       "y": 16,
       "elevation": 0,
       "item": "ITEM_PARALYZE_HEAL",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_ROUTE1_PARALYZE_HEAL"
     }
   ]
 }

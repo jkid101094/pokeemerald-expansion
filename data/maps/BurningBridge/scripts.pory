@@ -1,0 +1,94 @@
+mapscripts BurningBridge_MapScripts{}
+
+//Trainers
+script YoungsterTimmothy{
+    if(flag(FLAG_BURNING_BRIDGE_ROCKY_HELMET) == FALSE){
+        trainerbattle_single(TRAINER_TIMMOTHY, TimmothyIntro, TimmothyLoss)
+        msgbox(PostBattle_Timmothy, MSGBOX_AUTOCLOSE) 
+
+    }
+    else{
+        trainerbattle_single(TRAINER_TIMMOTHY, TimmothyBadIntro, TimmothyBadLoss)
+        msgbox(PostBattle_TimmothyBad, MSGBOX_AUTOCLOSE) 
+    }
+}
+
+script HikerWalt{
+    if(flag(FLAG_BURNING_BRIDGE_ROCKY_HELMET) == FALSE){
+        trainerbattle_single(TRAINER_WALT, WaltIntro, WaltLoss)
+        msgbox(PostBattle_Walt, MSGBOX_AUTOCLOSE) 
+
+    }
+    else{
+        trainerbattle_single(TRAINER_WALT, WaltBadIntro, WaltBadLoss)
+        msgbox(PostBattle_WaltBad, MSGBOX_AUTOCLOSE) 
+    }
+}
+
+text TimmothyIntro{
+    "Why aren't Lava types a thing?\nWouldn't that be cool?"
+}
+text TimmothyLoss{
+    "My Lava types!"
+}
+text PostBattle_Timmothy{
+    "I'll just catch better Lava types!\nThen you'll see!"
+}
+text TimmothyBadIntro{
+    "Woah. You actually stole that helmet?\nNot cool, man. Not cool."
+}
+text TimmothyBadLoss{
+    "..."
+}
+text PostBattle_TimmothyBad{
+    "My mom told me not to talk to bad people."
+}
+text WaltIntro{
+    "Wanna see my rocks roll?"
+}
+text WaltLoss{
+    "I guess you're more of a country person..."
+}
+text PostBattle_Walt{
+    "Wherever there's rocks, I roll!"
+}
+text WaltBadIntro{
+    "I can't believe you.\nHave you no shame?"
+}
+text WaltBadLoss{
+    "You may be good at battles,\nbut you're rotten to the core!"
+}
+text PostBattle_WaltBad{
+    "I don't waste my time with thieves."
+}
+
+//Items
+script BurningBridge_Item_Ball_Rocky_Helmet{
+    lockall
+    giveitem(ITEM_ROCKY_HELMET, [1])
+    setflag(FLAG_BURNING_BRIDGE_ROCKY_HELMET)
+    removeobject(1)
+    releaseall
+}
+
+//NPCs
+script DiggerGuy{
+    lockall
+    faceplayer
+    if(flag(FLAG_BURNING_BRIDGE_ROCKY_HELMET) == FALSE){
+        msgbox(format("I'm in charge of digging the tunnel from Route 1 to Tenou Village."))
+        msgbox(format("We call it the Burning Bridge 'cause, I mean just look at it!"))
+        msgbox(format("If you insist on playing in a construction site just make sure to watch your step."))
+        msgbox(format("It shouldn't surprise you; but lava isn't very forgiving. Don't wanna became charcoal now, do you?"))
+        msgbox(format("Anyway, run along now. I've got work to do."))
+        msgbox(format("Oh, and don't take that Rocky Helmet over there.\nIt was a late friends. I keep it close."))
+    }
+    else{
+        msgbox(format("Did you take that Rocky Helmet!?\nI'll have you know it was worn by my late friend."))
+        msgbox(format("Bah. Whatever. You may as well keep it now."))
+        msgbox(format("Possessions are fleeting anyway. My memories of her are forever."))
+        msgbox(format("..."))
+    }
+    releaseall
+
+}

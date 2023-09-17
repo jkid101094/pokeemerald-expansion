@@ -13,6 +13,7 @@ Tenou_Interior_Item_Ball_Nugget::
 	lockall
 	giveitem ITEM_NUGGET, [ 1 ]
 	setflag FLAG_TENOU_INTERIOR_NUGGET
+	removeobject 3
 	releaseall
 	return
 
@@ -21,6 +22,7 @@ Tenou_Interior_Item_Ball_Ether::
 	lockall
 	giveitem ITEM_ETHER, [ 1 ]
 	setflag FLAG_TENOU_INTERIOR_ETHER
+	removeobject 2
 	releaseall
 	return
 

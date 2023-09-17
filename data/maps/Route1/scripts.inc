@@ -54,6 +54,16 @@ Route1_Item_Ball_Rare_Candy::
 	lockall
 	giveitem ITEM_RARE_CANDY, [ 1 ]
 	setflag FLAG_ROUTE1_RARE_CANDY
+	removeobject 1
+	releaseall
+	return
+
+
+Route1_Item_Ball_TM26::
+	lockall
+	giveitem ITEM_TM26_EARTHQUAKE, [ 1 ]
+	setflag FLAG_ROUTE1_TM26
+	removeobject 4
 	releaseall
 	return
 

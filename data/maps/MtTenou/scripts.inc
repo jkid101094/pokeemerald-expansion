@@ -4,16 +4,18 @@ MtTenou_MapScripts::
 
 
 HideLaura::
-	removeobject 1
+	setflag FLAG_LAURA_VISIBLE
 	return
 
 
 LauraEncounter1::
 	lockall
 	playbgm MUS_ENCOUNTER_GIRL, FALSE
-	addobject 1
+	clearflag FLAG_LAURA_VISIBLE
 	msgbox LauraEncounter1_Text_0
 	waitmessage
+	clearflag FLAG_LAURA_VISIBLE
+	addobject 1
 	applymovement 1, LauraCome
 	applymovement OBJ_EVENT_ID_PLAYER, ArleFaceDown
 	waitmovement 1
@@ -30,6 +32,7 @@ LauraEncounter1::
 	applymovement 1, LauraGo
 	waitmovement 1
 	removeobject 1
+	setflag FLAG_LAURA_VISIBLE
 	releaseall
 	return
 
@@ -86,6 +89,7 @@ MtTenou_Item_Ball_Stone_Plate::
 	lockall
 	giveitem ITEM_STONE_PLATE, [ 1 ]
 	setflag FLAG_MT_TENOU_STONE_PLATE
+	removeobject 10
 	releaseall
 	return
 
@@ -94,6 +98,16 @@ MtTennou_Item_Ball_TM39::
 	lockall
 	giveitem ITEM_TM39_ROCK_TOMB, [ 1 ]
 	setflag FLAG_MT_TENOU_TM39
+	removeobject 9
+	releaseall
+	return
+
+
+MtTennou_Item_Ball_TM31::
+	lockall
+	giveitem ITEM_TM31_BRICK_BREAK, [ 1 ]
+	setflag FLAG_MT_TENOU_TM31
+	removeobject 11
 	releaseall
 	return
 

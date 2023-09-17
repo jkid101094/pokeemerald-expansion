@@ -1073,3 +1073,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TenouInterior/scripts.inc"
 
 	.include "data/maps/TenouInterior2/scripts.inc"
+
+	.include "data/maps/BurningBridge/scripts.inc"
