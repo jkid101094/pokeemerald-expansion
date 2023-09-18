@@ -1,0 +1,217 @@
+mapscripts TenouTownGym_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION{
+        setflag(FLAG_TENOU_GYM_CAROLANNE)
+        removeobject(9)
+        setflag(FLAG_TENOU_GYM_SAMANTHA)
+        removeobject(10)
+        setflag(FLAG_TENOU_GYM_CARTER)
+        removeobject(11)
+        setflag(FLAG_TENOU_GYM_HARLEY)
+        removeobject(12)
+    }
+}
+
+script TenouGymClerk{
+    lock
+    faceplayer
+    if(flag(FLAG_BADGE01_GET))
+{
+    msgbox("Clerk: Hello!\nWill you be dining with us today?\lOr are you perhaps a trainer?")
+    msgbox("Would you like to partake in the gym\nchallenge?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES)
+    {
+        msgbox(format("Very well! Here in Tenou Town we offer an all you can beat buffet!"))
+        msgbox(format("Take on three challengers in a row without healing, and you can face our florious head chef!"))
+        msgbox(format("How about it?\nStill ready to take the challenge?"))
+        if(var(VAR_RESULT) == YES)
+        {
+            msgbox(format("Well then! Take your place to the left of the room and I'll go grab your first dish!"))
+            waitmessage
+            fadescreen(FADE_TO_BLACK)
+            delay(20)
+            warpsilent(MAP_TENOU_TOWN_GYM, 10, 9)
+            applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceRight)
+            applymovement(8, Upx4)
+            clearflag(FLAG_TENOU_GYM_CAROLANNE)
+            addobject(9)
+            fadescreen(FADE_FROM_BLACK)
+            //First Battle: Carolanne
+            playse(SE_DOOR)
+            applymovement(9, NPCTakePlace)
+            waitmovement(9)
+            applymovement(9, NPCApproach)
+            applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproach)
+            waitmovement(9)
+            delay(60)
+            trainerbattle_single(TRAINER_CAROLANNE, CarolanneIntro, CarolanneLose)
+            playse(SE_APPLAUSE)
+            msgbox("Clerk: And our challenger clears the\nfirst course!\lWhat potential lies within our challenger?")
+            waitmessage
+            waitse
+
+            fadescreen(FADE_TO_BLACK)
+            delay(20)
+            warpsilent(MAP_TENOU_TOWN_GYM, 10, 9)
+            applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceRight)
+            setflag(FLAG_TENOU_GYM_CAROLANNE)
+            removeobject(9)
+            clearflag(FLAG_TENOU_GYM_SAMANTHA)
+            addobject(10)
+            fadescreen(FADE_FROM_BLACK)
+            //Second Battle: Samantha
+            playse(SE_DOOR)
+            applymovement(10, NPCTakePlace)
+            waitmovement(10)
+            applymovement(10, NPCApproach)
+            applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproach)
+            waitmovement(10)
+            delay(60)
+            trainerbattle_single(TRAINER_SAMANTHA, SamanthaIntro, SamanthaLose)
+            playse(SE_APPLAUSE)
+            msgbox("Clerk: And our challenger clears the\nsecond course!\pWhat a thrilling bout!")
+            waitmessage
+            waitse
+
+            fadescreen(FADE_TO_BLACK)
+            delay(20)
+            warpsilent(MAP_TENOU_TOWN_GYM, 10, 9)
+            applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceRight)
+            applymovement(8, Upx4)
+            setflag(FLAG_TENOU_GYM_SAMANTHA)
+            removeobject(10)
+            clearflag(FLAG_TENOU_GYM_CARTER)
+            addobject(11)
+            fadescreen(FADE_FROM_BLACK)
+            //Third Battle: Carter
+            playse(SE_DOOR)
+            applymovement(11, NPCTakePlace)
+            waitmovement(11)
+            applymovement(11, NPCApproach)
+            applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproach)
+            waitmovement(11)
+            delay(60)
+            trainerbattle_single(TRAINER_CARTER, CarterIntro, CarterLose)
+            playse(SE_APPLAUSE)
+            msgbox("Clerk: And our challenger topples the\nthird course!\pYou know what that means!\nTime for the main event\pBut first a meal for the Pokémon!")
+            waitmessage
+            waitse
+
+            fadescreen(FADE_TO_BLACK)
+            delay(20)
+            special(HealPlayerParty)
+            warpsilent(MAP_TENOU_TOWN_GYM, 10, 9)
+            applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceRight)
+            setflag(FLAG_TENOU_GYM_CARTER)
+            removeobject(11)
+            clearflag(FLAG_TENOU_GYM_HARLEY)
+            addobject(12)
+            fadescreen(FADE_FROM_BLACK)
+            //Final Battle: Harley
+            playse(SE_DOOR)
+            applymovement(12, NPCTakePlace)
+            waitmovement(12)
+            applymovement(12, NPCApproach)
+            applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproach)
+            waitmovement(12)
+            delay(60)
+            if(var(VAR_BADGES_OBTAINED) == 0){
+                trainerbattle_single(TRAINER_HARLEY_1, HarleyIntro, HarleyLose)
+            }
+            elif(var(VAR_BADGES_OBTAINED) == 1){
+                trainerbattle_single(TRAINER_HARLEY_2, HarleyIntro, HarleyLose)
+            }
+            elif(var(VAR_BADGES_OBTAINED) == 2){
+                trainerbattle_single(TRAINER_HARLEY_3, HarleyIntro, HarleyLose)
+            }
+            elif(var(VAR_BADGES_OBTAINED) == 3){
+                trainerbattle_single(TRAINER_HARLEY_4, HarleyIntro, HarleyLose)
+            }
+            elif(var(VAR_BADGES_OBTAINED) == 4){
+                trainerbattle_single(TRAINER_HARLEY_5, HarleyIntro, HarleyLose)
+            }
+            elif(var(VAR_BADGES_OBTAINED) == 5){
+                trainerbattle_single(TRAINER_HARLEY_6, HarleyIntro, HarleyLose)
+            }
+            elif(var(VAR_BADGES_OBTAINED) == 6){
+                trainerbattle_single(TRAINER_HARLEY_7, HarleyIntro, HarleyLose)
+            }
+            elif(var(VAR_BADGES_OBTAINED) == 7){
+                trainerbattle_single(TRAINER_HARLEY_8, HarleyIntro, HarleyLose)
+            }
+            playse(SE_APPLAUSE)
+            msgbox("Clerk: Our challenger has done it!\nThe head chef is down in a HUGE\lupset! Can you believe it, folks?")
+            waitmessage
+            waitse
+
+
+        }
+        else
+        {
+            goto(PlayerSaidNo)
+        }
+    }
+    else
+    {
+        goto(PlayerSaidNo)
+    }
+    
+}
+else{
+    msgbox("Thank you for stopping by!\nWe don't accept repeat challengers,\lbut please dine with us sometime!")
+}
+    
+    release
+
+    PlayerSaidNo:
+    msgbox("Very well.\nFeel free to return to dine with us\lanytime!")
+    return
+
+}
+
+movement PlayerFaceRight{
+    face_right
+}
+
+movement Upx4{
+    walk_up*4
+    face_down
+}
+
+movement NPCTakePlace{
+    walk_down*3
+    walk_right*5
+    walk_down*3
+}
+
+movement PlayerApproach{
+    walk_right*3
+}
+
+movement NPCApproach{
+    walk_left*3
+}
+
+text CarolanneIntro{
+    "I'm a feast for the eyes who makes\nfeasts for your thighs!"
+}
+text CarolanneLose{
+    "Guess your eyes weren't focused on\nme..."
+}
+text SamanthaIntro{
+    "I'm a five-star chef with a\nfive-star wanted level!"
+}
+text SamanthaLose{
+    "And now I'm a five-star chef\nwith a five loss streak..."
+}
+text CarterIntro{
+    "I'm hungry for battles! I'm insatiable!"
+}
+text CarterLose{
+    "For once I've had my fill."
+}
+text HarleyIntro{
+    "I must say, I'm impressed you passed my\nlittle gauntlet.\pHowever, your win streak ends here!\nI'm Harley, the fire of Mt. Tenou!\pAs the leader here, I accept your\nchallenge!\pCan you handle the heat of my kitchen?"
+}
+text HarleyLose{
+    "I must admit.\nThe taste of defeat is... bitter sweet."
+}

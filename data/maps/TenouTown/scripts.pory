@@ -1,0 +1,50 @@
+mapscripts TenouTown_MapScripts {}
+
+//NPCs
+script TenouScientist {
+    lock
+    faceplayer
+    msgbox(format("This machine helps regulate the magma chambers of Mt. Tenou."))
+    msgbox(format("By managing air and magma buildup, we can decrease the chance of erruption by roughly 30%!"))
+    msgbox(format("Of course, no system is perfect, and building our homes so close to the lava will always be dangerous."))
+    msgbox(format("It's quite risky business!"))
+    release
+}
+
+script TenouHiker {
+    lock
+    faceplayer
+    msgbox(format("The cable car leads down to Route 2."))
+    msgbox(format("Route 2 connects Tenou Town and Kino Village to Shingo City."))
+    msgbox(format("While you're here though, why not visit the gym? It's a real world class resteraunt."))
+    msgbox(format("Of course, you're free to proceed as you will."))
+    msgbox(format("Be careful, though. Once you step onto Route 2 you can't backtrack, so make sure you've done everything here you need to."))
+    release
+}
+
+//Items
+script Tenou_Town_Item_Ball_Ether{
+    lockall
+    giveitem(ITEM_ETHER, [1])
+    setflag(FLAG_TENOU_TOWN_ETHER)
+    removeobject(3)
+    releaseall
+}
+
+script Tenou_Town_Item_HM11{
+    lockall
+    giveitem(ITEM_TM11_SUNNY_DAY, [1])
+    setflag(FLAG_TENOU_TOWN_HM11)
+    removeobject(4)
+    releaseall
+}
+
+
+//Signs
+script TenouControlPanel{
+lock
+msgbox("-MT. TENOU MAGMA REGULATION TERMINAL-")
+msgbox("It's displaying numbers and other\nthings you can't understand...")
+release
+}
+

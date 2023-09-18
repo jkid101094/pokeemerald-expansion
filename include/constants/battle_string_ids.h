@@ -665,9 +665,32 @@
 #define STRINGID_SNOWSTOPPED                          663
 #define STRINGID_SNOWWARNINGSNOW                      664
 #define STRINGID_LAURA1LOWHP                          665
+#define STRINGID_LAURA2LOWHP                          666
+#define STRINGID_LAURA3LOWHP                          667
+#define STRINGID_LAURA4LOWHP                          668
+#define STRINGID_ASUKA1LOWHP                          669
+#define STRINGID_ASUKA2LOWHP                          670
+#define STRINGID_ASUKA3LOWHP                          671
+#define STRINGID_ASUKA4LOWHP                          672
+#define STRINGID_NOX1LOWHP                            673
+#define STRINGID_NOX2LOWHP                            674
+#define STRINGID_NOX3LOWHP                            675
+#define STRINGID_NOX4LOWHP                            676
+#define STRINGID_JORDAN1LOWHP                         677
+#define STRINGID_JORDAN2LOWHP                         678
+#define STRINGID_JORDAN3LOWHP                         679
+#define STRINGID_JORDAN4LOWHP                         680
+#define STRINGID_GYM1LOWHP                            681
+#define STRINGID_GYM2LOWHP                            682
+#define STRINGID_GYM3LOWHP                            683
+#define STRINGID_GYM4LOWHP                            684
+#define STRINGID_GYM5LOWHP                            685
+#define STRINGID_GYM6LOWHP                            686
+#define STRINGID_GYM7LOWHP                            687
+#define STRINGID_GYM8LOWHP                            688
 
-#define STRINGID_PLAYERWHITEOUT3                      666
-#define BATTLESTRINGS_COUNT                           667
+#define STRINGID_PLAYERWHITEOUT3                      689
+#define BATTLESTRINGS_COUNT                           690
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

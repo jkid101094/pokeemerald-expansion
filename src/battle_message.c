@@ -33,6 +33,7 @@
 #include "constants/trainers.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
+#include "trainer_see.h"
 
 struct BattleWindowText
 {
@@ -804,6 +805,7 @@ static const u8 sText_MirrorHerbCopied[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} us
 
 //Custom
 static const u8 sLaura1LowHP[] = _("We're not done just yet!\nReady, Exeggcute?");
+static const u8 sGym1LowHP[] = _("No! I won't lose so long\nas the fire in my soul still burns!");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -1463,6 +1465,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 
     //Custom
     [STRINGID_LAURA1LOWHP - BATTLESTRINGS_TABLE_START] = sLaura1LowHP,
+    [STRINGID_GYM1LOWHP - BATTLESTRINGS_TABLE_START] = sGym1LowHP,
 
 };
 
@@ -3999,6 +4002,49 @@ static const struct TrainerSlide sTrainerSlides[] =
     //Nox
 
     //Jordan
+
+    //Harley
+    //Harley
+    {
+        .trainerId = TRAINER_HARLEY_1,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sGym1LowHP,
+    },
+    {
+        .trainerId = TRAINER_HARLEY_2,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sGym1LowHP,
+    },
+    {
+        .trainerId = TRAINER_HARLEY_3,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sGym1LowHP,
+    },
+    {
+        .trainerId = TRAINER_HARLEY_4,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sGym1LowHP,
+    },
+    {
+        .trainerId = TRAINER_HARLEY_5,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sGym1LowHP,
+    },
+    {
+        .trainerId = TRAINER_HARLEY_6,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sGym1LowHP,
+    },
+    {
+        .trainerId = TRAINER_HARLEY_7,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sGym1LowHP,
+    },
+    {
+        .trainerId = TRAINER_HARLEY_8,
+        .isFrontierTrainer = FALSE,
+        .msgLastLowHp = sGym1LowHP,
+    },
 };
 
 

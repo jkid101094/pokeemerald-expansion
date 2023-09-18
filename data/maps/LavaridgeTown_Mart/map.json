@@ -59,15 +59,15 @@
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_LAVARIDGE_TOWN",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_TENOU_TOWN",
+      "dest_warp_id": "4"
     },
     {
       "x": 4,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_LAVARIDGE_TOWN",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_TENOU_TOWN",
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [
