@@ -81,12 +81,12 @@ script DiggerGuy{
         msgbox(format("If you insist on playing in a construction site just make sure to watch your step."))
         msgbox(format("It shouldn't surprise you; but lava isn't very forgiving. Don't wanna became charcoal now, do you?"))
         msgbox(format("Anyway, run along now. I've got work to do."))
-        msgbox(format("Oh, and don't take that Rocky Helmet over there.\nIt was a late friends. I keep it close."))
+        msgbox(format("Oh, and don't take that Rocky Helmet over there. It was a late friends. I keep it close."))
     }
     else{
         msgbox(format("Did you take that Rocky Helmet!?\nI'll have you know it was worn by my late friend."))
         msgbox(format("Bah. Whatever. You may as well keep it now."))
-        msgbox(format("Possessions are fleeting anyway. My memories of her are forever."))
+        msgbox(format("Possessions are fleeting anyway.\nMy memories of her are forever."))
         msgbox(format("..."))
     }
     releaseall

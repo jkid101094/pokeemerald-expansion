@@ -1,0 +1,65 @@
+mapscripts ArdentAlley_MapScripts{}
+
+//Trainers
+script LassAlisa{
+    trainerbattle_single(TRAINER_ALISA, AlisaIntro, AlisaLoss)
+        msgbox(PostBattle_Alisa, MSGBOX_AUTOCLOSE)
+    }
+
+script HikerMarco{
+    trainerbattle_single(TRAINER_MARCO, MarcoIntro, MarcoLoss)
+        msgbox(PostBattle_Marco, MSGBOX_AUTOCLOSE)
+    }
+
+text AlisaIntro{
+    "Gulpin are SO CUTE!\nDon't you agree?"
+}
+text AlisaLoss{
+    "Still cute, though."
+}
+text PostBattle_Alisa{
+    "Gulpin were born for contests,\nnot battles!"
+}
+
+text MarcoIntro{
+    "Sorry, girlie.\nBut you gotta be REAL MANLY to take\lthis heat!"
+}
+text MarcoLoss{
+    "My manly Pokémon!"
+}
+text PostBattle_Marco{
+    "Guess you're more manly than you look..."
+}
+
+//Items
+script ArdentAlley_Item_Ball_Choice_Scarf{
+    lockall
+    giveitem(ITEM_CHOICE_SCARF, [1])
+    setflag(FLAG_ARDENT_ALLEY_CHOICE_SCARF)
+    removeobject(2)
+    releaseall
+}
+
+//NPCs
+script ArdentAlleyNurse{
+    lock
+    faceplayer
+    msgbox("Hello there!\nWould you like me to heal your Pokémon?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES)
+    {
+        msgbox("Very well, then!\nI'll just take them for a second...")
+        fadescreen(FADE_TO_BLACK)
+        delay(40)
+        playfanfare(MUS_HEAL)
+        special(HealPlayerParty)
+        delay(180)
+        fadescreen(FADE_FROM_BLACK)
+        delay(40)
+        msgbox("All healed!\nStay safe out there!")
+        waitmessage
+    }
+    else{
+        msgbox("Very well.\nStay safe ouut there!")
+    }
+    release
+}

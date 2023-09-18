@@ -41,8 +41,8 @@
 #define TRAINER_JORDAN_4                     37
 #define TRAINER_TIMMOTHY                     38
 #define TRAINER_WALT                         39
-#define TRAINER_ROSE_2                       40
-#define TRAINER_ROSE_3                       41
+#define TRAINER_ALISA                        40
+#define TRAINER_MARCO                        41
 #define TRAINER_ROSE_4                       42
 #define TRAINER_ROSE_5                       43
 #define TRAINER_DUSTY_1                      44

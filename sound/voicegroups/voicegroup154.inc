@@ -19,16 +19,16 @@ voicegroup154::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_trumpet_72, 255, 165, 97, 236
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_tuba_51, 255, 165, 97, 236
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_string_ensemble_60, 255, 165, 97, 236
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_synth_bass, 255, 165, 97, 236
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 255, 165, 97, 236
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_tubular_bell, 255, 165, 97, 236
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_trumpet_72, 255, 165, 97, 236
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_trumpet_72, 255, 165, 97, 236
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

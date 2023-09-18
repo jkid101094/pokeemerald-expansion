@@ -81,8 +81,8 @@ DiggerGuy_Text_4:
 
 DiggerGuy_Text_5:
 	.string "Oh, and don't take that Rocky Helmet\n"
-	.string "over there.\n"
-	.string "It was a late friends. I keep it close.$"
+	.string "over there. It was a late friends. I\l"
+	.string "keep it close.$"
 
 DiggerGuy_Text_6:
 	.string "Did you take that Rocky Helmet!?\n"
@@ -94,8 +94,8 @@ DiggerGuy_Text_7:
 	.string "now.$"
 
 DiggerGuy_Text_8:
-	.string "Possessions are fleeting anyway. My\n"
-	.string "memories of her are forever.$"
+	.string "Possessions are fleeting anyway.\n"
+	.string "My memories of her are forever.$"
 
 DiggerGuy_Text_9:
 	.string "...$"

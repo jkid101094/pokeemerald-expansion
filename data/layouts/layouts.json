@@ -4500,6 +4500,26 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/ArdentAlley/border.bin",
       "blockdata_filepath": "data/layouts/ArdentAlley/map.bin"
+    },
+    {
+      "id": "LAYOUT_TENOU_TOWN",
+      "name": "TenouTown_Layout",
+      "width": 55,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/TenouTown/border.bin",
+      "blockdata_filepath": "data/layouts/TenouTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_TENOU_TOWN_GYM",
+      "name": "TenouTownGym_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TenouTownGym/border.bin",
+      "blockdata_filepath": "data/layouts/TenouTownGym/map.bin"
     }
   ]
 }

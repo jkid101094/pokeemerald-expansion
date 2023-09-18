@@ -1,3 +1,4 @@
+raw`
 .set LOCALID_NURSE, 1
 
 OldaleTown_PokemonCenter_1F_MapScripts::
@@ -52,43 +53,35 @@ OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub:
 	.string "the second floor was built recently.\p"
 	.string "I traded POKéMON right away.$"
 
-MichaelAfton::
-	lock
-	faceplayer
-	msgbox MichaelAfton_Text_0, MSGBOX_YESNO
-	compare VAR_RESULT, YES
-	goto_if_eq MichaelAfton_2
-	msgbox MichaelAfton_Text_2
-MichaelAfton_1:
-	release
-	return
+`
+//Trainers
+script MichaelAfton{
+    lock
+    faceplayer
+    msgbox("I'm training to face my father.\nWould you like to train with me?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox("Alright then.\nCome and face your fears!")
+        trainerbattle_no_intro(TRAINER_MICHAEL, MichaelLoss)
+        msgbox(PostBattle_Michael, MSGBOX_AUTOCLOSE)
+        fadescreen(FADE_TO_BLACK)
+        delay(20)
+        playse(SE_DOOR)
+        special(HealPlayerParty)
+        setflag(FLAG_MICHAEL1_DEFEATED)
+        removeobject(3)
+        delay(40)
+        fadescreen(FADE_FROM_BLACK)
+        }
+    else{
+        msgbox("I see...\nThat's too bad.\pPerhaps another time, then.")
+    }
+    release
+}
 
-MichaelAfton_2:
-	msgbox MichaelAfton_Text_1
-	trainerbattle_no_intro TRAINER_MICHAEL, MichaelLoss
-	msgbox PostBattle_Michael, MSGBOX_AUTOCLOSE
-	fadescreen FADE_TO_BLACK
-	delay 20
-	playse SE_DOOR
-	special HealPlayerParty
-	setflag FLAG_MICHAEL1_DEFEATED
-	removeobject 3
-	delay 40
-	fadescreen FADE_FROM_BLACK
-	goto MichaelAfton_1
+text MichaelLoss{
+    "I see...\nI still have a long road ahead of me."
+}
 
-
-MichaelAfton_Text_0:
-	.string "I'm training to face my father.\nWould you like to train with me?$"
-
-MichaelAfton_Text_1:
-	.string "Alright then.\nCome and face your fears!$"
-
-MichaelAfton_Text_2:
-	.string "I see...\nThat's too bad.\pPerhaps another time, then.$"
-
-MichaelLoss::
-	.string "I see...\nI still have a long road ahead of me.$"
-
-PostBattle_Michael::
-	.string "Even if I defeat my father he'll come\nback.\lHe ALWAYS comes back...$"
+text PostBattle_Michael{
+    "Even if I defeat my father he'll come\nback.\lHe ALWAYS comes back..."
+}

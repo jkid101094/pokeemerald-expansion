@@ -63,9 +63,9 @@
 #define FLAG_MT_TENOU_TM31    0x33 // Unused Flag
 #define FLAG_MT_TENOU_HARD_STONE   0x34 // Unused Flag
 #define FLAG_BURNING_BRIDGE_ROCKY_HELMET    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
+#define FLAG_ARDENT_ALLEY_CHOICE_SCARF    0x36 // Unused Flag
+#define FLAG_MICHAEL1_DEFEATED    0x37 // Unused Flag
+#define FLAG_MICHAEL2_DEFEATED    0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag

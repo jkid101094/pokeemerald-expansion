@@ -1110,34 +1110,34 @@ static const struct TrainerMonCustomized sParty_Walt[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose2[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Alisa[] = {
     {
-    .iv = 10,
-    .lvl = 26,
-    .species = SPECIES_SHROOMISH,
+    .iv = 0,
+    .lvl = 7,
+    .species = SPECIES_GULPIN,
     },
     {
-    .iv = 10,
-    .lvl = 26,
-    .species = SPECIES_ROSELIA,
+    .iv = 0,
+    .lvl = 7,
+    .species = SPECIES_GULPIN,
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose3[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Marco[] = {
     {
     .iv = 20,
-    .lvl = 28,
-    .species = SPECIES_SHROOMISH,
+    .lvl = 7,
+    .species = SPECIES_TYROGUE,
     },
     {
     .iv = 20,
-    .lvl = 28,
-    .species = SPECIES_GLOOM,
+    .lvl = 7,
+    .species = SPECIES_MAGBY,
     },
     {
     .iv = 20,
-    .lvl = 28,
-    .species = SPECIES_ROSELIA,
+    .lvl = 7,
+    .species = SPECIES_ELEKID,
     }
 };
 

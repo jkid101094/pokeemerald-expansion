@@ -101,7 +101,9 @@
     "TenouInterior",
     "TenouInterior2",
     "BurningBridge",
-    "ArdentAlley"
+    "ArdentAlley",
+    "TenouTown",
+    "TenouTownGym"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
