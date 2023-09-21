@@ -1176,7 +1176,7 @@ static const struct TrainerMonCustomized sParty_Harley1[] = {
     .iv = 50,
     .lvl = 10,
     .species = SPECIES_INDEEDEE_FEMALE,
-    .moves = {MOVE_CALM_MIND, MOVE_STORED_POWER, MOVE_ENCORE, MOVE_NONE},
+    .moves = {MOVE_DISARMING_VOICE, MOVE_STORED_POWER, MOVE_ENCORE, MOVE_NONE},
     },
     {
     .iv = 50,

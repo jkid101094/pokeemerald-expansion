@@ -93,6 +93,12 @@ const struct MonCoords gTrainerFrontPicCoords[] =
     [TRAINER_PIC_LEAF] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_RS_BRENDAN] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_RS_MAY] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_LAURA] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_ASUKA] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_NOX] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_JUSTIN] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_JUNO] = {.size = 8, .y_offset = 1},
+
 };
 
 #define TRAINER_SPRITE(trainerPic, sprite, size) [TRAINER_PIC_##trainerPic] = {sprite, size, TRAINER_PIC_##trainerPic}
@@ -192,9 +198,15 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
     TRAINER_SPRITE(LEAF, gTrainerFrontPic_Leaf, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(RS_BRENDAN, gTrainerFrontPic_RubySapphireBrendan, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(RS_MAY, gTrainerFrontPic_RubySapphireMay, TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(LAURA, gTrainerFrontPic_Laura, TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(ASUKA, gTrainerFrontPic_Asuka, TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(NOX, gTrainerFrontPic_Nox, TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(JUSTIN, gTrainerFrontPic_Justin, TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(JUNO, gTrainerFrontPic_JUNO, TRAINER_PIC_SIZE),
+
 };
 
-#define TRAINER_PAL(trainerPic, pal) [TRAINER_PIC_##trainerPic] = {pal, TRAINER_PIC_##trainerPic}
+#define TRAINER_PAL(trainerPic, pal) [TRAINER_PIC_##trainerPic] = {pal, _##trainerPic}
 
 const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
 {
@@ -291,4 +303,9 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(LEAF, gTrainerPalette_Leaf),
     TRAINER_PAL(RS_BRENDAN, gTrainerPalette_RubySapphireBrendan),
     TRAINER_PAL(RS_MAY, gTrainerPalette_RubySapphireMay),
+    TRAINER_PAL(LAURA, gTrainerPalette_Laura),
+    TRAINER_PAL(ASUKA, gTrainerPalette_ASUKA),
+    TRAINER_PAL(NOX, gTrainerPalette_Nox),
+    TRAINER_PAL(JUSTIN, gTrainerPalette_Justin),
+    TRAINER_PAL(JUNO, gTrainerPalette_Juno),
 };

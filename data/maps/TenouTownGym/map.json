@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
-      "x": 4,
+      "x": 7,
       "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -24,12 +24,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TenouGymNPC2",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 4,
+      "x": 7,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -37,12 +37,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TenouGymNPC3",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "x": 4,
+      "x": 7,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -50,12 +50,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TenouGymNPC1",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 4,
+      "x": 7,
       "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -63,12 +63,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TenouGymNPC4",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 25,
+      "x": 21,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -76,25 +76,25 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TenouGymNPC5",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 25,
-      "y": 8,
+      "x": 21,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TenouGymNPC6",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
-      "x": 25,
+      "x": 21,
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TenouGymNPC7",
       "flag": "0"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TenouGymClerk",
       "flag": "0"
     },
     {
@@ -167,8 +167,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FLAG_TENOU_GYM_HARLEY",
-      "flag": "0"
+      "script": "HarleyPostBattle",
+      "flag": "FLAG_TENOU_GYM_HARLEY"
     }
   ],
   "warp_events": [

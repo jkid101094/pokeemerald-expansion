@@ -1,57 +1,49 @@
 mapscripts TenouTownGym_MapScripts {
     MAP_SCRIPT_ON_TRANSITION{
         setflag(FLAG_TENOU_GYM_CAROLANNE)
-        removeobject(9)
         setflag(FLAG_TENOU_GYM_SAMANTHA)
-        removeobject(10)
         setflag(FLAG_TENOU_GYM_CARTER)
-        removeobject(11)
         setflag(FLAG_TENOU_GYM_HARLEY)
-        removeobject(12)
     }
 }
 
 script TenouGymClerk{
     lock
     faceplayer
-    if(flag(FLAG_BADGE01_GET))
+    if(flag(FLAG_BADGE01_GET) == FALSE)
 {
     msgbox("Clerk: Hello!\nWill you be dining with us today?\lOr are you perhaps a trainer?")
     msgbox("Would you like to partake in the gym\nchallenge?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES)
     {
         msgbox(format("Very well! Here in Tenou Town we offer an all you can beat buffet!"))
-        msgbox(format("Take on three challengers in a row without healing, and you can face our florious head chef!"))
-        msgbox(format("How about it?\nStill ready to take the challenge?"))
+        msgbox(format("Take on three challengers in a row without healing, and you can face our glorious head chef!"))
+        msgbox("How about it?\nStill ready to take the challenge?", MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES)
         {
             msgbox(format("Well then! Take your place to the left of the room and I'll go grab your first dish!"))
             waitmessage
             fadescreen(FADE_TO_BLACK)
-            delay(20)
-            warpsilent(MAP_TENOU_TOWN_GYM, 10, 9)
-            applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceRight)
+            applymovement(OBJ_EVENT_ID_PLAYER, GetIntoPosition)
             applymovement(8, Upx4)
             clearflag(FLAG_TENOU_GYM_CAROLANNE)
             addobject(9)
+            waitmovement(OBJ_EVENT_ID_PLAYER)
             fadescreen(FADE_FROM_BLACK)
             //First Battle: Carolanne
             playse(SE_DOOR)
             applymovement(9, NPCTakePlace)
             waitmovement(9)
-            applymovement(9, NPCApproach)
-            applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproach)
-            waitmovement(9)
             delay(60)
-            trainerbattle_single(TRAINER_CAROLANNE, CarolanneIntro, CarolanneLose)
+            msgbox(CarolanneIntro)
+            trainerbattle_no_intro(TRAINER_CAROLANNE, CarolanneLose)
             playse(SE_APPLAUSE)
-            msgbox("Clerk: And our challenger clears the\nfirst course!\lWhat potential lies within our challenger?")
+            msgbox("Clerk: And our challenger clears the\nfirst course!\lWhat potential lies within her?")
             waitmessage
             waitse
 
             fadescreen(FADE_TO_BLACK)
             delay(20)
-            warpsilent(MAP_TENOU_TOWN_GYM, 10, 9)
             applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceRight)
             setflag(FLAG_TENOU_GYM_CAROLANNE)
             removeobject(9)
@@ -62,21 +54,17 @@ script TenouGymClerk{
             playse(SE_DOOR)
             applymovement(10, NPCTakePlace)
             waitmovement(10)
-            applymovement(10, NPCApproach)
-            applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproach)
-            waitmovement(10)
             delay(60)
-            trainerbattle_single(TRAINER_SAMANTHA, SamanthaIntro, SamanthaLose)
+            msgbox(SamanthaIntro)
+            trainerbattle_no_intro(TRAINER_SAMANTHA, SamanthaLose)
             playse(SE_APPLAUSE)
-            msgbox("Clerk: And our challenger clears the\nsecond course!\pWhat a thrilling bout!")
+            msgbox("Clerk: And our challenger clears the\nsecond course!\pCan she be stopped!?")
             waitmessage
             waitse
 
             fadescreen(FADE_TO_BLACK)
             delay(20)
-            warpsilent(MAP_TENOU_TOWN_GYM, 10, 9)
             applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceRight)
-            applymovement(8, Upx4)
             setflag(FLAG_TENOU_GYM_SAMANTHA)
             removeobject(10)
             clearflag(FLAG_TENOU_GYM_CARTER)
@@ -86,20 +74,17 @@ script TenouGymClerk{
             playse(SE_DOOR)
             applymovement(11, NPCTakePlace)
             waitmovement(11)
-            applymovement(11, NPCApproach)
-            applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproach)
-            waitmovement(11)
             delay(60)
-            trainerbattle_single(TRAINER_CARTER, CarterIntro, CarterLose)
+            msgbox(CarterIntro)
+            trainerbattle_no_intro(TRAINER_CARTER, CarterLose)
             playse(SE_APPLAUSE)
-            msgbox("Clerk: And our challenger topples the\nthird course!\pYou know what that means!\nTime for the main event\pBut first a meal for the Pokémon!")
+            msgbox("Clerk: And our challenger topples the\nthird course!\pYou know what that means!\nTime for the main event!\pBut first a meal for the Pokémon!")
             waitmessage
             waitse
 
             fadescreen(FADE_TO_BLACK)
             delay(20)
             special(HealPlayerParty)
-            warpsilent(MAP_TENOU_TOWN_GYM, 10, 9)
             applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceRight)
             setflag(FLAG_TENOU_GYM_CARTER)
             removeobject(11)
@@ -110,39 +95,49 @@ script TenouGymClerk{
             playse(SE_DOOR)
             applymovement(12, NPCTakePlace)
             waitmovement(12)
-            applymovement(12, NPCApproach)
-            applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproach)
-            waitmovement(12)
             delay(60)
+            msgbox(HarleyIntro)
             if(var(VAR_BADGES_OBTAINED) == 0){
-                trainerbattle_single(TRAINER_HARLEY_1, HarleyIntro, HarleyLose)
+            trainerbattle_no_intro(TRAINER_HARLEY_1, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 1){
-                trainerbattle_single(TRAINER_HARLEY_2, HarleyIntro, HarleyLose)
+            trainerbattle_no_intro(TRAINER_HARLEY_2, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 2){
-                trainerbattle_single(TRAINER_HARLEY_3, HarleyIntro, HarleyLose)
+            trainerbattle_no_intro(TRAINER_HARLEY_3, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 3){
-                trainerbattle_single(TRAINER_HARLEY_4, HarleyIntro, HarleyLose)
+            trainerbattle_no_intro(TRAINER_HARLEY_4, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 4){
-                trainerbattle_single(TRAINER_HARLEY_5, HarleyIntro, HarleyLose)
+            trainerbattle_no_intro(TRAINER_HARLEY_5, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 5){
-                trainerbattle_single(TRAINER_HARLEY_6, HarleyIntro, HarleyLose)
+            trainerbattle_no_intro(TRAINER_HARLEY_6, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 6){
-                trainerbattle_single(TRAINER_HARLEY_7, HarleyIntro, HarleyLose)
+            trainerbattle_no_intro(TRAINER_HARLEY_7, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 7){
-                trainerbattle_single(TRAINER_HARLEY_8, HarleyIntro, HarleyLose)
+            trainerbattle_no_intro(TRAINER_HARLEY_8, HarleyLose)
             }
             playse(SE_APPLAUSE)
             msgbox("Clerk: Our challenger has done it!\nThe head chef is down in a HUGE\lupset! Can you believe it, folks?")
+            msgbox("Let's hear it for our winner today, Arle!")
             waitmessage
             waitse
-
+            //Give Badge
+            msgbox(format("As much as it sucks to say; you've beat me, so you've earned your badge."))
+            msgbox(format("As gym leader of Tenou City I confer unto you, the Zest Badge!."))
+            msgbox("Arle recieved the Zest Badge from\nHarley!")
+            call(Common_EventScript_PlayGymBadgeFanfare)
+            setflag(FLAG_DEFEATED_RUSTBORO_GYM)
+	        setflag(FLAG_BADGE01_GET)
+            msgbox(format("With that you have officially conqured the Tenou City gym! Congratulations!"))
+            msgbox(format("If I were you, I'd hop aboard the cable car and head for Shingo City next."))
+            msgbox(format("Good luck on the rest of your challenge!"))
+            release
+            end
 
         }
         else
@@ -158,17 +153,87 @@ script TenouGymClerk{
 }
 else{
     msgbox("Thank you for stopping by!\nWe don't accept repeat challengers,\lbut please dine with us sometime!")
+    release
+    end
 }
     
     release
 
     PlayerSaidNo:
     msgbox("Very well.\nFeel free to return to dine with us\lanytime!")
-    return
+    release
 
 }
 
+script HarleyPostBattle{
+    lock
+    faceplayer
+    msgbox(format("Harley: Good luck on the rest of your gym challenge!"))
+    release
+}
+
+//NPCs
+script TenouGymNPC1{
+    lock
+    faceplayer
+    msgbox(format("Gym leaders in this region don't focus on types, but themes.\pI hear Harley focuses on food and big eaters, for example."))
+    release
+}
+
+script TenouGymNPC2{
+    lock
+    faceplayer
+    msgbox(format("My boyfriend brought me here on a date, but he's too busy gawking at the waitresses to notice me!\pOh well. He's still better than my ex."))
+    release
+}
+
+script TenouGymNPC3{
+    lock
+    faceplayer
+    msgbox(format("Whoa ho! Isn't Harley just the cutest?"))
+    release
+}
+
+script TenouGymNPC4{
+    lock
+    faceplayer
+    msgbox(format("I came here for a meal, but apparently the make a show of gym challengers here too.\pI couldn't do that. I'd get stage fright!"))
+    release
+}
+
+script TenouGymNPC5{
+    lock
+    faceplayer
+    msgbox(format("This is my first time dining here, but this place is really swell.\pThe air conditioning is the best part!"))
+    release
+}
+
+script TenouGymNPC6{
+    lock
+    faceplayer
+    msgbox(format("The food here almost makes trekking up a volcano worth it. ALMOST."))
+    release
+}
+
+script TenouGymNPC7{
+    lock
+    faceplayer
+    msgbox(format("You gotta respect the moxie of the staff here. Holding a job on top of being gym trainers must be a lot of work. Makes my nine to five look like a cakewalk..."))
+    release
+}
+
 movement PlayerFaceRight{
+    face_right
+}
+
+movement PlayerResume{
+    walk_left
+    face_right
+}
+
+movement GetIntoPosition{
+    walk_left
+    walk_up
     face_right
 }
 
@@ -178,17 +243,18 @@ movement Upx4{
 }
 
 movement NPCTakePlace{
-    walk_down*3
-    walk_right*5
-    walk_down*3
+    walk_down*1
+    walk_right*2
+    walk_down*5
+    face_player
 }
 
 movement PlayerApproach{
-    walk_right*3
+    walk_right
 }
 
 movement NPCApproach{
-    walk_left*3
+    walk_left
 }
 
 text CarolanneIntro{
@@ -201,7 +267,7 @@ text SamanthaIntro{
     "I'm a five-star chef with a\nfive-star wanted level!"
 }
 text SamanthaLose{
-    "And now I'm a five-star chef\nwith a five loss streak..."
+    "And now I'm a five-star chef\nwith a five-star loss streak..."
 }
 text CarterIntro{
     "I'm hungry for battles! I'm insatiable!"
@@ -210,7 +276,7 @@ text CarterLose{
     "For once I've had my fill."
 }
 text HarleyIntro{
-    "I must say, I'm impressed you passed my\nlittle gauntlet.\pHowever, your win streak ends here!\nI'm Harley, the fire of Mt. Tenou!\pAs the leader here, I accept your\nchallenge!\pCan you handle the heat of my kitchen?"
+    "Harley: I must say, I'm impressed you \npassed my little gauntlet.\pHowever, your win streak ends here!\nI'm Harley, the fire of Mt. Tenou!\pAs the leader here, I accept your\nchallenge!\pCan you handle the heat of my kitchen?"
 }
 text HarleyLose{
     "I must admit.\nThe taste of defeat is... bitter sweet."

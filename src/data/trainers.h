@@ -100,7 +100,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_NOX,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOX,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_NOX
         .trainerName = _("Nox"),
         .items = {},
         .doubleBattle = FALSE,
@@ -388,7 +388,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_NOX,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOX,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_NOX,
         .trainerName = _("Nox"),
         .items = {},
         .doubleBattle = FALSE,
@@ -400,7 +400,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_NOX,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOX,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_NOX,
         .trainerName = _("Nox"),
         .items = {},
         .doubleBattle = FALSE,
@@ -412,7 +412,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_NOX,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOX,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_NOX,
         .trainerName = _("Nox"),
         .items = {ITEM_Z_POWER_RING},
         .doubleBattle = FALSE,
