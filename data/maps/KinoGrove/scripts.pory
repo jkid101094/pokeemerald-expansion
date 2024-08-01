@@ -1,0 +1,21 @@
+mapscripts KinoGrove {}
+
+script KinoGroveRunner{
+    lockall
+    faceplayer
+    msgbox("Kino Grove is great for exercise!\nThe air here is so fresh!")
+    releaseall
+}
+
+script KinoFatMan{
+    lockall
+    faceplayer
+    msgbox("The woods are full of all types of Pokémon!\nI think I saw a Petilil in there!")
+    releaseall
+}
+
+script KinoSign{
+    lockall
+    msgbox("-Kino Woods-")
+    releaseall
+}

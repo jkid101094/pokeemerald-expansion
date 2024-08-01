@@ -98,6 +98,7 @@ const struct MonCoords gTrainerFrontPicCoords[] =
     [TRAINER_PIC_NOX] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_JUSTIN] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_JUNO] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_SUMI] = {.size = 8, .y_offset = 1},
 
 };
 
@@ -202,11 +203,12 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
     TRAINER_SPRITE(ASUKA, gTrainerFrontPic_Asuka, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(NOX, gTrainerFrontPic_Nox, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(JUSTIN, gTrainerFrontPic_Justin, TRAINER_PIC_SIZE),
-    TRAINER_SPRITE(JUNO, gTrainerFrontPic_JUNO, TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(JUNO, gTrainerFrontPic_Juno, TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(SUMI, gTrainerFrontPic_Sumi, TRAINER_PIC_SIZE),
 
 };
 
-#define TRAINER_PAL(trainerPic, pal) [TRAINER_PIC_##trainerPic] = {pal, _##trainerPic}
+#define TRAINER_PAL(trainerPic, pal) [TRAINER_PIC_##trainerPic] = {pal, TRAINER_PIC_##trainerPic}
 
 const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
 {
@@ -304,8 +306,9 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(RS_BRENDAN, gTrainerPalette_RubySapphireBrendan),
     TRAINER_PAL(RS_MAY, gTrainerPalette_RubySapphireMay),
     TRAINER_PAL(LAURA, gTrainerPalette_Laura),
-    TRAINER_PAL(ASUKA, gTrainerPalette_ASUKA),
+    TRAINER_PAL(ASUKA, gTrainerPalette_Asuka),
     TRAINER_PAL(NOX, gTrainerPalette_Nox),
     TRAINER_PAL(JUSTIN, gTrainerPalette_Justin),
     TRAINER_PAL(JUNO, gTrainerPalette_Juno),
+    TRAINER_PAL(SUMI, gTrainerPalette_Sumi),
 };

@@ -1134,7 +1134,7 @@ static const struct InGameTrade sIngameTrades[] =
         .species = SPECIES_FEEBAS,
         .ivs = {31, 31, 31, 31, 31, 31},
         .abilityNum = 0,
-        .otId = 33106,
+        .otId = 20629,
         .conditions = {5, 5, 5, 5, 5},
         .personality = 0x20,
         .heldItem = ITEM_ADAMANT_MINT,
@@ -1143,6 +1143,22 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_SHELMET
+    },
+      [INGAME_TRADE_HAPPINY] =
+    {
+        .nickname = _("Bliss"),
+        .species = SPECIES_HAPPINY,
+        .ivs = {10, 10, 10, 10, 10, 10},
+        .abilityNum = 2,
+        .otId = 13352,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x20,
+        .heldItem = ITEM_LUCKY_EGG,
+        .mailNum = -1,
+        .otName = _("JOY"),
+        .otGender = FEMALE,
+        .sheen = 0,
+        .requestedSpecies = SPECIES_HAPPINY
     },
 };
 

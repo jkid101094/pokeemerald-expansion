@@ -72,8 +72,8 @@
 #define FLAG_TENOU_GYM_SAMANTHA   0x3C // Unused Flag
 #define FLAG_TENOU_GYM_CARTER   0x3D // Unused Flag
 #define FLAG_TENOU_GYM_HARLEY   0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
+#define FLAG_KINOWOODS_NUGGET    0x3F // Unused Flag
+#define FLAG_KINOWOODS_SCEPTILITE    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag

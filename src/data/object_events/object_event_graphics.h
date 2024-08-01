@@ -393,4 +393,6 @@ const u32 gObjectEventPic_Regieleki[] = INCBIN_U32("graphics/object_events/pics/
 const u16 gObjectEventPal_Regieleki[] = INCBIN_U16("graphics/object_events/palettes/regieleki.gbapal");
 const u32 gObjectEventPic_Regigigas[] = INCBIN_U32("graphics/object_events/pics/pokemon/regigigas.4bpp");
 const u16 gObjectEventPal_Regigigas[] = INCBIN_U16("graphics/object_events/palettes/regigigas.gbapal");
+const u32 gObjectEventPic_Sumi[] = INCBIN_U32("graphics/object_events/pics/people/sumi.4bpp");
+const u16 gObjectEventPal_Sumi[] = INCBIN_U16("graphics/object_events/palettes/sumi.gbapal");
 

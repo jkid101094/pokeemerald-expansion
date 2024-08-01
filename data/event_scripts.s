@@ -1083,3 +1083,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TenouTownGym/scripts.inc"
 
 	.include "data/maps/KinoGrove/scripts.inc"
+
+	.include "data/maps/KinoWoods/scripts.inc"
+
+	.include "data/maps/KinoVillage/scripts.inc"

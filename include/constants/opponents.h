@@ -54,11 +54,11 @@
 #define TRAINER_HARLEY_6                     50
 #define TRAINER_HARLEY_7                     51
 #define TRAINER_HARLEY_8                     52
-#define TRAINER_GABBY_AND_TY_3               53
-#define TRAINER_GABBY_AND_TY_4               54
-#define TRAINER_GABBY_AND_TY_5               55
-#define TRAINER_GABBY_AND_TY_6               56
-#define TRAINER_LOLA_1                       57
+#define TRAINER_GEOFF                        53
+#define TRAINER_BECK                         54
+#define TRAINER_DARREN                       55
+#define TRAINER_LEN                          56
+#define TRAINER_KELDA_1                      57
 #define TRAINER_AUSTINA                      58
 #define TRAINER_GWEN                         59
 #define TRAINER_LOLA_2                       60
@@ -415,7 +415,7 @@
 #define TRAINER_ROBERT_4                    411
 #define TRAINER_ROBERT_5                    412
 #define TRAINER_ALEX                        413
-#define TRAINER_BECK                        414
+#define TRAINER_KYLE                        414
 #define TRAINER_YASU                        415
 #define TRAINER_TAKASHI                     416
 #define TRAINER_DIANNE                      417

@@ -15,6 +15,7 @@
 #define INGAME_TRADE_SHELMET    7
 #define INGAME_TRADE_KARRABLAST 8
 #define INGAME_TRADE_FEEBAS     9
+#define INGAME_TRADE_HAPPINY    10
 
 
 // Return values for CanTradeSelectedMon and CanSpinTradeMon

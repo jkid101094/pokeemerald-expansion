@@ -4524,12 +4524,32 @@
     {
       "id": "LAYOUT_KINO_GROVE",
       "name": "KinoGrove_Layout",
-      "width": 50,
+      "width": 54,
       "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/KinoGrove/border.bin",
       "blockdata_filepath": "data/layouts/KinoGrove/map.bin"
+    },
+    {
+      "id": "LAYOUT_KINO_WOODS",
+      "name": "KinoWoods_Layout",
+      "width": 54,
+      "height": 69,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/KinoWoods/border.bin",
+      "blockdata_filepath": "data/layouts/KinoWoods/map.bin"
+    },
+    {
+      "id": "LAYOUT_KINO_VILLAGE",
+      "name": "KinoVillage_Layout",
+      "width": 54,
+      "height": 69,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/KinoVillage/border.bin",
+      "blockdata_filepath": "data/layouts/KinoVillage/map.bin"
     }
   ]
 }

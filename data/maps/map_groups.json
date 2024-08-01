@@ -104,7 +104,9 @@
     "ArdentAlley",
     "TenouTown",
     "TenouTownGym",
-    "KinoGrove"
+    "KinoGrove",
+    "KinoWoods",
+    "KinoVillage"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

@@ -1,0 +1,118 @@
+mapscripts KinoWoods {}
+
+//Story
+script AsukaEncounter1{
+    lockall
+    playbgm(MUS_ENCOUNTER_GIRL, FALSE)
+    msgbox("Jordan? Jordan!?\nWhere are you?")
+    waitmessage
+    
+    releaseall
+}
+
+//Signs
+script KinoWoods_sign1{
+    lockall
+    msgbox("NOTICE: Please be on the lookout for lost\nitems.\pIf found please return to the Usagi Bay lost\nand found.\pThank you and watch your step!")
+    releaseall
+    }
+
+script KinoWoods_sign2{
+    lockall
+    msgbox("NOTICE: Please be on the lookout for lost\nitems.\pIf found please return to the Usagi Bay lost\nand found.\pThank you and watch your step!")
+    releaseall
+    }
+
+script KinoWoods_sign3{
+    lockall
+    msgbox("NOTICE: Please be on the lookout for lost\nitems.\pIf found please return to the Usagi Bay lost\nand found.\pThank you and watch your step!")
+    releaseall
+    }
+
+script KinoWoods_sign4{
+    lockall
+    msgbox("NOTICE: Please be on the lookout for lost\nitems.\pIf found please return to the Usagi Bay lost\nand found.\pThank you and watch your step!")
+    releaseall
+    }
+
+//Trainers
+script TrainerBeck{
+    trainerbattle_single(TRAINER_BECK, BeckIntro, BeckLoss)
+    msgbox(PostBattle_Beck, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+script TrainerDarren{
+    trainerbattle_single(TRAINER_Darren, DarrenIntro, DarrenLoss)
+    msgbox(PostBattle_Darren, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+script TrainerLen{
+    trainerbattle_single(TRAINER_LEN, LenIntro, LenLoss)
+    msgbox(PostBattle_Len, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+script TrainerKelda{
+    trainerbattle_single(TRAINER_KELDA, KeldaIntro, KeldaLoss)
+    msgbox(PostBattle_Kelda, MSGBOX_AUTOCLOSE) 
+	waitmessage
+}
+
+text BeckIntro{
+    "Get ready, peon!\nThe Beckoning is nigh!"
+}
+text BeckLoss{
+    "Curses! Foiled again!"
+}
+text PostBattle_Beck{
+    "Just you wait, you goody two\nshoes...\pBeck will rise again!"
+}
+
+text DarrenIntro{
+    "Have you spoken to that guy by\nthe entrance? I think he's nuts!"
+}
+text DarrenLoss{
+    "Aww! My Castcoon!"
+}
+text PostBattle_Darren{
+    "I'd honestly feel better if that\nguy would just leave..."
+}
+
+text LenIntro{
+    "You think you're ready?\nI'll be the judge of that!"
+}
+text LenLoss{
+    "Drat!\nSquashed again!"
+}
+text PostBattle_Len{
+    "Ready for what?\nWhat lies ahead, of course!"
+}
+
+text KeldaIntro{
+    "You won't make a monkey out of me!"
+}
+text KeldaLoss{
+    "Ooo ooo eee eee!"
+}
+text PostBattle_Kelda{
+    "Ugh! So embarassing!"
+}
+
+//Item Balls
+script KinoWoods_Item_Ball_Rare_Candy{
+    lockall
+    giveitem(ITEM_NUGGET, [1])
+    setflag(FLAG_KINOWOODS_NUGGET)
+    removeobject(7)
+    releaseall
+}
+
+script Route1_Item_Ball_Sceptilite{
+    lockall
+    giveitem(ITEM_SCEPTILITE, [1])
+    setflag(FLAG_KINOWOODS_SCEPTILITE)
+    removeobject(6)
+    releaseall
+}

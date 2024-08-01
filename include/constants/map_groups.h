@@ -75,6 +75,8 @@
 #define MAP_TENOU_TOWN               (66 | (0 << 8))
 #define MAP_TENOU_TOWN_GYM           (67 | (0 << 8))
 #define MAP_KINO_GROVE               (68 | (0 << 8))
+#define MAP_KINO_WOODS               (69 | (0 << 8))
+#define MAP_KINO_VILLAGE             (70 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
