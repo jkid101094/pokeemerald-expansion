@@ -43,7 +43,7 @@ script TrainerBeck{
 }
 
 script TrainerDarren{
-    trainerbattle_single(TRAINER_Darren, DarrenIntro, DarrenLoss)
+    trainerbattle_single(TRAINER_DARREN, DarrenIntro, DarrenLoss)
     msgbox(PostBattle_Darren, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }
