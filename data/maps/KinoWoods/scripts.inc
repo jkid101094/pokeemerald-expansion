@@ -1,4 +1,4 @@
-KinoWoods::
+KinoWoods_MapScripts::
 	.byte 0
 
 
@@ -47,7 +47,7 @@ TrainerBeck::
 
 
 TrainerDarren::
-	trainerbattle_single TRAINER_Darren, DarrenIntro, DarrenLoss
+	trainerbattle_single TRAINER_DARREN, DarrenIntro, DarrenLoss
 	msgbox PostBattle_Darren, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
@@ -61,7 +61,7 @@ TrainerLen::
 
 
 TrainerKelda::
-	trainerbattle_single TRAINER_KELDA, KeldaIntro, KeldaLoss
+	trainerbattle_single TRAINER_KELDA_1, KeldaIntro, KeldaLoss
 	msgbox PostBattle_Kelda, MSGBOX_AUTOCLOSE
 	waitmessage
 	return

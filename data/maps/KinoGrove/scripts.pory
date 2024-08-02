@@ -1,4 +1,4 @@
-mapscripts KinoGrove {}
+mapscripts KinoGrove_MapScripts {}
 
 script KinoGroveRunner{
     lockall

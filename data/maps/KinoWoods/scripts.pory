@@ -1,4 +1,4 @@
-mapscripts KinoWoods {}
+mapscripts KinoWoods_MapScripts {}
 
 //Story
 script AsukaEncounter1{
@@ -55,7 +55,7 @@ script TrainerLen{
 }
 
 script TrainerKelda{
-    trainerbattle_single(TRAINER_KELDA, KeldaIntro, KeldaLoss)
+    trainerbattle_single(TRAINER_KELDA_1, KeldaIntro, KeldaLoss)
     msgbox(PostBattle_Kelda, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }

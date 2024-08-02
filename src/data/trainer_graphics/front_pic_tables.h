@@ -204,7 +204,7 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
     TRAINER_SPRITE(NOX, gTrainerFrontPic_Nox, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(JUSTIN, gTrainerFrontPic_Justin, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(JUNO, gTrainerFrontPic_Juno, TRAINER_PIC_SIZE),
-    TRAINER_SPRITE(SUMI, , TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(SUMI, gTrainerFrontPic_Sumi, TRAINER_PIC_SIZE),
 
 };
 
