@@ -59,7 +59,7 @@ script ArdentAlleyNurse{
         waitmessage
     }
     else{
-        msgbox("Very well.\nStay safe ouut there!")
+        msgbox("Very well.\nStay safe out there!")
     }
     release
 }

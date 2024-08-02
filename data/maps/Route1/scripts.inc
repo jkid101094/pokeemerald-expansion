@@ -89,11 +89,18 @@ TrainerBart::
 	return
 
 
+TrainerAustin::
+	trainerbattle_single TRAINER_AUSTIN, AustinIntro, AustinLoss
+	msgbox PostBattle_Austin, MSGBOX_AUTOCLOSE
+	waitmessage
+	return
+
+
 route1_sign1_Text_0:
 	.string "-ROUTE 1-\nNORTH: MT. TENOU\lEAST: KINO GROVE\lSOUTH: USAGI BAY$"
 
 route1_sign2_Text_0:
-	.string "NOTICE: Please be on the lookout for lost\nitems.\pIf found please return to the Usagi Bay lost\nand found.\pThank you and watch your step!$"
+	.string "NOTICE: Please be on the lookout for lost\nitems.\pIf found please return to the Usagi Bay\nlost and found.\pThank you and watch your step!$"
 
 route1_sign3_Text_0:
 	.string "KINO GROVE: Beware of bugs!$"
@@ -147,3 +154,12 @@ BartLoss::
 
 PostBattle_Bart::
 	.string "I love nuzlocking, but man...\nI hate releasing my Pokémon...$"
+
+AustinIntro::
+	.string "Bwwah! Did I scare ya?$"
+
+AustinLoss::
+	.string "I'm spooked!$"
+
+PostBattle_Austin::
+	.string "I need to work on my pranks.$"

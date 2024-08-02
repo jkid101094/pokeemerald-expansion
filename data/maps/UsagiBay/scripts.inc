@@ -629,7 +629,7 @@ StoneShop_Text_1:
 	.string "We hope to see you again!$"
 
 BattleShop_Text_0:
-	.string "Hi and welcome to Chasey Supply.\nHow may I help you?$"
+	.string "Hi and welcome to Chansey Supply.\nHow may I help you?$"
 
 BallShop_Text_0:
 	.string "Hi and welcome to the Ball Emporium.\nHow may I help you?$"

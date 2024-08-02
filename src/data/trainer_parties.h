@@ -1447,11 +1447,11 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Kelda1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Austina[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Austin[] = {
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_MARILL,
+    .lvl = 3,
+    .species = SPECIES_NINCADA,
     }
 };
 

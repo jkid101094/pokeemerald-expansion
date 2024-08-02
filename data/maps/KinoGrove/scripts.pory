@@ -10,7 +10,7 @@ script KinoGroveRunner{
 script KinoFatMan{
     lockall
     faceplayer
-    msgbox("The woods are full of all types of Pokémon!\nI think I saw a Petilil in there!")
+    msgbox("The woods are full of all types of\nPokémon!\pI think I saw a Petilil in there!")
     releaseall
 }
 
@@ -18,4 +18,28 @@ script KinoSign{
     lockall
     msgbox("-Kino Woods-")
     releaseall
+}
+
+//NPCs
+script KinoGroveNurse{
+    lock
+    faceplayer
+    msgbox("Hello there!\nWould you like me to heal your Pokémon?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES)
+    {
+        msgbox("Very well, then!\nI'll just take them for a second...")
+        fadescreen(FADE_TO_BLACK)
+        delay(40)
+        playfanfare(MUS_HEAL)
+        special(HealPlayerParty)
+        delay(180)
+        fadescreen(FADE_FROM_BLACK)
+        delay(40)
+        msgbox("All healed!\nStay safe out there!")
+        waitmessage
+    }
+    else{
+        msgbox("Very well.\nStay safe out there!")
+    }
+    release
 }

@@ -58,7 +58,7 @@ ArdentAlleyNurse_Text_2:
 	.string "All healed!\nStay safe out there!$"
 
 ArdentAlleyNurse_Text_3:
-	.string "Very well.\nStay safe ouut there!$"
+	.string "Very well.\nStay safe out there!$"
 
 AlisaIntro::
 	.string "Gulpin are SO CUTE!\nDon't you agree?$"

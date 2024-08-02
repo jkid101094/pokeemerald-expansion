@@ -59,7 +59,7 @@
 #define TRAINER_DARREN                       55
 #define TRAINER_LEN                          56
 #define TRAINER_KELDA_1                      57
-#define TRAINER_AUSTINA                      58
+#define TRAINER_AUSTIN                       58
 #define TRAINER_GWEN                         59
 #define TRAINER_LOLA_2                       60
 #define TRAINER_LOLA_3                       61

@@ -313,7 +313,7 @@ end
 script BattleShop{
     lock
     faceplayer
-    message("Hi and welcome to Chasey Supply.\nHow may I help you?")
+    message("Hi and welcome to Chansey Supply.\nHow may I help you?")
     waitmessage
     if(var(VAR_BADGES_OBTAINED)==0)
     {

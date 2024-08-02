@@ -25,11 +25,48 @@ KinoSign::
 	return
 
 
+KinoGroveNurse::
+	lock
+	faceplayer
+	msgbox KinoGroveNurse_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq KinoGroveNurse_2
+	msgbox KinoGroveNurse_Text_3
+KinoGroveNurse_1:
+	release
+	return
+
+KinoGroveNurse_2:
+	msgbox KinoGroveNurse_Text_1
+	fadescreen FADE_TO_BLACK
+	delay 40
+	playfanfare MUS_HEAL
+	special HealPlayerParty
+	delay 180
+	fadescreen FADE_FROM_BLACK
+	delay 40
+	msgbox KinoGroveNurse_Text_2
+	waitmessage
+	goto KinoGroveNurse_1
+
+
 KinoGroveRunner_Text_0:
 	.string "Kino Grove is great for exercise!\nThe air here is so fresh!$"
 
 KinoFatMan_Text_0:
-	.string "The woods are full of all types of Pokémon!\nI think I saw a Petilil in there!$"
+	.string "The woods are full of all types of\nPokémon!\pI think I saw a Petilil in there!$"
 
 KinoSign_Text_0:
 	.string "-Kino Woods-$"
+
+KinoGroveNurse_Text_0:
+	.string "Hello there!\nWould you like me to heal your Pokémon?$"
+
+KinoGroveNurse_Text_1:
+	.string "Very well, then!\nI'll just take them for a second...$"
+
+KinoGroveNurse_Text_2:
+	.string "All healed!\nStay safe out there!$"
+
+KinoGroveNurse_Text_3:
+	.string "Very well.\nStay safe out there!$"
