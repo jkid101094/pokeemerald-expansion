@@ -33,6 +33,7 @@ LauraEncounter1::
 	waitmovement 1
 	removeobject 1
 	setflag FLAG_LAURA_VISIBLE
+	setflag FLAG_ASUKA_VISIBLE
 	releaseall
 	return
 
@@ -194,7 +195,7 @@ JulianIntro::
 	.string "Hehe... Want to see my collection?$"
 
 JulianLoss::
-	.string "I should be adding YOU to my\ncollection...$"
+	.string "But they were mint condition!$"
 
 PostBattle_Julian::
-	.string "My collection of what? Pokémon, of course.\nWhat did you think I meant?$"
+	.string "Do you know how much I paid for\nthese?$"

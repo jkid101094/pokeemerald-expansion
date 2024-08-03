@@ -274,7 +274,7 @@ static const struct TrainerMonCustomized sParty_Asuka1[] = {
     {
     .iv = 0,
     .lvl = 7,
-    .species = SPECIES_RABOOT,
+    .species = SPECIES_SCORBUNNY,
     .gender TRAINER_MON_FEMALE,
     },
     {

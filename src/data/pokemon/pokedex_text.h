@@ -443,7 +443,7 @@ const u8 gTentacruelPokedexText[] = _(
 
 const u8 gGeodudePokedexText[] = _(
     "In ancient times children would chuck\n"
-    "this Pokémon at onee annother for fun.\n"
+    "this Pokémon at one another for fun.\n"
     "What a terrible idea that was.");
 
 const u8 gGravelerPokedexText[] = _(

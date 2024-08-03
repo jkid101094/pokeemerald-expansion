@@ -32,6 +32,7 @@ script LauraEncounter1{
     waitmovement(1)
     removeobject(1)
     setflag(FLAG_LAURA_VISIBLE)
+    setflag(FLAG_ASUKA_VISIBLE)
     releaseall
 
 }
@@ -111,10 +112,10 @@ text JulianIntro{
     "Hehe... Want to see my collection?"
 }
 text JulianLoss{
-    "I should be adding YOU to my\ncollection..."
+    "But they were mint condition!"
 }
 text PostBattle_Julian{
-    "My collection of what? Pokémon, of course.\nWhat did you think I meant?"
+    "Do you know how much I paid for\nthese?"
 }
 
 //Items

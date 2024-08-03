@@ -1,13 +1,89 @@
 mapscripts KinoWoods_MapScripts {}
 
 //Story
-script AsukaEncounter1{
+script AsukaEncounter1Left{
     lockall
     playbgm(MUS_ENCOUNTER_GIRL, FALSE)
+    applymovement(1, AsukaSearch)
+    waitmovement(1)
     msgbox("Jordan? Jordan!?\nWhere are you?")
     waitmessage
-    
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+    applymovement(1, AsukaApproachLeft)
+    waitmovement(1)
+    msgbox(format("Oh, Arle! You finally got your first Pokémon, huh?"))
+    msgbox(format("Jordan got tired of waiting on you and took off. I tried to follow her to make sure she was safe, but she disappeared too quickly."))
+    msgbox(format("I'm getting a little burnt out on searching so why don't we have a quick battle?"))
+    msgbox(format("I caught a new teammate on Mt. Tenou and I'm dying to let it loose."))
+    msgbox(format("It's decided then! Ready or not, Arle! Here we come!"))
+    trainerbattle_no_intro(TRAINER_ASUKA_1, AsukaLoseText)
+    msgbox(format("It's good to see you're already getting the hang of battling. You'll keep your rivals sharp, I'm sure."))
+    msgbox(format("Anyway I gotta keep looking for Jordan. Let's all catch up later, alright?"))
+    msgbox(format("See ya!"))
+    setvar(VAR_STORY_PROGRESSION, 4)
+    applymovement(1, AsukaLeave)
+    waitmovement(1)
+    removeobject(1)
+    setflag(FLAG_LAURA_VISIBLE)
+    setflag(FLAG_ASUKA_VISIBLE)
     releaseall
+}
+
+script AsukaEncounter1Right{
+    lockall
+    playbgm(MUS_ENCOUNTER_GIRL, FALSE)
+    applymovement(1, AsukaSearch)
+    waitmovement(1)
+    msgbox("Jordan? Jordan!?\nWhere are you?")
+    waitmessage
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(1)
+    applymovement(1, AsukaApproachRight)
+    waitmovement(1)
+    msgbox(format("Oh, Arle! You finally got your first Pokémon, huh?"))
+    msgbox(format("Jordan got tired of waiting on you and took off. I tried to follow her to make sure she was safe, but she disappeared too quickly."))
+    msgbox(format("I'm getting a little burnt out on searching so why don't we have a quick battle?"))
+    msgbox(format("I caught a new teammate on Mt. Tenou and I'm dying to let it loose."))
+    msgbox(format("It's decided then! Ready or not, Arle! Here we come!"))
+    trainerbattle_no_intro(TRAINER_ASUKA_1, AsukaLoseText)
+    msgbox(format("It's good to see you're already getting the hang of battling. You'll keep your rivals sharp, I'm sure."))
+    msgbox(format("Anyway I gotta keep looking for Jordan. Let's all catch up later, alright?"))
+    msgbox(format("See ya!"))
+    setvar(VAR_STORY_PROGRESSION, 4)
+    applymovement(1, AsukaLeave)
+    waitmovement(1)
+    removeobject(1)
+    setflag(FLAG_LAURA_VISIBLE)
+    setflag(FLAG_ASUKA_VISIBLE)
+    releaseall
+}
+
+//Asuka Movement
+text AsukaLoseText {
+    "I see you're already coming into\nyour own."
+}
+
+movement AsukaSearch{
+    face_left
+    delay_16
+    face_right
+    delay_16
+    jump_in_place_up
+    delay_16
+}
+
+movement AsukaApproachLeft{
+    walk_down*2
+}
+
+movement AsukaApproachRight{
+    walk_right
+    walk_down*2
+}
+
+movement AsukaLeave{
+    walk_up*5
 }
 
 //Signs
