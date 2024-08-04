@@ -1099,3 +1099,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/KinoHouse1/scripts.inc"
 
 	.include "data/maps/KinoHouse2/scripts.inc"
+
+	.include "data/maps/ShingoCity/scripts.inc"

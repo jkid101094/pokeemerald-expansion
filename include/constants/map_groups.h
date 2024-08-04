@@ -80,6 +80,7 @@
 #define MAP_SOGGY_SLOG               (71 | (0 << 8))
 #define MAP_ROUTE2                   (72 | (0 << 8))
 #define MAP_ROUTE2EAST               (73 | (0 << 8))
+#define MAP_SHINGO_CITY              (74 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

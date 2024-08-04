@@ -4610,6 +4610,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/KinoHouse2/border.bin",
       "blockdata_filepath": "data/layouts/KinoHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHINGO_CITY",
+      "name": "ShingoCity_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ShingoCity/border.bin",
+      "blockdata_filepath": "data/layouts/ShingoCity/map.bin"
     }
   ]
 }
