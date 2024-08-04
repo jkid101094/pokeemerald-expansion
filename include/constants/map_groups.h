@@ -77,6 +77,9 @@
 #define MAP_KINO_GROVE               (68 | (0 << 8))
 #define MAP_KINO_WOODS               (69 | (0 << 8))
 #define MAP_KINO_VILLAGE             (70 | (0 << 8))
+#define MAP_SOGGY_SLOG               (71 | (0 << 8))
+#define MAP_ROUTE2                   (72 | (0 << 8))
+#define MAP_ROUTE2EAST               (73 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

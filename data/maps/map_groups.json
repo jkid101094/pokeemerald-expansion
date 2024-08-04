@@ -106,7 +106,10 @@
     "TenouTownGym",
     "KinoGrove",
     "KinoWoods",
-    "KinoVillage"
+    "KinoVillage",
+    "SoggySlog",
+    "Route2",
+    "Route2East"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
