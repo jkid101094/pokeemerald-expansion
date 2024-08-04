@@ -87,7 +87,7 @@ KinoVillage_sign3::
 
 KinoVillage_gym_sign::
 	lockall
-	msgbox KinoVillage_sign1_Text_0
+	msgbox KinoVillage_gym_sign_Text_0
 	releaseall
 	return
 
@@ -153,3 +153,7 @@ KinoVillage_sign2_Text_0:
 
 KinoVillage_sign3_Text_0:
 	.string "-Kino Village Rest Center-$"
+
+KinoVillage_gym_sign_Text_0:
+	.string "Kino Gym - Lead by Aiza the Beauty\n"
+	.string "Queen!$"
