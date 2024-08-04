@@ -1174,13 +1174,13 @@ static const struct TrainerMonNoItemCustomMoves sParty_Carter[] = {
 static const struct TrainerMonCustomized sParty_Harley1[] = {
     {
     .iv = 50,
-    .lvl = 10,
+    .lvl = 11,
     .species = SPECIES_INDEEDEE_FEMALE,
     .moves = {MOVE_DISARMING_VOICE, MOVE_STORED_POWER, MOVE_ENCORE, MOVE_NONE},
     },
     {
     .iv = 50,
-    .lvl = 12,
+    .lvl = 13,
     .species = SPECIES_SWIRLIX,
     .moves = {MOVE_FAIRY_WIND, MOVE_SWEET_SCENT, MOVE_NONE, MOVE_NONE},
     }

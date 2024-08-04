@@ -75,7 +75,7 @@ script KinoVillage_sign1{
 
     script KinoVillage_gym_sign{
     lockall
-    msgbox(format("Kino Village: The secret forest retreat."))
+    msgbox(format("Kino Gym - Lead by Aiza the Beauty\nQueen!"))
     releaseall
     }
 

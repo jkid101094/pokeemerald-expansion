@@ -213,3 +213,6 @@ const u16 gMetatileAttributes_Sakura[] = INCBIN_U16("data/tilesets/primary/sakur
 
 const u16 gMetatiles_WaterCave[] = INCBIN_U16("data/tilesets/secondary/water_cave/metatiles.bin");
 const u16 gMetatileAttributes_WaterCave[] = INCBIN_U16("data/tilesets/secondary/water_cave/metatile_attributes.bin");
+
+const u16 gMetatiles_KinoGym[] = INCBIN_U16("data/tilesets/secondary/kino_gym/metatiles.bin");
+const u16 gMetatileAttributes_KinoGym[] = INCBIN_U16("data/tilesets/secondary/kino_gym/metatile_attributes.bin");
