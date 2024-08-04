@@ -710,38 +710,38 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_GWEN] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
-        .trainerName = _("GWEN"),
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerName = _("Gwen"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Gwen),
     },
 
-    [TRAINER_LOLA_2] =
+    [TRAINER_TEGAN] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
-        .trainerName = _("LOLA"),
+        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerName = _("Tegan"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Lola2),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Tegan),
     },
 
-    [TRAINER_LOLA_3] =
+    [TRAINER_KARL] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
-        .trainerName = _("LOLA"),
+        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerName = _("Karl"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Lola3),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Karl),
     },
 
     [TRAINER_LOLA_4] =

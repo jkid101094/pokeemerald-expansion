@@ -1458,34 +1458,34 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Austin[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Gwen[] = {
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_MARILL,
+    .lvl = 5,
+    .species = SPECIES_ODDISH,
+    },
+    {
+    .iv = 0,
+    .lvl = 6,
+    .species = SPECIES_POLIWAG,
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Lola2[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Tegan[] = {
     {
-    .iv = 10,
-    .lvl = 26,
-    .species = SPECIES_MARILL,
+    .iv = 0,
+    .lvl = 6,
+    .species = SPECIES_NINCADA,
     },
     {
-    .iv = 10,
-    .lvl = 26,
-    .species = SPECIES_MARILL,
+    .iv = 0,
+    .lvl = 6,
+    .species = SPECIES_DEWPIDER,
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Lola3[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Karl[] = {
     {
-    .iv = 20,
-    .lvl = 29,
-    .species = SPECIES_MARILL,
-    },
-    {
-    .iv = 20,
-    .lvl = 29,
-    .species = SPECIES_MARILL,
+    .iv = 0,
+    .lvl = 8,
+    .species = SPECIES_CLEFAIRY,
     }
 };
 

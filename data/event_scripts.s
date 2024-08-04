@@ -1093,3 +1093,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route2/scripts.inc"
 
 	.include "data/maps/Route2East/scripts.inc"
+
+	.include "data/maps/KinoVillage_Mart/scripts.inc"
+
+	.include "data/maps/KinoHouse1/scripts.inc"
+
+	.include "data/maps/KinoHouse2/scripts.inc"

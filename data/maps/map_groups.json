@@ -131,7 +131,10 @@
     "DewfordTown_PokemonCenter_2F",
     "DewfordTown_Gym",
     "DewfordTown_Hall",
-    "DewfordTown_House2"
+    "DewfordTown_House2",
+    "KinoVillage_Mart",
+    "KinoHouse1",
+    "KinoHouse2"
   ],
   "gMapGroup_IndoorLavaridge": [
     "LavaridgeTown_HerbShop",

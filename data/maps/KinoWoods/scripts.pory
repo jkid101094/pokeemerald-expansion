@@ -9,7 +9,8 @@ script AsukaEncounter1Left{
     msgbox("Jordan? Jordan!?\nWhere are you?")
     waitmessage
     applymovement(1, Common_Movement_ExclamationMark)
-    waitmovement(1)
+    playse(SE_PIN)
+    waitse
     applymovement(1, AsukaApproachLeft)
     waitmovement(1)
     msgbox(format("Oh, Arle! You finally got your first Pokémon, huh?"))
@@ -38,7 +39,8 @@ script AsukaEncounter1Right{
     msgbox("Jordan? Jordan!?\nWhere are you?")
     waitmessage
     applymovement(1, Common_Movement_ExclamationMark)
-    waitmovement(1)
+    playse(SE_PIN)
+    waitse
     applymovement(1, AsukaApproachRight)
     waitmovement(1)
     msgbox(format("Oh, Arle! You finally got your first Pokémon, huh?"))

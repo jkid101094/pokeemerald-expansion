@@ -17,6 +17,11 @@
       "map": "MAP_KINO_VILLAGE",
       "offset": -19,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE2EAST",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [

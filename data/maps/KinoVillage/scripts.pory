@@ -1,0 +1,89 @@
+mapscripts KinoVillage_MapScripts {}
+
+//NPCs
+script KinoVillageGardener{
+    lockall
+    faceplayer
+    showmoneybox(0,0)
+    msgbox(format("The berries in my garden here tend to grow up so healthy."))
+    msgbox(format("In fact they're so impressive that people actually pay me for the soil.\pCan you believe that?"))
+    msgbox("How about it? I'll sell you a Peat Block\nfor ¥1000.", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+    checkmoney(1000)
+    if(var(VAR_RESULT) == TRUE){
+    removemoney(1000)
+    playse(SE_SHOP)
+    waitse
+    giveitem(ITEM_PEAT_BLOCK, [1])
+    msgbox(format("Here you go!\nHope you enjoy it!"))
+    }
+    else{
+    msgbox(format("Hey! You can't scam me! Come back with more cash!"))
+    }
+    }
+    else{
+    msgbox(format("I see...\nWell come back if you want some delicious dirt!"))
+    }
+    hidemoneybox
+    releaseall
+}
+
+script KinoVillageGameboy{
+    lockall
+    msgbox("Hey, have you ever played this cool\ngame called Fire Emblem?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox(format("It's cool, right?\nTiki is the best!"))
+    }
+    else{
+        msgbox("No? That's lame.\nYou're lame.")
+    }
+    releaseall
+}
+
+script KinoVillageArtist{
+    lockall
+    faceplayer
+    msgbox(format("Kino Village is pretty spectacular, wouldn't you agree?"))
+    releaseall
+}
+
+script KinoVillageBoy{
+    lockall
+    faceplayer
+    msgbox(format("The city is nice and all, but a quaint village like this has its charm too!"))
+    releaseall
+}
+
+//Signs
+script KinoVillage_sign1{
+    lockall
+    msgbox(format("Kino Village: The secret forest retreat."))
+    releaseall
+    }
+
+    script KinoVillage_sign2{
+    lockall
+    msgbox(format("Trainer Tips:"))
+    releaseall
+    }
+
+    script KinoVillage_sign3{
+    lockall
+    msgbox(format("-Kino Village Rest Center-"))
+    releaseall
+    }
+
+    script KinoVillage_gym_sign{
+    lockall
+    msgbox(format("Kino Village: The secret forest retreat."))
+    releaseall
+    }
+
+//Items
+script KinoVillage_HM{
+    lockall
+    giveitem(ITEM_TM09_BULLET_SEED, [1])
+    setflag(FLAG_KINOVILLAGE_HM)
+    removeobject(2)
+    releaseall
+}

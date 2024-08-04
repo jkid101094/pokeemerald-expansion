@@ -61,8 +61,8 @@
 #define TRAINER_KELDA_1                      57
 #define TRAINER_AUSTIN                       58
 #define TRAINER_GWEN                         59
-#define TRAINER_LOLA_2                       60
-#define TRAINER_LOLA_3                       61
+#define TRAINER_TEGAN                        60
+#define TRAINER_KARL                         61
 #define TRAINER_LOLA_4                       62
 #define TRAINER_LOLA_5                       63
 #define TRAINER_RICKY_1                      64

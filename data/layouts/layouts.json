@@ -4580,6 +4580,36 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/Route2East/border.bin",
       "blockdata_filepath": "data/layouts/Route2East/map.bin"
+    },
+    {
+      "id": "LAYOUT_KINO_VILLAGE_MART",
+      "name": "KinoVillage_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/KinoVillage_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/KinoVillage_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_KINO_HOUSE1",
+      "name": "KinoHouse1_Layout",
+      "width": 18,
+      "height": 15,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/KinoHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/KinoHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_KINO_HOUSE2",
+      "name": "KinoHouse2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/KinoHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/KinoHouse2/map.bin"
     }
   ]
 }

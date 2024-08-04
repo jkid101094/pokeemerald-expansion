@@ -10,7 +10,8 @@ AsukaEncounter1Left::
 	msgbox AsukaEncounter1Left_Text_0
 	waitmessage
 	applymovement 1, Common_Movement_ExclamationMark
-	waitmovement 1
+	playse SE_PIN
+	waitse
 	applymovement 1, AsukaApproachLeft
 	waitmovement 1
 	msgbox AsukaEncounter1Left_Text_1
@@ -40,7 +41,8 @@ AsukaEncounter1Right::
 	msgbox AsukaEncounter1Left_Text_0
 	waitmessage
 	applymovement 1, Common_Movement_ExclamationMark
-	waitmovement 1
+	playse SE_PIN
+	waitse
 	applymovement 1, AsukaApproachRight
 	waitmovement 1
 	msgbox AsukaEncounter1Left_Text_1
