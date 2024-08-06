@@ -3035,8 +3035,13 @@ extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
 
+//Custom
 extern const u8 gText_Bulbasaur[];
 extern const u8 gText_Charmander[];
 extern const u8 gText_Squirtle[];
+
+// Exp. Share
+extern const u8 gText_ExpShareOn[];
+extern const u8 gText_ExpShareOff[];
 
 #endif // GUARD_STRINGS_H
