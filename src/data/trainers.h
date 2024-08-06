@@ -10032,7 +10032,7 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_Fernando5),
     },
 
-    [TRAINER_SAWYER_1_2] =
+    [TRAINER_SAWYER_2] =
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
@@ -10044,7 +10044,7 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_SAWYER_12),
     },
 
-    [TRAINER_SAWYER_1_3] =
+    [TRAINER_SAWYER_3] =
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
@@ -10056,7 +10056,7 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_SAWYER_13),
     },
 
-    [TRAINER_SAWYER_1_4] =
+    [TRAINER_SAWYER_4] =
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
@@ -10068,7 +10068,7 @@ const struct Trainer gTrainers[] = {
         .party = TRAINER_PARTY(sParty_SAWYER_14),
     },
 
-    [TRAINER_SAWYER_1_5] =
+    [TRAINER_SAWYER_5] =
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,

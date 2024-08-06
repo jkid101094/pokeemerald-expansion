@@ -837,10 +837,10 @@
 #define TRAINER_FERNANDO_3                  833
 #define TRAINER_FERNANDO_4                  834
 #define TRAINER_FERNANDO_5                  835
-#define TRAINER_SAWYER_1_2                    836
-#define TRAINER_SAWYER_1_3                    837
-#define TRAINER_SAWYER_1_4                    838
-#define TRAINER_SAWYER_1_5                    839
+#define TRAINER_SAWYER_2                    836
+#define TRAINER_SAWYER_3                    837
+#define TRAINER_SAWYER_4                    838
+#define TRAINER_SAWYER_5                    839
 #define TRAINER_GABRIELLE_2                 840
 #define TRAINER_GABRIELLE_3                 841
 #define TRAINER_GABRIELLE_4                 842
