@@ -1002,7 +1002,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "… … … … … Click!$"
 
 	Event_StartJordanBattle::
-	trainerbattle_no_whiteout_continue_script TRAINER_JORDAN_1,Jordan_Intro_Text,Jordan_Defeat_Text,JordanPost
+	trainerbattle_no_whiteout_continue_script TRAINER_SAWYER_1,Jordan_Intro_Text,Jordan_Defeat_Text,JordanPost
 	end
 
 	JordanPost:: 

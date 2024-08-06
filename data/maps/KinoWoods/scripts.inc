@@ -19,7 +19,7 @@ AsukaEncounter1Left::
 	msgbox AsukaEncounter1Left_Text_3
 	msgbox AsukaEncounter1Left_Text_4
 	msgbox AsukaEncounter1Left_Text_5
-	trainerbattle_no_intro TRAINER_ASUKA_1, AsukaLoseText
+	trainerbattle_no_intro TRAINER_SAWYER_1, AsukaLoseText
 	msgbox AsukaEncounter1Left_Text_6
 	msgbox AsukaEncounter1Left_Text_7
 	msgbox AsukaEncounter1Left_Text_8
@@ -50,7 +50,7 @@ AsukaEncounter1Right::
 	msgbox AsukaEncounter1Left_Text_3
 	msgbox AsukaEncounter1Left_Text_4
 	msgbox AsukaEncounter1Left_Text_5
-	trainerbattle_no_intro TRAINER_ASUKA_1, AsukaLoseText
+	trainerbattle_no_intro TRAINER_SAWYER_1, AsukaLoseText
 	msgbox AsukaEncounter1Left_Text_6
 	msgbox AsukaEncounter1Left_Text_7
 	msgbox AsukaEncounter1Left_Text_8
@@ -121,28 +121,28 @@ KinoWoods_sign4::
 
 
 TrainerBeck::
-	trainerbattle_single TRAINER_BECK, BeckIntro, BeckLoss
+	trainerbattle_single TRAINER_SAWYER_1, BeckIntro, BeckLoss
 	msgbox PostBattle_Beck, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 TrainerDarren::
-	trainerbattle_single TRAINER_DARREN, DarrenIntro, DarrenLoss
+	trainerbattle_single TRAINER_SAWYER_1, DarrenIntro, DarrenLoss
 	msgbox PostBattle_Darren, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 TrainerLen::
-	trainerbattle_single TRAINER_LEN, LenIntro, LenLoss
+	trainerbattle_single TRAINER_SAWYER_1, LenIntro, LenLoss
 	msgbox PostBattle_Len, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 TrainerKelda::
-	trainerbattle_single TRAINER_KELDA_1, KeldaIntro, KeldaLoss
+	trainerbattle_single TRAINER_SAWYER_1, KeldaIntro, KeldaLoss
 	msgbox PostBattle_Kelda, MSGBOX_AUTOCLOSE
 	waitmessage
 	return

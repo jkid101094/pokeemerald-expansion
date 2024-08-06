@@ -25,7 +25,7 @@ LauraEncounter1::
 	msgbox LauraEncounter1_Text_4
 	msgbox LauraEncounter1_Text_5
 	msgbox LauraEncounter1_Text_6
-	trainerbattle_no_intro TRAINER_LAURA_1, LauraLoseText
+	trainerbattle_no_intro TRAINER_SAWYER_1, LauraLoseText
 	msgbox LauraEncounter1_Text_7
 	msgbox LauraEncounter1_Text_8
 	setvar VAR_STORY_PROGRESSION, 4
@@ -59,28 +59,28 @@ LauraGo:
 	step_end
 
 HikerGustaf::
-	trainerbattle_single TRAINER_GUSTAF, GustafIntro, GustafLoss
+	trainerbattle_single TRAINER_SAWYER_1, GustafIntro, GustafLoss
 	msgbox PostBattle_Gustaf, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 LadyOlivia::
-	trainerbattle_single TRAINER_OLIVIA, OliviaIntro, OliviaLoss
+	trainerbattle_single TRAINER_SAWYER_1, OliviaIntro, OliviaLoss
 	msgbox PostBattle_Olivia, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 HikerFoster::
-	trainerbattle_single TRAINER_FOSTER, FosterIntro, FosterLoss
+	trainerbattle_single TRAINER_SAWYER_1, FosterIntro, FosterLoss
 	msgbox PostBattle_Foster, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 CollectorJulian::
-	trainerbattle_single TRAINER_JULIAN, JulianIntro, JulianLoss
+	trainerbattle_single TRAINER_SAWYER_1, JulianIntro, JulianLoss
 	msgbox PostBattle_Julian, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
@@ -97,7 +97,7 @@ MtTenou_Item_Ball_Stone_Plate::
 
 MtTennou_Item_Ball_TM39::
 	lockall
-	giveitem ITEM_TM39_ROCK_TOMB, [ 1 ]
+	giveitem ITEM_TM39, [ 1 ]
 	setflag FLAG_MT_TENOU_TM39
 	removeobject 9
 	releaseall
@@ -106,7 +106,7 @@ MtTennou_Item_Ball_TM39::
 
 MtTennou_Item_Ball_TM31::
 	lockall
-	giveitem ITEM_TM31_BRICK_BREAK, [ 1 ]
+	giveitem ITEM_TM31, [ 1 ]
 	setflag FLAG_MT_TENOU_TM31
 	removeobject 11
 	releaseall

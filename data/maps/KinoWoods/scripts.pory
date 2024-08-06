@@ -18,7 +18,7 @@ script AsukaEncounter1Left{
     msgbox(format("I'm getting a little burnt out on searching so why don't we have a quick battle?"))
     msgbox(format("I caught a new teammate on Mt. Tenou and I'm dying to let it loose."))
     msgbox(format("It's decided then! Ready or not, Arle! Here we come!"))
-    trainerbattle_no_intro(TRAINER_ASUKA_1, AsukaLoseText)
+    trainerbattle_no_intro(TRAINER_SAWYER_1, AsukaLoseText)
     msgbox(format("It's good to see you're already getting the hang of battling. You'll keep your rivals sharp, I'm sure."))
     msgbox(format("Anyway I gotta keep looking for Jordan. Let's all catch up later, alright?"))
     msgbox(format("See ya!"))
@@ -48,7 +48,7 @@ script AsukaEncounter1Right{
     msgbox(format("I'm getting a little burnt out on searching so why don't we have a quick battle?"))
     msgbox(format("I caught a new teammate on Mt. Tenou and I'm dying to let it loose."))
     msgbox(format("It's decided then! Ready or not, Arle! Here we come!"))
-    trainerbattle_no_intro(TRAINER_ASUKA_1, AsukaLoseText)
+    trainerbattle_no_intro(TRAINER_SAWYER_1, AsukaLoseText)
     msgbox(format("It's good to see you're already getting the hang of battling. You'll keep your rivals sharp, I'm sure."))
     msgbox(format("Anyway I gotta keep looking for Jordan. Let's all catch up later, alright?"))
     msgbox(format("See ya!"))
@@ -115,25 +115,25 @@ script KinoWoods_sign4{
 
 //Trainers
 script TrainerBeck{
-    trainerbattle_single(TRAINER_BECK, BeckIntro, BeckLoss)
+    trainerbattle_single(TRAINER_SAWYER_1, BeckIntro, BeckLoss)
     msgbox(PostBattle_Beck, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }
 
 script TrainerDarren{
-    trainerbattle_single(TRAINER_DARREN, DarrenIntro, DarrenLoss)
+    trainerbattle_single(TRAINER_SAWYER_1, DarrenIntro, DarrenLoss)
     msgbox(PostBattle_Darren, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }
 
 script TrainerLen{
-    trainerbattle_single(TRAINER_LEN, LenIntro, LenLoss)
+    trainerbattle_single(TRAINER_SAWYER_1, LenIntro, LenLoss)
     msgbox(PostBattle_Len, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }
 
 script TrainerKelda{
-    trainerbattle_single(TRAINER_KELDA_1, KeldaIntro, KeldaLoss)
+    trainerbattle_single(TRAINER_SAWYER_1, KeldaIntro, KeldaLoss)
     msgbox(PostBattle_Kelda, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }

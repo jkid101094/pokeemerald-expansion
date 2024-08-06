@@ -3,13 +3,13 @@ ArdentAlley_MapScripts::
 
 
 LassAlisa::
-	trainerbattle_single TRAINER_ALISA, AlisaIntro, AlisaLoss
+	trainerbattle_single TRAINER_SAWYER_1, AlisaIntro, AlisaLoss
 	msgbox PostBattle_Alisa, MSGBOX_AUTOCLOSE
 	return
 
 
 HikerMarco::
-	trainerbattle_single TRAINER_MARCO, MarcoIntro, MarcoLoss
+	trainerbattle_single TRAINER_SAWYER_1, MarcoIntro, MarcoLoss
 	msgbox PostBattle_Marco, MSGBOX_AUTOCLOSE
 	return
 

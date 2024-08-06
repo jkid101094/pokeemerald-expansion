@@ -36,7 +36,7 @@ Tenou_Town_Item_Ball_Ether::
 
 Tenou_Town_Item_HM11::
 	lockall
-	giveitem ITEM_TM11_SUNNY_DAY, [ 1 ]
+	giveitem ITEM_TM11, [ 1 ]
 	setflag FLAG_TENOU_TOWN_HM11
 	removeobject 4
 	releaseall

@@ -61,7 +61,7 @@ Route1_Item_Ball_Rare_Candy::
 
 Route1_Item_Ball_TM26::
 	lockall
-	giveitem ITEM_TM26_EARTHQUAKE, [ 1 ]
+	giveitem ITEM_TM26, [ 1 ]
 	setflag FLAG_ROUTE1_TM26
 	removeobject 4
 	releaseall
@@ -69,28 +69,28 @@ Route1_Item_Ball_TM26::
 
 
 TrainerRikki::
-	trainerbattle_single TRAINER_RIKKI, RikkiIntro, RikkiLoss
+	trainerbattle_single TRAINER_SAWYER_1, RikkiIntro, RikkiLoss
 	msgbox PostBattle_Rikki, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 TrainerStanley::
-	trainerbattle_single TRAINER_STANLEY, StanleyIntro, StanleyLoss
+	trainerbattle_single TRAINER_SAWYER_1, StanleyIntro, StanleyLoss
 	msgbox PostBattle_Stanley, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 TrainerBart::
-	trainerbattle_single TRAINER_BART, BartIntro, BartLoss
+	trainerbattle_single TRAINER_SAWYER_1, BartIntro, BartLoss
 	msgbox PostBattle_Bart, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 TrainerAustin::
-	trainerbattle_single TRAINER_AUSTIN, AustinIntro, AustinLoss
+	trainerbattle_single TRAINER_SAWYER_1, AustinIntro, AustinLoss
 	msgbox PostBattle_Austin, MSGBOX_AUTOCLOSE
 	waitmessage
 	return

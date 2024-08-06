@@ -4,24 +4,24 @@ BurningBridge_MapScripts::
 
 YoungsterTimmothy::
 	goto_if_unset FLAG_BURNING_BRIDGE_ROCKY_HELMET, YoungsterTimmothy_1
-	trainerbattle_single TRAINER_TIMMOTHY, TimmothyBadIntro, TimmothyBadLoss
+	trainerbattle_single TRAINER_SAWYER_1, TimmothyBadIntro, TimmothyBadLoss
 	msgbox PostBattle_TimmothyBad, MSGBOX_AUTOCLOSE
 	return
 
 YoungsterTimmothy_1:
-	trainerbattle_single TRAINER_TIMMOTHY, TimmothyIntro, TimmothyLoss
+	trainerbattle_single TRAINER_SAWYER_1, TimmothyIntro, TimmothyLoss
 	msgbox PostBattle_Timmothy, MSGBOX_AUTOCLOSE
 	return
 
 
 HikerWalt::
 	goto_if_unset FLAG_BURNING_BRIDGE_ROCKY_HELMET, HikerWalt_1
-	trainerbattle_single TRAINER_WALT, WaltBadIntro, WaltBadLoss
+	trainerbattle_single TRAINER_SAWYER_1, WaltBadIntro, WaltBadLoss
 	msgbox PostBattle_WaltBad, MSGBOX_AUTOCLOSE
 	return
 
 HikerWalt_1:
-	trainerbattle_single TRAINER_WALT, WaltIntro, WaltLoss
+	trainerbattle_single TRAINER_SAWYER_1, WaltIntro, WaltLoss
 	msgbox PostBattle_Walt, MSGBOX_AUTOCLOSE
 	return
 

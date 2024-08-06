@@ -61,7 +61,7 @@ script MichaelAfton{
     msgbox("I'm training to face my father.\nWould you like to train with me?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         msgbox("Alright then.\nCome and face your fears!")
-        trainerbattle_no_intro(TRAINER_MICHAEL, MichaelLoss)
+        trainerbattle_no_intro(TRAINER_SAWYER, MichaelLoss)
         msgbox(PostBattle_Michael, MSGBOX_AUTOCLOSE)
         fadescreen(FADE_TO_BLACK)
         delay(20)

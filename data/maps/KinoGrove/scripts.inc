@@ -51,21 +51,21 @@ KinoGroveNurse_2:
 
 
 AromaGwen::
-	trainerbattle_single TRAINER_GWEN, GwenIntro, GwenLoss
+	trainerbattle_single TRAINER_SAWYER_1, GwenIntro, GwenLoss
 	msgbox PostBattle_Gwen, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 CollectorKarl::
-	trainerbattle_single TRAINER_KARL, KarlIntro, KarlLoss
+	trainerbattle_single TRAINER_SAWYER_1, KarlIntro, KarlLoss
 	msgbox PostBattle_Karl, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 BugCatcherTegen::
-	trainerbattle_single TRAINER_TEGAN, TegenIntro, TegenLoss
+	trainerbattle_single TRAINER_SAWYER_1, TegenIntro, TegenLoss
 	msgbox PostBattle_Tegen, MSGBOX_AUTOCLOSE
 	waitmessage
 	return

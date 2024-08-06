@@ -3,7 +3,7 @@ TenouInterior_MapScripts::
 
 
 TrainerRandolph::
-	trainerbattle_single TRAINER_RANDOLPH, RandolphIntro, RandolphLoss
+	trainerbattle_single TRAINER_SAWYER_1, RandolphIntro, RandolphLoss
 	msgbox PostBattle_Randolph, MSGBOX_AUTOCLOSE
 	waitmessage
 	return

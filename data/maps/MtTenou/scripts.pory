@@ -24,7 +24,7 @@ script LauraEncounter1{
     msgbox(format("Ah, who needs that sentimental stuff anyways, right? Besides, I can tell you're starting to zone out. So how about we have some fun with a battle?"))
     msgbox(format("Gotta warn ya, though. I caught a sweet new Pokémon in that forest over there!"))
     msgbox("You ready, Arles? OK! Let's go!")
-    trainerbattle_no_intro(TRAINER_LAURA_1, LauraLoseText)
+    trainerbattle_no_intro(TRAINER_SAWYER_1, LauraLoseText)
     msgbox(format("I guess I've still got some training to do, huh?\pGuess I'll put my energy towards leveling up for now."))
     msgbox("See you later, Arles!\nTake care, alright?")
     setvar(VAR_STORY_PROGRESSION, 4)
@@ -55,7 +55,7 @@ movement LauraGo{
 
 //Trainers
 script HikerGustaf{
-    trainerbattle_single(TRAINER_GUSTAF, GustafIntro, GustafLoss)
+    trainerbattle_single(TRAINER_SAWYER_1, GustafIntro, GustafLoss)
     msgbox(PostBattle_Gustaf, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }
@@ -71,7 +71,7 @@ text PostBattle_Gustaf{
 }
 
 script LadyOlivia{
-    trainerbattle_single(TRAINER_OLIVIA, OliviaIntro, OliviaLoss)
+    trainerbattle_single(TRAINER_SAWYER_1, OliviaIntro, OliviaLoss)
     msgbox(PostBattle_Olivia, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }
@@ -87,7 +87,7 @@ text PostBattle_Olivia{
 }
 
 script HikerFoster{
-    trainerbattle_single(TRAINER_FOSTER, FosterIntro, FosterLoss)
+    trainerbattle_single(TRAINER_SAWYER_1, FosterIntro, FosterLoss)
     msgbox(PostBattle_Foster, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }
@@ -103,7 +103,7 @@ text PostBattle_Foster{
 }
 
 script CollectorJulian{
-    trainerbattle_single(TRAINER_JULIAN, JulianIntro, JulianLoss)
+    trainerbattle_single(TRAINER_SAWYER_1, JulianIntro, JulianLoss)
     msgbox(PostBattle_Julian, MSGBOX_AUTOCLOSE) 
 	waitmessage
 }
@@ -129,7 +129,7 @@ script MtTenou_Item_Ball_Stone_Plate{
 
 script MtTennou_Item_Ball_TM39{
     lockall
-    giveitem(ITEM_TM39_ROCK_TOMB, [1])
+    giveitem(ITEM_TM39, [1])
     setflag(FLAG_MT_TENOU_TM39)
     removeobject(9)
     releaseall
@@ -138,7 +138,7 @@ script MtTennou_Item_Ball_TM39{
 script MtTennou_Item_Ball_TM31
 {
     lockall
-    giveitem(ITEM_TM31_BRICK_BREAK, [1])
+    giveitem(ITEM_TM31, [1])
     setflag(FLAG_MT_TENOU_TM31)
     removeobject(11)
     releaseall

@@ -3,14 +3,14 @@ TenouInterior2_MapScripts::
 
 
 TrainerGunter::
-	trainerbattle_single TRAINER_GUNTER, GunterIntro, GunterLoss
+	trainerbattle_single TRAINER_SAWYER_1, GunterIntro, GunterLoss
 	msgbox PostBattle_Gunter, MSGBOX_AUTOCLOSE
 	waitmessage
 	return
 
 
 TrainerJenette::
-	trainerbattle_single TRAINER_JENETTE, JenetteIntro, JenetteLoss
+	trainerbattle_single TRAINER_SAWYER_1, JenetteIntro, JenetteLoss
 	msgbox PostBattle_Jenette, MSGBOX_AUTOCLOSE
 	waitmessage
 	return

@@ -57,7 +57,7 @@ TenouGymClerk_8:
 	waitmovement 9
 	delay 60
 	msgbox CarolanneIntro
-	trainerbattle_no_intro TRAINER_CAROLANNE, CarolanneLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, CarolanneLose
 	playse SE_APPLAUSE
 	msgbox TenouGymClerk_Text_6
 	waitmessage
@@ -75,7 +75,7 @@ TenouGymClerk_8:
 	waitmovement 10
 	delay 60
 	msgbox SamanthaIntro
-	trainerbattle_no_intro TRAINER_SAMANTHA, SamanthaLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, SamanthaLose
 	playse SE_APPLAUSE
 	msgbox TenouGymClerk_Text_7
 	waitmessage
@@ -93,7 +93,7 @@ TenouGymClerk_8:
 	waitmovement 11
 	delay 60
 	msgbox CarterIntro
-	trainerbattle_no_intro TRAINER_CARTER, CarterLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, CarterLose
 	playse SE_APPLAUSE
 	msgbox TenouGymClerk_Text_8
 	waitmessage
@@ -147,35 +147,35 @@ TenouGymClerk_11:
 	end
 
 TenouGymClerk_12:
-	trainerbattle_no_intro TRAINER_HARLEY_1, HarleyLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, HarleyLose
 	goto TenouGymClerk_11
 
 TenouGymClerk_13:
-	trainerbattle_no_intro TRAINER_HARLEY_2, HarleyLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, HarleyLose
 	goto TenouGymClerk_11
 
 TenouGymClerk_14:
-	trainerbattle_no_intro TRAINER_HARLEY_3, HarleyLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, HarleyLose
 	goto TenouGymClerk_11
 
 TenouGymClerk_15:
-	trainerbattle_no_intro TRAINER_HARLEY_4, HarleyLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, HarleyLose
 	goto TenouGymClerk_11
 
 TenouGymClerk_16:
-	trainerbattle_no_intro TRAINER_HARLEY_5, HarleyLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, HarleyLose
 	goto TenouGymClerk_11
 
 TenouGymClerk_17:
-	trainerbattle_no_intro TRAINER_HARLEY_6, HarleyLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, HarleyLose
 	goto TenouGymClerk_11
 
 TenouGymClerk_18:
-	trainerbattle_no_intro TRAINER_HARLEY_7, HarleyLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, HarleyLose
 	goto TenouGymClerk_11
 
 TenouGymClerk_19:
-	trainerbattle_no_intro TRAINER_HARLEY_8, HarleyLose
+	trainerbattle_no_intro TRAINER_SAWYER_1, HarleyLose
 	goto TenouGymClerk_11
 
 

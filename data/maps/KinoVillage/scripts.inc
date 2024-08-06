@@ -94,7 +94,7 @@ KinoVillage_gym_sign::
 
 KinoVillage_HM::
 	lockall
-	giveitem ITEM_TM09_BULLET_SEED, [ 1 ]
+	giveitem ITEM_TM09, [ 1 ]
 	setflag FLAG_KINOVILLAGE_HM
 	removeobject 2
 	releaseall

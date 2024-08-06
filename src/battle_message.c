@@ -3999,7 +3999,7 @@ static const struct TrainerSlide sTrainerSlides[] =
 
     //Laura
     {
-        .trainerId = TRAINER_LAURA_1,
+        .trainerId = TRAINER_SAWYER_1,
         .isFrontierTrainer = FALSE,
         .msgLastLowHp = sLaura1LowHP,
     },
@@ -4013,42 +4013,42 @@ static const struct TrainerSlide sTrainerSlides[] =
     //Harley
     //Harley
     {
-        .trainerId = TRAINER_HARLEY_1,
+        .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
         .msgLastLowHp = sGym1LowHP,
     },
     {
-        .trainerId = TRAINER_HARLEY_2,
+        .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
         .msgLastLowHp = sGym1LowHP,
     },
     {
-        .trainerId = TRAINER_HARLEY_3,
+        .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
         .msgLastLowHp = sGym1LowHP,
     },
     {
-        .trainerId = TRAINER_HARLEY_4,
+        .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
         .msgLastLowHp = sGym1LowHP,
     },
     {
-        .trainerId = TRAINER_HARLEY_5,
+        .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
         .msgLastLowHp = sGym1LowHP,
     },
     {
-        .trainerId = TRAINER_HARLEY_6,
+        .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
         .msgLastLowHp = sGym1LowHP,
     },
     {
-        .trainerId = TRAINER_HARLEY_7,
+        .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
         .msgLastLowHp = sGym1LowHP,
     },
     {
-        .trainerId = TRAINER_HARLEY_8,
+        .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
         .msgLastLowHp = sGym1LowHP,
     },

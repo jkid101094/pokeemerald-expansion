@@ -3,24 +3,24 @@ mapscripts BurningBridge_MapScripts{}
 //Trainers
 script YoungsterTimmothy{
     if(flag(FLAG_BURNING_BRIDGE_ROCKY_HELMET) == FALSE){
-        trainerbattle_single(TRAINER_TIMMOTHY, TimmothyIntro, TimmothyLoss)
+        trainerbattle_single(TRAINER_SAWYER_1, TimmothyIntro, TimmothyLoss)
         msgbox(PostBattle_Timmothy, MSGBOX_AUTOCLOSE) 
 
     }
     else{
-        trainerbattle_single(TRAINER_TIMMOTHY, TimmothyBadIntro, TimmothyBadLoss)
+        trainerbattle_single(TRAINER_SAWYER_1, TimmothyBadIntro, TimmothyBadLoss)
         msgbox(PostBattle_TimmothyBad, MSGBOX_AUTOCLOSE) 
     }
 }
 
 script HikerWalt{
     if(flag(FLAG_BURNING_BRIDGE_ROCKY_HELMET) == FALSE){
-        trainerbattle_single(TRAINER_WALT, WaltIntro, WaltLoss)
+        trainerbattle_single(TRAINER_SAWYER_1, WaltIntro, WaltLoss)
         msgbox(PostBattle_Walt, MSGBOX_AUTOCLOSE) 
 
     }
     else{
-        trainerbattle_single(TRAINER_WALT, WaltBadIntro, WaltBadLoss)
+        trainerbattle_single(TRAINER_SAWYER_1, WaltBadIntro, WaltBadLoss)
         msgbox(PostBattle_WaltBad, MSGBOX_AUTOCLOSE) 
     }
 }

@@ -65,7 +65,7 @@ MichaelAfton_1:
 
 MichaelAfton_2:
 	msgbox MichaelAfton_Text_1
-	trainerbattle_no_intro TRAINER_MICHAEL, MichaelLoss
+	trainerbattle_no_intro TRAINER_SAWYER_1, MichaelLoss
 	msgbox PostBattle_Michael, MSGBOX_AUTOCLOSE
 	fadescreen FADE_TO_BLACK
 	delay 20

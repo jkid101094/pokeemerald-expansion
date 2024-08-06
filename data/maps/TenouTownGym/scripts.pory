@@ -36,7 +36,7 @@ script TenouGymClerk{
             waitmovement(9)
             delay(60)
             msgbox(CarolanneIntro)
-            trainerbattle_no_intro(TRAINER_CAROLANNE, CarolanneLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, CarolanneLose)
             playse(SE_APPLAUSE)
             msgbox("Clerk: And our challenger clears the\nfirst course!\lWhat potential lies within her?")
             waitmessage
@@ -56,7 +56,7 @@ script TenouGymClerk{
             waitmovement(10)
             delay(60)
             msgbox(SamanthaIntro)
-            trainerbattle_no_intro(TRAINER_SAMANTHA, SamanthaLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, SamanthaLose)
             playse(SE_APPLAUSE)
             msgbox("Clerk: And our challenger clears the\nsecond course!\pCan she be stopped!?")
             waitmessage
@@ -76,7 +76,7 @@ script TenouGymClerk{
             waitmovement(11)
             delay(60)
             msgbox(CarterIntro)
-            trainerbattle_no_intro(TRAINER_CARTER, CarterLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, CarterLose)
             playse(SE_APPLAUSE)
             msgbox("Clerk: And our challenger topples the\nthird course!\pYou know what that means!\nTime for the main event!\pBut first a meal for the Pokémon!")
             waitmessage
@@ -98,28 +98,28 @@ script TenouGymClerk{
             delay(60)
             msgbox(HarleyIntro)
             if(var(VAR_BADGES_OBTAINED) == 0){
-            trainerbattle_no_intro(TRAINER_HARLEY_1, HarleyLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 1){
-            trainerbattle_no_intro(TRAINER_HARLEY_2, HarleyLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 2){
-            trainerbattle_no_intro(TRAINER_HARLEY_3, HarleyLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 3){
-            trainerbattle_no_intro(TRAINER_HARLEY_4, HarleyLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 4){
-            trainerbattle_no_intro(TRAINER_HARLEY_5, HarleyLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 5){
-            trainerbattle_no_intro(TRAINER_HARLEY_6, HarleyLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 6){
-            trainerbattle_no_intro(TRAINER_HARLEY_7, HarleyLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, HarleyLose)
             }
             elif(var(VAR_BADGES_OBTAINED) == 7){
-            trainerbattle_no_intro(TRAINER_HARLEY_8, HarleyLose)
+            trainerbattle_no_intro(TRAINER_SAWYER_1, HarleyLose)
             }
             playse(SE_APPLAUSE)
             msgbox("Clerk: Our challenger has done it!\nThe head chef is down in a HUGE\lupset! Can you believe it, folks?")

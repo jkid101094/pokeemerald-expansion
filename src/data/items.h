@@ -3178,22 +3178,7 @@ const struct Item gItems[] =
         .secondaryId = TYPE_FAIRY,
         .flingPower = 90,
     },
-
-    [ITEM_LEGEND_PLATE] =
-    {
-        .name = _("Legend Plate"),
-        .itemId = ITEM_LEGEND_PLATE,
-        .price = 0,
-        .holdEffect = HOLD_EFFECT_PLATE,
-        .holdEffectParam = 20,
-        .description = sLegendPlateDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_NORMAL,
-        .flingPower = 90,
-    },
-
+    
 // Drives
 
     [ITEM_DOUSE_DRIVE] =
