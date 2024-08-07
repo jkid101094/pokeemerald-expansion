@@ -547,7 +547,7 @@
 #define STRINGID_NOONEWILLBEABLETORUNAWAY             545
 #define STRINGID_DESTINYKNOTACTIVATES                 546
 #define STRINGID_CLOAKEDINAFREEZINGLIGHT              547
-#define STRINGID_STATWASNOTLOWERED                    548
+#define STRINGID_CLEARAMULETWONTLOWERSTATS            548
 #define STRINGID_FERVENTWISHREACHED                   549
 #define STRINGID_AIRLOCKACTIVATES                     550
 #define STRINGID_PRESSUREENTERS                       551
@@ -670,33 +670,59 @@
 #define STRINGID_CURRENTMOVECANTSELECT                668
 #define STRINGID_TARGETISBEINGSALTCURED               669
 #define STRINGID_TARGETISHURTBYSALTCURE               670
+#define STRINGID_OPPORTUNISTCOPIED                    671
+#define STRINGID_TARGETCOVEREDINSTICKYCANDYSYRUP      672
+#define STRINGID_SHARPSTEELFLOATS                     673
+#define STRINGID_SHARPSTEELDMG                        674
+#define STRINGID_PKMNBLEWAWAYSHARPSTEEL               675
+#define STRINGID_SHARPSTEELDISAPPEAREDFROMTEAM        676
+#define STRINGID_TEAMTRAPPEDWITHVINES                 677
+#define STRINGID_PKMNHURTBYVINES                      678
+#define STRINGID_TEAMCAUGHTINVORTEX                   679
+#define STRINGID_PKMNHURTBYVORTEX                     680
+#define STRINGID_TEAMSURROUNDEDBYFIRE                 681
+#define STRINGID_PKMNBURNINGUP                        682
+#define STRINGID_TEAMSURROUNDEDBYROCKS                683
+#define STRINGID_PKMNHURTBYROCKSTHROWN                684
+#define STRINGID_MOVEBLOCKEDBYDYNAMAX                 685
+#define STRINGID_ZEROTOHEROTRANSFORMATION             686
+#define STRINGID_THETWOMOVESBECOMEONE                 687
+#define STRINGID_ARAINBOWAPPEAREDONSIDE               688
+#define STRINGID_THERAINBOWDISAPPEARED                689
+#define STRINGID_WAITINGFORPARTNERSMOVE               690
+#define STRINGID_SEAOFFIREENVELOPEDSIDE               691
+#define STRINGID_HURTBYTHESEAOFFIRE                   692
+#define STRINGID_THESEAOFFIREDISAPPEARED              693
+#define STRINGID_SWAMPENVELOPEDSIDE                   694
+#define STRINGID_THESWAMPDISAPPEARED                  695
+#define STRINGID_PKMNTELLCHILLINGRECEPTIONJOKE        696
 
-#define STRINGID_LAURA1LOWHP                          671
-#define STRINGID_LAURA2LOWHP                          672
-#define STRINGID_LAURA3LOWHP                          673
-#define STRINGID_LAURA4LOWHP                          674
-#define STRINGID_ASUKA1LOWHP                          675
-#define STRINGID_ASUKA2LOWHP                          676
-#define STRINGID_ASUKA3LOWHP                          677
-#define STRINGID_ASUKA4LOWHP                          678
-#define STRINGID_NOX1LOWHP                            679
-#define STRINGID_NOX2LOWHP                            680
-#define STRINGID_NOX3LOWHP                            681
-#define STRINGID_NOX4LOWHP                            682
-#define STRINGID_JORDAN1LOWHP                         683
-#define STRINGID_JORDAN2LOWHP                         684
-#define STRINGID_JORDAN3LOWHP                         685
-#define STRINGID_JORDAN4LOWHP                         686
-#define STRINGID_GYM1LOWHP                            687
-#define STRINGID_GYM2LOWHP                            688
-#define STRINGID_GYM3LOWHP                            688
-#define STRINGID_GYM4LOWHP                            689
-#define STRINGID_GYM5LOWHP                            690
-#define STRINGID_GYM6LOWHP                            691
-#define STRINGID_GYM7LOWHP                            692
-#define STRINGID_GYM8LOWHP                            693
+#define STRINGID_LAURA1LOWHP                          697
+#define STRINGID_LAURA2LOWHP                          698
+#define STRINGID_LAURA3LOWHP                          699
+#define STRINGID_LAURA4LOWHP                          700
+#define STRINGID_ASUKA1LOWHP                          701
+#define STRINGID_ASUKA2LOWHP                          702
+#define STRINGID_ASUKA3LOWHP                          703
+#define STRINGID_ASUKA4LOWHP                          704
+#define STRINGID_NOX1LOWHP                            705
+#define STRINGID_NOX2LOWHP                            706
+#define STRINGID_NOX3LOWHP                            707
+#define STRINGID_NOX4LOWHP                            708
+#define STRINGID_JORDAN1LOWHP                         709
+#define STRINGID_JORDAN2LOWHP                         710
+#define STRINGID_JORDAN3LOWHP                         711
+#define STRINGID_JORDAN4LOWHP                         712
+#define STRINGID_GYM1LOWHP                            713
+#define STRINGID_GYM2LOWHP                            714
+#define STRINGID_GYM3LOWHP                            715
+#define STRINGID_GYM4LOWHP                            716
+#define STRINGID_GYM5LOWHP                            717
+#define STRINGID_GYM6LOWHP                            718
+#define STRINGID_GYM7LOWHP                            719
+#define STRINGID_GYM8LOWHP                            720
 
-#define STRINGID_PLAYERWHITEOUT3                      694
+#define STRINGID_PLAYERWHITEOUT3                      721
 
 #define BATTLESTRINGS_COUNT                           695
 
@@ -1001,7 +1027,21 @@
 // gDmgHazardsStringIds
 #define B_MSG_PKMNHURTBYSPIKES   0
 #define B_MSG_STEALTHROCKDMG     1
-#define B_MSG_POINTEDSTONESFLOAT 2
-#define B_MSG_SPIKESSCATTERED    3
+#define B_MSG_SHARPSTEELDMG      2
+#define B_MSG_POINTEDSTONESFLOAT 3
+#define B_MSG_SPIKESSCATTERED    4
+#define B_MSG_SHARPSTEELFLOATS   5
+
+// gDamageNonTypesStartStringIds
+#define B_MSG_TRAPPED_WITH_VINES  0
+#define B_MSG_CAUGHT_IN_VORTEX    1
+#define B_MSG_SURROUNDED_BY_FIRE  2
+#define B_MSG_SURROUNDED_BY_ROCKS 3
+
+// gDamageNonTypesDmgStringIds
+#define B_MSG_HURT_BY_VINES  0
+#define B_MSG_HURT_BY_VORTEX    1
+#define B_MSG_BURNING_UP  2
+#define B_MSG_HURT_BY_ROCKS_THROWN 3
 
 #endif // GUARD_CONSTANTS_BATTLE_STRING_IDS_H
