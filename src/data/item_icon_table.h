@@ -288,7 +288,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_DREAD_PLATE] = {gItemIcon_DreadPlate, gItemIconPalette_DreadPlate},
     [ITEM_IRON_PLATE] = {gItemIcon_IronPlate, gItemIconPalette_IronPlate},
     [ITEM_PIXIE_PLATE] = {gItemIcon_PixiePlate, gItemIconPalette_PixiePlate},
-    [ITEM_LEGEND_PLATE] = {gItemIcon_LegendPlate, gItemIconPalette_LegendPlate},
+    
     // Drives
     [ITEM_DOUSE_DRIVE] = {gItemIcon_DouseDrive, gItemIconPalette_DouseDrive},
     [ITEM_SHOCK_DRIVE] = {gItemIcon_ShockDrive, gItemIconPalette_ShockDrive},
