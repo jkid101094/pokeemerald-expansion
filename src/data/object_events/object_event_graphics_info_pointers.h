@@ -253,6 +253,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juno;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regidrago;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regieleki;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regigigas;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sumi;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
