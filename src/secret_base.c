@@ -159,7 +159,7 @@ static const struct YesNoFuncTable sDeleteRegistryYesNoFuncs =
     .noFunc = DeleteRegistry_No,
 };
 
-static const u16 sSecretBaseOwnerGfxIds[10] =
+static const u8 sSecretBaseOwnerGfxIds[10] =
 {
     // Male
     OBJ_EVENT_GFX_YOUNGSTER,
@@ -519,7 +519,7 @@ bool8 CurMapIsSecretBase(void)
 void InitSecretBaseAppearance(bool8 hidePC)
 {
     u16 secretBaseIdx;
-    s16 x = 0, y = 0;
+    s16 x, y = 0;
     u8 *decorations;
     u8 *decorPos;
 
