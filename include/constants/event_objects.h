@@ -246,9 +246,9 @@
 #define OBJ_EVENT_GFX_NOX                        242
 #define OBJ_EVENT_GFX_JUNO                       243
 #define OBJ_EVENT_GFX_JUSTIN                     244
-#define OBJ_EVENT_GFX_REGIDRAGO                  245
-#define OBJ_EVENT_GFX_REGIELEKI                  246
-#define OBJ_EVENT_GFX_REGIGIGAS                  247
+#define OBJ_EVENT_GFX_OLDREGIDRAGO               245
+#define OBJ_EVENT_GFX_OLDREGIELEKI               246
+#define OBJ_EVENT_GFX_OLDREGIGIGAS               247
 #define OBJ_EVENT_GFX_SUMI                       248
 #define OBJ_EVENT_GFX_POKE_BALL                  249
 #define OBJ_EVENT_GFX_OW_MON                     250
@@ -385,6 +385,16 @@
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
 #define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124
+#define OBJ_EVENT_PAL_TAG_HMITEMBALL              0x1125
+#define OBJ_EVENT_PAL_TAG_LAURA                   0x1126
+#define OBJ_EVENT_PAL_TAG_ASUKA                   0x1127
+#define OBJ_EVENT_PAL_TAG_NOX                     0x1128
+#define OBJ_EVENT_PAL_TAG_JUNO                    0x1129
+#define OBJ_EVENT_PAL_TAG_JUSTIN                  0x112A
+#define OBJ_EVENT_PAL_TAG_OLDREGIDRAGO            0x112B
+#define OBJ_EVENT_PAL_TAG_OLDREGIELEKI            0x112C
+#define OBJ_EVENT_PAL_TAG_OLDREGIGIGAS            0x112D
+#define OBJ_EVENT_PAL_TAG_SUMI                    0x112E
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

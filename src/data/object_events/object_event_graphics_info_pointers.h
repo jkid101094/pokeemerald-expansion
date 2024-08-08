@@ -253,9 +253,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Asuka;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nox;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Justin;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juno;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regidrago;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regieleki;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regigigas;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_OldRegidrago;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_OldRegieleki;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_OldRegigigas;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sumi;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -504,9 +504,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_NOX] =                      &gObjectEventGraphicsInfo_Nox,
     [OBJ_EVENT_GFX_JUNO] =                     &gObjectEventGraphicsInfo_Juno,
     [OBJ_EVENT_GFX_JUSTIN] =                   &gObjectEventGraphicsInfo_Justin,
-    [OBJ_EVENT_GFX_REGIDRAGO] =                &gObjectEventGraphicsInfo_Regidrago,
-    [OBJ_EVENT_GFX_REGIELEKI] =                &gObjectEventGraphicsInfo_Regieleki,
-    [OBJ_EVENT_GFX_REGIGIGAS] =                &gObjectEventGraphicsInfo_Regigigas,
+    [OBJ_EVENT_GFX_OLDREGIDRAGO] =             &gObjectEventGraphicsInfo_OldRegidrago,
+    [OBJ_EVENT_GFX_OLDREGIELEKI] =             &gObjectEventGraphicsInfo_OldRegieleki,
+    [OBJ_EVENT_GFX_OLDREGIGIGAS] =             &gObjectEventGraphicsInfo_OldRegigigas,
     [OBJ_EVENT_GFX_SUMI] =                     &gObjectEventGraphicsInfo_Sumi,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,

@@ -713,34 +713,34 @@
 #define STRINGID_FOGLIFTED                            711
 #define STRINGID_PKMNMADESHELLGLEAM                   712
 
-#define STRINGID_LAURA1LOWHP                          707
-#define STRINGID_LAURA2LOWHP                          708
-#define STRINGID_LAURA3LOWHP                          709
-#define STRINGID_LAURA4LOWHP                          710
-#define STRINGID_ASUKA1LOWHP                          711
-#define STRINGID_ASUKA2LOWHP                          712
-#define STRINGID_ASUKA3LOWHP                          713
-#define STRINGID_ASUKA4LOWHP                          714
-#define STRINGID_NOX1LOWHP                            715
-#define STRINGID_NOX2LOWHP                            716
-#define STRINGID_NOX3LOWHP                            717
-#define STRINGID_NOX4LOWHP                            718
-#define STRINGID_JORDAN1LOWHP                         719
-#define STRINGID_JORDAN2LOWHP                         720
-#define STRINGID_JORDAN3LOWHP                         721
-#define STRINGID_JORDAN4LOWHP                         722
-#define STRINGID_GYM1LOWHP                            723
-#define STRINGID_GYM2LOWHP                            724
-#define STRINGID_GYM3LOWHP                            725
-#define STRINGID_GYM4LOWHP                            726
-#define STRINGID_GYM5LOWHP                            727
-#define STRINGID_GYM6LOWHP                            728
-#define STRINGID_GYM7LOWHP                            729
-#define STRINGID_GYM8LOWHP                            730
+#define STRINGID_LAURA1LOWHP                          713
+#define STRINGID_LAURA2LOWHP                          714
+#define STRINGID_LAURA3LOWHP                          715
+#define STRINGID_LAURA4LOWHP                          716
+#define STRINGID_ASUKA1LOWHP                          717
+#define STRINGID_ASUKA2LOWHP                          718
+#define STRINGID_ASUKA3LOWHP                          719
+#define STRINGID_ASUKA4LOWHP                          720
+#define STRINGID_NOX1LOWHP                            721
+#define STRINGID_NOX2LOWHP                            722
+#define STRINGID_NOX3LOWHP                            723
+#define STRINGID_NOX4LOWHP                            724
+#define STRINGID_JORDAN1LOWHP                         725
+#define STRINGID_JORDAN2LOWHP                         726
+#define STRINGID_JORDAN3LOWHP                         727
+#define STRINGID_JORDAN4LOWHP                         728
+#define STRINGID_GYM1LOWHP                            729
+#define STRINGID_GYM2LOWHP                            730
+#define STRINGID_GYM3LOWHP                            731
+#define STRINGID_GYM4LOWHP                            732
+#define STRINGID_GYM5LOWHP                            733
+#define STRINGID_GYM6LOWHP                            734
+#define STRINGID_GYM7LOWHP                            735
+#define STRINGID_GYM8LOWHP                            736
 
-#define STRINGID_PLAYERWHITEOUT3                      731
+#define STRINGID_PLAYERWHITEOUT3                      737
 
-#define BATTLESTRINGS_COUNT                           732
+#define BATTLESTRINGS_COUNT                           738
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

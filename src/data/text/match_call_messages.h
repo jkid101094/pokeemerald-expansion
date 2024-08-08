@@ -308,10 +308,10 @@ const u8 gText_MatchCallHiker_Trent_Pokemon[] = _("Hard-bodied POKéMON.");
 const u8 gText_MatchCallHiker_Trent_Intro1[] = _("I've been planning a month");
 const u8 gText_MatchCallHiker_Trent_Intro2[] = _("for today's hike.");
 
-const u8 gText_MatchCallHiker_SAWYER_1_Strategy[] = _("I like it hot!");
-const u8 gText_MatchCallHiker_SAWYER_1_Pokemon[] = _("Hot POKéMON!");
-const u8 gText_MatchCallHiker_SAWYER_1_Intro1[] = _("As much as I love POKéMON,");
-const u8 gText_MatchCallHiker_SAWYER_1_Intro2[] = _("I surely like hiking!");
+const u8 gText_MatchCallHiker_Sawyer_Strategy[] = _("I like it hot!");
+const u8 gText_MatchCallHiker_Sawyer_Pokemon[] = _("Hot POKéMON!");
+const u8 gText_MatchCallHiker_Sawyer_Intro1[] = _("As much as I love POKéMON,");
+const u8 gText_MatchCallHiker_Sawyer_Intro2[] = _("I surely like hiking!");
 
 const u8 gText_MatchCallYoungCouple_LoisAndHal_Strategy[] = _("Lovey-dovey strategy!");
 const u8 gText_MatchCallYoungCouple_LoisAndHal_Pokemon[] = _("Lovey-dovey POKéMON!");
@@ -452,7 +452,7 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_HALEY] = MCFLAVOR(Lass_Haley),
     [REMATCH_JAMES] = MCFLAVOR(BugCatcher_James),
     [REMATCH_TRENT] = MCFLAVOR(Hiker_Trent),
-    [REMATCH_SAWYER_1] = MCFLAVOR(Hiker_SAWYER_1),
+    [REMATCH_SAWYER] = MCFLAVOR(Hiker_Sawyer),
     [REMATCH_KIRA_AND_DAN] = MCFLAVOR(YoungCouple_LoisAndHal),
     [REMATCH_WALLY_VR] = MCFLAVOR(PkmnTrainer_Wally),
     [REMATCH_ROXANNE] = MCFLAVOR(RockinWhiz_Roxanne),

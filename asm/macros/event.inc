@@ -791,6 +791,8 @@
 	@ Starts a trainer battle, skipping intro text. Takes a trainer and loss text. Does not warp the player to last heal location if they lose. 
 	.macro trainerbattle_no_intro_no_whiteout trainer:req, lose_text:req
 	trainerbattle TRAINER_BATTLE_NO_INTRO_NO_WHITEOUT, \trainer, 0, \lose_text
+	.endm
+	
 	@ Starts a double battle with the player against two trainers
 	@ Takes two trainers and defeat text for each
 	.macro trainerbattle_two_trainers trainer_a:req, lose_text_a:req, trainer_b:req, lose_text_b:req

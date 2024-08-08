@@ -98,7 +98,7 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->regionMapZoom = FALSE;
 }
 
-static void ClearPokedexFlags(void)
+static void UNUSED ClearPokedexFlags(void)
 {
     gUnusedPokedexU8 = 0;
     memset(&gSaveBlock1Ptr->dexCaught, 0, sizeof(gSaveBlock1Ptr->dexCaught));

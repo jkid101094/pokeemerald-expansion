@@ -512,9 +512,9 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Nox,                   OBJ_EVENT_PAL_TAG_NOX},
     {gObjectEventPal_Juno,                  OBJ_EVENT_PAL_TAG_JUNO},
     {gObjectEventPal_Justin,                OBJ_EVENT_PAL_TAG_JUSTIN},
-    {gObjectEventPal_Regidrago,             OBJ_EVENT_PAL_TAG_REGIDRAGO},
-    {gObjectEventPal_Regieleki,             OBJ_EVENT_PAL_TAG_REGIELEKI},
-    {gObjectEventPal_Regigigas,             OBJ_EVENT_PAL_TAG_REGIGIGAS},
+    {gObjectEventPal_OldRegidrago,          OBJ_EVENT_PAL_TAG_OLDREGIDRAGO},
+    {gObjectEventPal_OldRegieleki,          OBJ_EVENT_PAL_TAG_OLDREGIELEKI},
+    {gObjectEventPal_OldRegigigas,          OBJ_EVENT_PAL_TAG_OLDREGIGIGAS},
     {gObjectEventPal_Sumi,                  OBJ_EVENT_PAL_TAG_SUMI},
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
