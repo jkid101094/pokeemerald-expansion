@@ -373,3 +373,25 @@ const u32 gObjectEventPic_Lugia[] = INCBIN_U32("graphics/object_events/pics/poke
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 const u32 gObjectEventPic_HoOh[] = INCBIN_U32("graphics/object_events/pics/pokemon/ho_oh.4bpp");
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
+
+//Custom
+const u32 gObjectEventPic_HMItemBall[] = INCBIN_U32("graphics/object_events/pics/misc/hm_item_ball.4bpp");
+const u16 gObjectEventPal_HMItemBall[] = INCBIN_U16("graphics/object_events/palettes/hm_item_ball.gbapal");
+const u32 gObjectEventPic_Laura[] = INCBIN_U32("graphics/object_events/pics/people/laura.4bpp");
+const u16 gObjectEventPal_Laura[] = INCBIN_U16("graphics/object_events/palettes/laura.gbapal");
+const u32 gObjectEventPic_Asuka[] = INCBIN_U32("graphics/object_events/pics/people/asuka.4bpp");
+const u16 gObjectEventPal_Asuka[] = INCBIN_U16("graphics/object_events/palettes/asuka.gbapal");
+const u32 gObjectEventPic_Nox[] = INCBIN_U32("graphics/object_events/pics/people/nox.4bpp");
+const u16 gObjectEventPal_Nox[] = INCBIN_U16("graphics/object_events/palettes/nox.gbapal");
+const u32 gObjectEventPic_Juno[] = INCBIN_U32("graphics/object_events/pics/people/juno.4bpp");
+const u16 gObjectEventPal_Juno[] = INCBIN_U16("graphics/object_events/palettes/juno.gbapal");
+const u32 gObjectEventPic_Justin[] = INCBIN_U32("graphics/object_events/pics/people/justin.4bpp");
+const u16 gObjectEventPal_Justin[] = INCBIN_U16("graphics/object_events/palettes/justin.gbapal");
+const u32 gObjectEventPic_Regidrago[] = INCBIN_U32("graphics/object_events/pics/pokemon/regidrago.4bpp");
+const u16 gObjectEventPal_Regidrago[] = INCBIN_U16("graphics/object_events/palettes/regidrago.gbapal");
+const u32 gObjectEventPic_Regieleki[] = INCBIN_U32("graphics/object_events/pics/pokemon/regieleki.4bpp");
+const u16 gObjectEventPal_Regieleki[] = INCBIN_U16("graphics/object_events/palettes/regieleki.gbapal");
+const u32 gObjectEventPic_Regigigas[] = INCBIN_U32("graphics/object_events/pics/pokemon/regigigas.4bpp");
+const u16 gObjectEventPal_Regigigas[] = INCBIN_U16("graphics/object_events/palettes/regigigas.gbapal");
+const u32 gObjectEventPic_Sumi[] = INCBIN_U32("graphics/object_events/pics/people/sumi.4bpp");
+const u16 gObjectEventPal_Sumi[] = INCBIN_U16("graphics/object_events/palettes/sumi.gbapal");

@@ -21,10 +21,3 @@ EventScript_GotoTrainerScript::
 	releaseall
 	end
 
-EventScript_ObjectApproachPlayer::
-	lock
-	special DoTrainerApproach
-	waitstate
-	gotonative LoadTrainerObjectScript
-	end
-

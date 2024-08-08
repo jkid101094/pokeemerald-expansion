@@ -847,8 +847,8 @@ static const u8 sText_SupersweetAromaWafts[] = _("A supersweet aroma is wafting 
 static const u8 sText_TidyingUpComplete[] = _("Tidying up complete!");
 
 //Custom
-static const u8 sLaura1LowHP[] = _("We're not done just yet!\nReady, Exeggcute?");
-static const u8 sGym1LowHP[] = _("No! I won't lose so long\nas the fire in my soul still burns!");
+static const u8 sText_Laura1LowHP[] = _("We're not done just yet!\nReady, Exeggcute?");
+static const u8 sText_Gym1LowHP[] = _("No! I won't lose so long\nas the fire in my soul still burns!");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -1550,8 +1550,8 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_CLOAKEDINAHARSHLIGHT - BATTLESTRINGS_TABLE_START] = sText_PkmnIsCloakedInAHarshLight,
 
     //Custom
-    [STRINGID_LAURA1LOWHP - BATTLESTRINGS_TABLE_START] = sLaura1LowHP,
-    [STRINGID_GYM1LOWHP - BATTLESTRINGS_TABLE_START] = sGym1LowHP,
+    [STRINGID_LAURA1LOWHP - BATTLESTRINGS_TABLE_START] = sText_Laura1LowHP,
+    [STRINGID_GYM1LOWHP - BATTLESTRINGS_TABLE_START] = sText_Gym1LowHP,
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -4062,7 +4062,7 @@ static const struct TrainerSlide sTrainerSlides[] =
     {
         .trainerId = TRAINER_SAWYER_1,
         .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sLaura1LowHP,
+        .msgLastLowHp = sText_Laura1LowHP,
     },
 
     //Asuka
@@ -4076,42 +4076,42 @@ static const struct TrainerSlide sTrainerSlides[] =
     {
         .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sGym1LowHP,
+        .msgLastLowHp = sText_Gym1LowHP,
     },
     {
         .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sGym1LowHP,
+        .msgLastLowHp = sText_Gym1LowHP,
     },
     {
         .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sGym1LowHP,
+        .msgLastLowHp = sText_Gym1LowHP,
     },
     {
         .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sGym1LowHP,
+        .msgLastLowHp = sText_Gym1LowHP,
     },
     {
         .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sGym1LowHP,
+        .msgLastLowHp = sText_Gym1LowHP,
     },
     {
         .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sGym1LowHP,
+        .msgLastLowHp = sText_Gym1LowHP,
     },
     {
         .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sGym1LowHP,
+        .msgLastLowHp = sText_Gym1LowHP,
     },
     {
         .trainerId = TRAINER_ARCHIE,
         .isFrontierTrainer = FALSE,
-        .msgLastLowHp = sGym1LowHP,
+        .msgLastLowHp = sText_Gym1LowHP,
     },
 };
 
