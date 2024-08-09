@@ -1116,3 +1116,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/KinoHouse2/scripts.inc"
 
 	.include "data/maps/ShingoCity/scripts.inc"
+
+	.include "data/maps/ShingoCityNoth/scripts.inc"

@@ -21,7 +21,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_REGIDRAGO",
+      "graphics_id": "OBJ_EVENT_GFX_OLDREGIDRAGO",
       "x": 3,
       "y": 3,
       "elevation": 0,
@@ -34,7 +34,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_REGIELEKI",
+      "graphics_id": "OBJ_EVENT_GFX_OLDREGIELEKI",
       "x": 5,
       "y": 3,
       "elevation": 0,
@@ -47,7 +47,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_REGIGIGAS",
+      "graphics_id": "OBJ_EVENT_GFX_OLDREGIGIGAS",
       "x": 7,
       "y": 3,
       "elevation": 0,

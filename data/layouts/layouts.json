@@ -4620,6 +4620,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/ShingoCity/border.bin",
       "blockdata_filepath": "data/layouts/ShingoCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHINGO_CITY_NOTH",
+      "name": "ShingoCityNoth_Layout",
+      "width": 19,
+      "height": 19,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/ShingoCityNoth/border.bin",
+      "blockdata_filepath": "data/layouts/ShingoCityNoth/map.bin"
     }
   ]
 }
