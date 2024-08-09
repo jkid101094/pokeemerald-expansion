@@ -5742,10 +5742,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 23,
         .weight = 2150,
         .description = COMPOUND_STRING(
-            "Powerful legs and jaws made it the apex\n"
-            "predator of its time. Its own overhunting\n"
-            "of its prey was what drove it to\n"
-            "extinction."),
+            "Its existence is nothing but misery.\n"
+            "Reviving this Pokémon was a grave mistake.\n"
+            "It cries out in pain.\n"
+            ""),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 342,
@@ -5804,10 +5804,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 20,
         .weight = 1750,
         .description = COMPOUND_STRING(
-            "Though it's able to capture prey by\n"
-            "freezing its surroundings, it has trouble\n"
-            "eating the prey afterward because its\n"
-            "mouth is on top of its head."),
+            "Its head is upside down.\n"
+            "Why is its head upside down?\n"
+            "Someone please fix this.\n"
+            ""),
         .pokemonScale = 261,
         .pokemonOffset = 1,
         .trainerScale = 334,

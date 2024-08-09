@@ -3605,10 +3605,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 5,
         .weight = 66,
         .description = COMPOUND_STRING(
-            "By pruning the leaves on its head with\n"
-            "regularity, this Pokémon can be grown\n"
-            "into a fine plump shape. These bitter\n"
-            "leaves refresh those who eat them."),
+            "The leaves on its head make a lovely\n"
+            "garnish. It is prized by chefs, who\n"
+            "specialize in farming Petilil leaves.\n"
+            "How refreshing!"),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -3639,8 +3639,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sPetililLevelUpLearnset,
         .teachableLearnset = sPetililTeachableLearnset,
         .eggMoveLearnset = sPetililEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT},
-                                {EVO_NONE, 0, SPECIES_LILLIGANT_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_ITEM_DAY, ITEM_SUN_STONE, SPECIES_LILLIGANT},
+                                {EVO_ITEM_NIGHT, ITEM_SUN_STONE, SPECIES_LILLIGANT_HISUIAN}),
     },
 
     [SPECIES_LILLIGANT] =
@@ -3671,10 +3671,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 11,
         .weight = 163,
         .description = COMPOUND_STRING(
-            "Even veteran Trainers face a challenge\n"
-            "in getting its beautiful flower to bloom.\n"
-            "It withers away if a trainer does not\n"
-            "take good care of it."),
+            "Though it appears to lack a mouth it can\n"
+            "still consume berries.\n"
+            "This baffles even top scientists.\n"
+            ""),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,

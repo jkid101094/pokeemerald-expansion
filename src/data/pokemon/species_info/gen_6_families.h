@@ -2765,10 +2765,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 4,
         .weight = 35,
         .description = COMPOUND_STRING(
-            "Because it eats nothing but sweets, its\n"
-            "fur is as sticky sweet as cotton candy.\n"
-            "To entangle its opponents in battle, it\n"
-            "extrudes sticky white threads."),
+            "Make no mistake; that is fur, not candy.\n"
+            "Because of its diet its fur is just as\n"
+            "sweet, however. Other Pokémon feed on\n"
+            "the sugars in its sweat."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -2828,10 +2828,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 8,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "Slurpuff can distinguish even the\n"
-            "faintest of scents. It puts its sensitive\n"
-            "sense of smell to use by helping pastry\n"
-            "chefs in their work."),
+            "Its highly sensitive nose allows it to\n"
+            "sniff out everything about a person.\n"
+            "It hates those with bad habbits like\n"
+            "forgetting to shower."),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -3515,10 +3515,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 8,
         .weight = 260,
         .description = COMPOUND_STRING(
-            "Its immense jaws have enough destructive\n"
-            "force that it can chew up a car. If\n"
-            "something happens that it doesn't like,\n"
-            "it throws a tantrum and runs wild."),
+            "Its throws tatrums like a baby, hence\n"
+            "the name.\n"
+            "If something gets between its jaws\n"
+            "it'll smash it to bits."),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -3577,10 +3577,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 25,
         .weight = 2700,
         .description = COMPOUND_STRING(
-            "Thanks to its gargantuan jaws, which could\n"
-            "shred thick metal plates as if they were\n"
-            "paper, it was invincible in the ancient\n"
-            "world it once inhabited."),
+            "Because it wass invincible in its day;\n"
+            "its trainer must treat it like a king.\n"
+            "Rumor has it that it was the inspiration\n"
+            "for a Pokéstar Studios classic."),
         .pokemonScale = 257,
         .pokemonOffset = 10,
         .trainerScale = 423,
@@ -3639,10 +3639,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 13,
         .weight = 252,
         .description = COMPOUND_STRING(
-            "This ancient Pokémon was restored from\n"
-            "part of its body that had been frozen in\n"
-            "ice for over 100 million years. It lived in a\n"
-            "cold land where there were no predators."),
+            "With the advent of modern technlogy;\n"
+            "a breeder was able to release tons of\n"
+            "these once extinct Pokémon back into the wild;\n"
+            "giving them a second chance at life."),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -3701,10 +3701,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 27,
         .weight = 2250,
         .description = COMPOUND_STRING(
-            "Using the diamond-shaped crystals on its\n"
-            "body it can instantly create a wall of ice\n"
-            "to block an opponent's attack, or encase\n"
-            "them in ice."),
+            "This Pokémon can create auroras by howling.\n"
+            "Groups of Aurorus gather together during\n"
+            "snowy nights to fill the sky with vibrant\n"
+            "lights."),
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,

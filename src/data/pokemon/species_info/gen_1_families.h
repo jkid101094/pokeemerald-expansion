@@ -8361,10 +8361,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 4,
         .weight = 203,
         .description = COMPOUND_STRING(
-            "Its body is a magnetic stone. Iron sand\n"
-            "attach to parts of its body with stronger\n"
-            "magnetism. If you carelessly step on one,\n"
-            "it will headbutt and shock you in anger."),
+            "In ancient times children would chuck\n"
+            "this Pokémon at each other for fun.\n"
+            "What a terrible idea that was.\n"
+            ""),
         .pokemonScale = 347,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -8427,10 +8427,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 10,
         .weight = 1100,
         .description = COMPOUND_STRING(
-            "When two Graveler smash each other over\n"
-            "dravite, their favorite food, they cause\n"
-            "flashes of light and booming noises.\n"
-            "People call them “fireworks of the earth.”"),
+            "These Pokémon crash together liike flit\n"
+            "and steel, creating bright flashes.\n"
+            "Because of this behavior they are used\n"
+            "for displays of flashing lights.”"),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 256,
@@ -8492,10 +8492,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 17,
         .weight = 3160,
         .description = COMPOUND_STRING(
-            "It fires rocks charged with electricity.\n"
-            "Even if the rock isn't fired that\n"
-            "accurately, just grazing an opponent\n"
-            "will cause numbness and fainting."),
+            "It fires rocks from its railgun-like\n"
+            "appendage. When rocks cannot be found,\n"
+            "it loads up its naughty offspring\n"
+            "instead."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 296,
