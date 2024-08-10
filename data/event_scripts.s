@@ -1118,3 +1118,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ShingoCity/scripts.inc"
 
 	.include "data/maps/ShingoCityNoth/scripts.inc"
+
+	.include "data/maps/Route3/scripts.inc"
