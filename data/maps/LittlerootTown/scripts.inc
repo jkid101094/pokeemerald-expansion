@@ -35,5 +35,21 @@ RegigigasEncounter::
 	return
 
 
+GiveHitmonchan::
+	lockall
+	msgbox GiveHitmonchan_Text_0
+	givemon SPECIES_HITMONCHAN_FEMALE, 25, [ ITEM_PUNCHING_GLOVE ]
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox GiveHitmonchan_Text_1
+	releaseall
+	return
+
+
 RegidragoEncounter_Text_0:
 	.string "Gi gi gi gi!$"
+
+GiveHitmonchan_Text_0:
+	.string "This is a test script.\nHave a free Hitmonchan.$"
+
+GiveHitmonchan_Text_1:
+	.string "You recieved the Hitmonchan!$"

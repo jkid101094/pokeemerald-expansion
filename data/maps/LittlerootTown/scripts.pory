@@ -27,3 +27,12 @@ script RegigigasEncounter{
     dowildbattle
     releaseall
 }
+
+script GiveHitmonchan{
+    lockall
+    msgbox ("This is a test script.\nHave a free Hitmonchan.")
+    givemon(SPECIES_HITMONCHAN_FEMALE, 25, [ITEM_PUNCHING_GLOVE])
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox ("You recieved the Hitmonchan!")
+    releaseall
+}

@@ -1,0 +1,40 @@
+mapscripts TerraDen1_MapScripts{}
+
+script Zygarde10Encounter{
+    lockall
+    msgbox(format("Suddenly a mass of green energy appears before you!"))
+    playmoncry(SPECIES_ZYGARDE_10_AURA_BREAK, CRY_MODE_ENCOUNTER)
+    msgbox("Zzzz-dddd-aaaaaa!")
+    setwildbattle(SPECIES_ZYGARDE_10_AURA_BREAK, 15, item=ITEM_NONE)
+    delay(40)
+    waitmoncry
+    setflag(FLAG_NO_CATCHING)
+    dowildbattle
+    releaseall
+    specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+		call(Won_or_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+		call(Won_or_Caught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(RanAway)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(RanAway)
+	}
+    else{
+    clearflag(FLAG_NO_CATCHING)
+    }
+	waitmessage
+	releaseall
+}
+
+script Won_or_Caught{
+clearflag(FLAG_NO_CATCHING)
+}
+
+script RanAway{
+clearflag(FLAG_NO_CATCHING)
+}

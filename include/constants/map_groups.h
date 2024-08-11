@@ -201,6 +201,7 @@
 #define MAP_RUSTBORO_CITY_FLAT2_2F          (14 | (11 << 8))
 #define MAP_RUSTBORO_CITY_FLAT2_3F          (15 | (11 << 8))
 #define MAP_RUSTBORO_CITY_HOUSE3            (16 | (11 << 8))
+#define MAP_SHINGO_APARTMENT_F1             (17 | (11 << 8))
 
 // gMapGroup_IndoorFortree
 #define MAP_FORTREE_CITY_HOUSE1            (0 | (12 << 8))
@@ -423,6 +424,7 @@
 #define MAP_TERRA_CAVE_END                           (105 | (24 << 8))
 #define MAP_ALTERING_CAVE                            (106 | (24 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
+#define MAP_TERRA_DEN1                               (108 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

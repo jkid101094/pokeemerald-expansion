@@ -4640,6 +4640,26 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route3/border.bin",
       "blockdata_filepath": "data/layouts/Route3/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHINGO_APARTMENT_F1",
+      "name": "ShingoApartment_F1_Layout",
+      "width": 20,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ShingoApartment_F1/border.bin",
+      "blockdata_filepath": "data/layouts/ShingoApartment_F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TERRA_DEN1",
+      "name": "TerraDen1_Layout",
+      "width": 19,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TerraDen1/border.bin",
+      "blockdata_filepath": "data/layouts/TerraDen1/map.bin"
     }
   ]
 }

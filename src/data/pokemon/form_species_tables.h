@@ -425,6 +425,12 @@ static const u16 sMarowakFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_CUBONE
 
+static const u16 sHitmonchanFormSpeciesIdTable[] = {
+    SPECIES_HITMONCHAN,
+    SPECIES_HITMONCHAN_FEMALE,
+    FORM_SPECIES_END,
+};
+
 #if P_FAMILY_KOFFING
 static const u16 sWeezingFormSpeciesIdTable[] = {
     SPECIES_WEEZING,

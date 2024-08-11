@@ -2920,6 +2920,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+    const u32 gMonFrontPic_HitmonchanF[] = INCBIN_U32("graphics/pokemon/hitmonchan/female/anim_front.4bpp.lz");
+    const u32 gMonPalette_HitmonchanF[] = INCBIN_U32("graphics/pokemon/hitmonchan/female/normal.gbapal.lz");
+    const u32 gMonBackPic_HitmonchanF[] = INCBIN_U32("graphics/pokemon/hitmonchan/female/back.4bpp.lz");
+    const u32 gMonShinyPalette_HitmonchanF[] = INCBIN_U32("graphics/pokemon/hitmonchan/female/shiny.gbapal.lz");
+    const u8 gMonIcon_HitmonchanF[] = INCBIN_U8("graphics/pokemon/hitmonchan/female/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_HitmonchanF[] = INCBIN_COMP("graphics/pokemon/hitmonchan/female/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gOverworldPalette_HitmonchanF[] = INCBIN_U32("graphics/pokemon/hitmonchan/female/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_HitmonchanF[] = INCBIN_U32("graphics/pokemon/hitmonchan/female/overworld_shiny.gbapal.lz");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_Hitmontop[] = INCBIN_U32("graphics/pokemon/hitmontop/anim_front.4bpp.lz");
     const u32 gMonPalette_Hitmontop[] = INCBIN_U32("graphics/pokemon/hitmontop/normal.gbapal.lz");

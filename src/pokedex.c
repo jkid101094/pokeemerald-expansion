@@ -756,7 +756,7 @@ static const struct SpriteTemplate sHoennNationalTextSpriteTemplate =
     .callback = SpriteCB_SeenOwnInfo,
 };
 
-static const struct SpriteTemplate sHoennOwnNumberSpriteTemplate =
+static const struct SpriteTemplate sHoennDexSeenOwnNumberSpriteTemplate =
 {
     .tileTag = TAG_DEX_INTERFACE,
     .paletteTag = TAG_DEX_INTERFACE,
