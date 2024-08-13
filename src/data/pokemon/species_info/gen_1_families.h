@@ -12041,68 +12041,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sHitmonchanLevelUpLearnset,
         .teachableLearnset = sHitmonchanTeachableLearnset,
     },
-
-[SPECIES_HITMONCHAN_FEMALE] =
-    {
-        .baseHP        = 50,
-        .baseAttack    = 105,
-        .baseDefense   = 79,
-        .baseSpeed     = 101,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 76,
-        .types = MON_TYPES(TYPE_FIGHTING),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 159 : 140,
-        .evYield_SpDefense = 2,
-        .genderRatio = MON_FEMALE,
-        .eggCycles = 25,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_RIVALRY, ABILITY_IRON_FIST, ABILITY_INNER_FOCUS },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Hitmonchan"),
-        .cryId = CRY_HITMONCHAN,
-        .natDexNum = NATIONAL_DEX_HITMONCHAN,
-        .categoryName = _("Punching"),
-        .height = 14,
-        .weight = 502,
-        .description = COMPOUND_STRING(
-            "A rare, female variant of Hitmonchan.\n"
-            "Its strength matches that of its male\n"
-            "counterpart, as does its tenacity.\n"
-            "One punch will send you reeling."),
-        .pokemonScale = 256,
-        .pokemonOffset = 2,
-        .trainerScale = 277,
-        .trainerOffset = 2,
-        .frontPic = gMonFrontPic_HitmonchanF,
-        .frontPicSize = MON_COORDS_SIZE(48, 64),
-        .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Hitmonchan,
-        .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_HitmonchanF,
-        .backPicSize = MON_COORDS_SIZE(56, 56),
-        .backPicYOffset = 6,
-        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_HitmonchanF,
-        .shinyPalette = gMonShinyPalette_HitmonchanF,
-        .iconSprite = gMonIcon_HitmonchanF,
-        .iconPalIndex = 2,
-        FOOTPRINT(Hitmonchan)
-        OVERWORLD(
-            sPicTable_HitmonchanF,
-            SIZE_32x32,
-            SHADOW_SIZE_M,
-            TRACKS_FOOT,
-            gOverworldPalette_HitmonchanF,
-            gShinyOverworldPalette_HitmonchanF
-        )
-        .levelUpLearnset = sHitmonchanLevelUpLearnset,
-        .teachableLearnset = sHitmonchanTeachableLearnset,
-        .cannotBeTraded = TRUE
-    },
-
+    
 #if P_GEN_2_CROSS_EVOS
     [SPECIES_HITMONTOP] =
     {

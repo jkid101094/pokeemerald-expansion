@@ -4660,6 +4660,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/TerraDen1/border.bin",
       "blockdata_filepath": "data/layouts/TerraDen1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOMOE_DESERT",
+      "name": "TomoeDesert_Layout",
+      "width": 60,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/TomoeDesert/border.bin",
+      "blockdata_filepath": "data/layouts/TomoeDesert/map.bin"
     }
   ]
 }

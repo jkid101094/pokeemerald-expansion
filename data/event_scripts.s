@@ -1124,3 +1124,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ShingoApartment_F1/scripts.inc"
 
 	.include "data/maps/TerraDen1/scripts.inc"
+
+	.include "data/maps/TomoeDesert/scripts.inc"
